@@ -6265,7 +6265,7 @@ export const questions = {
 
 
   ],
-  CPlusPlus: [
+  CPlus: [
     {
       "q": "Which of the following is used for input in C++?",
       "opts": ["cin", "in", "input", "scanf"],

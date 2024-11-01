@@ -14,8 +14,8 @@ const Category = ({ startQuiz }) => {
     { name: "Java", icon: <FaCode className="text-orange-400" /> },
     { name: "Python", icon: <FaCode className="text-blue-500" /> },
     { name: "C", icon: <FaCode className="text-cyan-400" /> },
-    { name: "C++", icon: <FaCode className="text-green-500" /> },
-    { name: ".NET", icon: <FaCode className="text-red-500" /> },
+    { name: "CPlus", icon: <FaCode className="text-green-500" /> },
+    { name: "DotNet", icon: <FaCode className="text-red-500" /> },
   ];
 
   const handleCategoryClick = (cat) => {
