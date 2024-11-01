@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Navbar from './Navbar';
 import Category from './Category';
@@ -42,13 +42,13 @@ function App() {
             <Routes>
               <Route path="/" element={<Navigate to="/category" />} />
               <Route path="/category" element={<Category startQuiz={startQuiz} />} />
-              <Route 
-                path="/quiz" 
-                element={<Quiz quizData={quizData} handleResult={handleResult} />} 
+              <Route
+                path="/quiz"
+                element={<Quiz quizData={quizData} handleResult={handleResult} />}
               />
-              <Route 
-                path="/result" 
-                element={<Result correct={results.correct} wrong={results.wrong} totalQuestions={quizData?.length} solvedQuestions={solvedQuestions} />} 
+              <Route
+                path="/result"
+                element={<Result correct={results.correct} wrong={results.wrong} totalQuestions={quizData?.length} solvedQuestions={solvedQuestions} />}
               />
               <Route path="/contact" element={<Contact />} />
             </Routes>
