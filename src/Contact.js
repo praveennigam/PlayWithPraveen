@@ -78,7 +78,7 @@ const Contact = () => {
                     alt="Logo"
                     className="h-10 w-10 rounded-full border-none shadow-lg"
                   />
-                  <span className="text-lg text-transparent bg-gradient-to-r from-purple-700 to-orange-400 bg-clip-text leading-6 hover:underline">
+                  <span className="text-lg text-transparent bg-gradient-to-r from-purple-700 to-orange-700 bg-clip-text leading-6 hover:underline">
                     Visit: <span className="font-bold underline hover:underline">Thewebseller</span>
                   </span>
                 </a>
