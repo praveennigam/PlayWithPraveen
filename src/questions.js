@@ -4119,7 +4119,404 @@ export const questions = {
       "q": "What is a constructor initializer list?",
       "opts": ["Used to initialize members of a class", "A list of constructors", "A way to define a class", "None of the above"],
       "ans": 0
+    },
+    {
+      "q": "What is the default access specifier for class members?",
+      "opts": ["public", "private", "protected", "friend"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is used to create a copy of an object?",
+      "opts": ["Copy constructor", "Assignment operator", "Clone method", "All of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'new' keyword return?",
+      "opts": ["Pointer to the allocated memory", "Size of the allocated memory", "Reference to the allocated memory", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'std::move'?",
+      "opts": ["Transfers ownership of resources", "Creates a copy of an object", "Allocates memory", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following can be a lambda expression?",
+      "opts": ["[] {}", "[&]() {}", "[x] { return x; }", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is a pure virtual function?",
+      "opts": ["A function that must be implemented by derived classes", "A function that has no implementation", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What is the purpose of 'const' in function parameters?",
+      "opts": ["To prevent modification of arguments", "To create constant references", "To indicate output parameters", "Both 1 and 2"],
+      "ans": 3
+    },
+    {
+      "q": "What is an exception?",
+      "opts": ["An error during execution", "A compile-time error", "A logical error", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'try' block do?",
+      "opts": ["Catches exceptions", "Defines a function", "Handles errors", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is not a standard data type in C++?",
+      "opts": ["int", "float", "double", "decimal"],
+      "ans": 3
+    },
+    {
+      "q": "What is a default constructor?",
+      "opts": ["Constructor with no parameters", "Constructor with default values", "Constructor with multiple parameters", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is function overloading?",
+      "opts": ["Multiple functions with the same name", "Multiple functions with different names", "Changing the function definition", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << (3 == 2 ? 'A' : 'B');",
+      "opts": ["A", "B", "Error", "None of the above"],
+      "ans": 1
+    },
+    {
+      "q": "What is the purpose of the 'sizeof' operator?",
+      "opts": ["To return the size of a type or variable", "To return the size of an array", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What does 'std::vector' represent?",
+      "opts": ["A dynamic array", "A linked list", "A static array", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is an inline function?",
+      "opts": ["A function that is expanded in line when called", "A function that cannot be called", "A function that has no return type", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'static_assert'?",
+      "opts": ["To perform compile-time assertions", "To create static variables", "To check for errors", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a C++11 feature?",
+      "opts": ["Range-based for loops", "nullptr", "auto keyword", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does the 'std::list' represent?",
+      "opts": ["A doubly linked list", "A dynamic array", "A stack", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a dynamic memory allocation?",
+      "opts": ["Allocating memory at runtime", "Allocating memory at compile time", "Fixed size allocation", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a constructor?",
+      "opts": ["A special member function that initializes an object", "A function that destructs an object", "A regular function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'default' keyword do in C++?",
+      "opts": ["Defines a default constructor", "Indicates a default parameter value", "Defines a default function", "None of the above"],
+      "ans": 1
+    },
+    {
+      "q": "What is a template in C++?",
+      "opts": ["A blueprint for creating functions or classes", "A type of data structure", "A library function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'std::string' represent?",
+      "opts": ["A class for string manipulation", "A C-style string", "An array of characters", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a reference in C++?",
+      "opts": ["An alias for another variable", "A pointer to a variable", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is not a storage class in C++?",
+      "opts": ["auto", "register", "extern", "static_assert"],
+      "ans": 3
+    },
+    {
+      "q": "What is a nested class?",
+      "opts": ["A class defined inside another class", "A class with multiple inheritance", "A class that is abstract", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'sizeof' operator return for a pointer?",
+      "opts": ["Size of the pointer", "Size of the data it points to", "Size of the array", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a destructor?",
+      "opts": ["A special member function that cleans up resources", "A function that initializes an object", "A regular function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a default member initializer?",
+      "opts": ["An initializer for class members", "An automatic value for a member", "A special constructor", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'mutable' keyword?",
+      "opts": ["To allow modification of a member in a const object", "To define a constant variable", "To prevent changes", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is an example of a move constructor?",
+      "opts": ["A constructor that transfers resources", "A constructor that copies resources", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a virtual function?",
+      "opts": ["A function that can be overridden", "A function that cannot be overridden", "A static function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << 10 % 3;",
+      "opts": ["3", "1", "2", "0"],
+      "ans": 2
+    },
+    {
+      "q": "What does 'std::map' represent?",
+      "opts": ["An associative container", "A type of array", "A linked list", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a dynamic_cast used for?",
+      "opts": ["Safely downcasting pointers", "Static casting", "Creating objects dynamically", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'override' indicate?",
+      "opts": ["A method overrides a base class method", "A variable is constant", "Defines a static method", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << (true && true);",
+      "opts": ["1", "0", "true", "false"],
+      "ans": 2
+    },
+    {
+      "q": "What is the main function in a C++ program?",
+      "opts": ["Entry point of the program", "A type of function", "A user-defined function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'cout' stand for?",
+      "opts": ["Console output", "Count output", "Character output", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a static variable?",
+      "opts": ["Retains its value between function calls", "Only exists in the current function", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'std::pair' represent?",
+      "opts": ["A container to hold two values", "A function pair", "A pointer pair", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is an example of a scoped enumeration?",
+      "opts": ["enum class Color {Red, Green, Blue};", "enum Color {Red, Green, Blue};", "Color {Red, Green, Blue};", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a namespace?",
+      "opts": ["A way to organize code", "A type of variable", "A function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'return' statement?",
+      "opts": ["Exits a function and optionally returns a value", "Ends the program", "Declares a variable", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between 'struct' and 'class'?",
+      "opts": ["Default access specifier", "Inheritance", "Memory allocation", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'const' mean when used with a pointer?",
+      "opts": ["The pointer cannot be changed", "The value pointed to cannot be changed", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What is the purpose of a destructor?",
+      "opts": ["Releases resources when an object is destroyed", "Initializes an object", "Creates a copy of an object", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is operator overloading?",
+      "opts": ["Defining custom behavior for operators", "Changing the operator's precedence", "Using operators in new ways", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << 5 + 2 * 3;",
+      "opts": ["11", "21", "16", "13"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'volatile' keyword?",
+      "opts": ["Indicates that a variable can change unexpectedly", "Prevents optimization", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What is a linked list?",
+      "opts": ["A data structure consisting of nodes", "An array", "A type of pointer", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'nullptr' represent?",
+      "opts": ["A null pointer constant", "A type of variable", "An error", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a function pointer?",
+      "opts": ["A pointer that points to a function", "A special type of variable", "A regular pointer", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'using namespace std;'?",
+      "opts": ["To simplify code by avoiding std:: prefix", "To create a new namespace", "To define a function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'friend' keyword allow?",
+      "opts": ["Access to private and protected members", "Create friend functions", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What is a multi-threaded program?",
+      "opts": ["A program that runs multiple threads concurrently", "A program that runs sequentially", "A single-threaded program", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a const member function?",
+      "opts": ["A function that cannot modify the object", "A function that can modify the object", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'this' pointer refer to?",
+      "opts": ["Current object", "Previous object", "Next object", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is an accessor method?",
+      "opts": ["A method that retrieves a value", "A method that modifies a value", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a mutator method?",
+      "opts": ["A method that modifies a value", "A method that retrieves a value", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'override' indicate in a derived class?",
+      "opts": ["A method overrides a base class method", "A method cannot be overridden", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of a lambda function?",
+      "opts": ["To create anonymous functions", "To define a function inline", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What is a virtual base class?",
+      "opts": ["A base class that can be inherited virtually", "A class with virtual functions", "A special type of class", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'dynamic_cast' do?",
+      "opts": ["Safely downcasts pointers", "Converts types", "Creates objects dynamically", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is an exception handler?",
+      "opts": ["Code that handles exceptions", "Code that throws exceptions", "Code that defines functions", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << (2 + 3) * 4;",
+      "opts": ["20", "10", "12", "15"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'delete' in C++?",
+      "opts": ["To deallocate memory", "To free resources", "Both 1 and 2", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What does 'std::array' represent?",
+      "opts": ["A fixed-size array", "A dynamic array", "A linked list", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of cout << (3 > 2 ? 'A' : 'B');",
+      "opts": ["A", "B", "Error", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a stack in C++?",
+      "opts": ["A last-in, first-out data structure", "A queue", "An array", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'break' statement do?",
+      "opts": ["Exits the nearest loop or switch", "Ends the program", "Continues the loop", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'continue' statement do?",
+      "opts": ["Skips to the next iteration of a loop", "Exits the loop", "Ends the program", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a queue?",
+      "opts": ["A first-in, first-out data structure", "A stack", "An array", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'throw' statement do?",
+      "opts": ["Throws an exception", "Creates a variable", "Defines a function", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'static' in a function?",
+      "opts": ["To preserve the value between function calls", "To make the function accessible globally", "To restrict access", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a deep copy?",
+      "opts": ["Copying an object including dynamic resources", "Shallow copy", "Reference copy", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'const_cast' do?",
+      "opts": ["Cast away const-ness of a variable", "Cast to a different type", "Both 1 and 2", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is a file stream?",
+      "opts": ["An object that reads/writes data to files", "A data structure", "A function", "None of the above"],
+      "ans": 0
     }
+    
+    
     
     
     
