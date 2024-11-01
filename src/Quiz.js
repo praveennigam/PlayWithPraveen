@@ -33,15 +33,15 @@ const Quiz = ({ quizData, handleResult }) => {
   };
 
   return (
-    <div className="mt-10 mx-4 sm:mx-8 lg:mx-16 h-120 bg-gradient-to-br from-purple-800 to-blue-600 p-10 pb-12 mb-6 rounded-lg shadow-lg transition-transform transform">
+    <div className="mt-10 mx-4 sm:mx-8 lg:mx-16 h-120 bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 rounded-lg shadow-lg transition-transform transform">
       <h2 className="text-2xl font-bold text-white mb-4">{currentQ.q}</h2>
       <div className="flex flex-col">
         {currentQ.opts.map((opt, index) => {
           let buttonClass = 'mb-2 p-2 text-sm rounded-lg transition duration-300 ';
           if (answered) {
-            buttonClass += index === currentQ.ans ? 'bg-green-600' : (selectedOptions[qIndex] === index ? 'bg-red-600' : 'bg-gray-600');
+            buttonClass += index === currentQ.ans ? 'bg-gradient-to-r from-green-400 to-green-600' : (selectedOptions[qIndex] === index ? 'bg-gradient-to-r from-red-400 to-red-600' : 'bg-gray-600');
           } else {
-            buttonClass += 'bg-gradient-to-r from-red-900 to-blue-900 hover:from-purple-900 hover:to-red-700';
+            buttonClass += 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600';
           }
 
           return (
