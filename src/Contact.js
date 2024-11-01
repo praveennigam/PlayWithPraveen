@@ -26,11 +26,12 @@ const Contact = () => {
             href="https://impraveen.onrender.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center text-yellow-400 underline hover:text-yellow-300"
+            className="flex items-center justify-center text-gray-300 underline hover:text-yellow-300 text-2xl font-bold transition-colors duration-300 ease-in-out"
           >
-            <FaEnvelope className="mr-2 text-yellow-300" />
-            impraveen.onrender.com
+            <FaEnvelope className="mr-2 text-yellow-300 font-3xl" />
+            <span className="hover:text-yellow-400 transition-colors duration-300 ease-in-out">impraveen</span>
           </a>
+
         </div>
       </div>
     </div>
