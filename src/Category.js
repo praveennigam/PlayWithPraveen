@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBookOpen, FaGraduationCap, FaCode, FaClipboardCheck, FaStar } from 'react-icons/fa';
 
-const Category = ({ startQuiz }) => {  
+const Category = ({ startQuiz }) => {
   const navigate = useNavigate();
   const categories = [
     { name: "UPSC", icon: <FaGraduationCap className="text-yellow-400" /> },
@@ -20,11 +20,11 @@ const Category = ({ startQuiz }) => {
 
   const handleCategoryClick = (cat) => {
     startQuiz(cat);
-    navigate('/quiz'); 
+    navigate('/quiz');
   };
 
   return (
-    <div className="flex flex-wrap justify-center mt-20 p-4">
+    <div className="flex flex-wrap justify-center mt-6 p-4">
       {categories.map(({ name, icon }) => (
         <button
           key={name}
