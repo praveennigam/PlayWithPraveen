@@ -33,8 +33,8 @@ const Quiz = ({ quizData, handleResult }) => {
   };
 
   return (
-    <div className="mt-26 w-full bg-gradient-to-br from-purple-800 to-blue-600   p-10 rounded-lg shadow-lg transition-transform transform">
-      <h2 className="text-xl text-white mb-4">{currentQ.q}</h2>
+    <div className="mt-10 mx-4 sm:mx-8 lg:mx-16 h-120 bg-gradient-to-br from-purple-800 to-blue-600 p-10 pb-12 mb-6 rounded-lg shadow-lg transition-transform transform">
+      <h2 className="text-2xl font-bold text-white mb-4">{currentQ.q}</h2>
       <div className="flex flex-col">
         {currentQ.opts.map((opt, index) => {
           let buttonClass = 'mb-2 p-2 text-sm rounded-lg transition duration-300 ';
@@ -59,14 +59,14 @@ const Quiz = ({ quizData, handleResult }) => {
       <div className="flex justify-between mt-4">
         <button
           onClick={finishQuiz}
-          className="p-2 text-sm bg-gradient-to-r from-red-500  to-purple-500 hover:from-purple-500 hover:to-green-500 rounded-lg transition duration-300 text-white"
+          className="p-2 text-sm bg-gradient-to-r from-red-500 to-purple-500 hover:from-purple-500 hover:to-green-500 rounded-lg transition duration-300 text-white"
         >
           End Quiz
         </button>
         {answered && (
           <button
             onClick={handleNextQuestion}
-            className="p-2 text-sm bg-gradient-to-r from-yellow-900 to-red-800 hover:from-yellow-00 hover:to-purple-700 rounded-lg transition duration-300 text-white"
+            className="p-2 text-sm bg-gradient-to-r from-yellow-900 to-red-800 hover:from-yellow-500 hover:to-purple-700 rounded-lg transition duration-300 text-white"
           >
             {qIndex < quizData.length - 1 ? 'Next Question' : 'Finish'}
           </button>
