@@ -29,10 +29,10 @@ const Category = ({ startQuiz }) => {
         <button
           key={name}
           onClick={() => handleCategoryClick(name)}
-          className="m-2 w-full sm:w-1/3 md:w-1/4 p-4 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white rounded-lg transition duration-300 transform hover:scale-105 flex items-center"
+          className="m-2 w-full sm:w-1/3 md:w-1/4 p-6 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center"
         >
           <span className="mr-2 text-2xl">{icon}</span>
-          {name}
+          <span className="text-center">{name}</span>
         </button>
       ))}
     </div>

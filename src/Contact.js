@@ -63,7 +63,7 @@ const Contact = () => {
                 className="flex items-center justify-center link-gradient underline text-xl font-bold transition-colors duration-300 ease-in-out animate-blink"
               >
                 <FaEnvelope className="mr-2 text-blue-700 text-2xl " />
-                <span className="text-2xl py-4 text-lg text-transparent bg-gradient-to-r from-purple-300 to-green-500 bg-clip-text leading-6 hover:underline">Visit: Impravee.com</span>
+                <span className="text-2xl py-4 text-lg text-transparent bg-gradient-to-r from-purple-300 to-green-500 bg-clip-text leading-6 hover:underline">Visit: ImPraveen.com</span>
               </a>
               <p className="text-2xl py-2 text-lg text-transparent bg-gradient-to-r from-purple-300 to-blue-700 bg-clip-text leading-6 hover:underline font-bold">or</p>
               <a

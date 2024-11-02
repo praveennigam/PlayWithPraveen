@@ -37,11 +37,11 @@ const Quiz = ({ quizData, handleResult }) => {
       <h2 className="text-2xl font-bold text-white mb-4">{currentQ.q}</h2>
       <div className="flex flex-col">
         {currentQ.opts.map((opt, index) => {
-          let buttonClass = 'mb-2 p-2 text-sm rounded-lg transition duration-300 ';
+          let buttonClass = 'mb-2 p-2 text-sm rounded-lg transition duration-300 flex items-center justify-center';
           if (answered) {
-            buttonClass += index === currentQ.ans ? 'bg-gradient-to-r from-green-400 to-green-600' : (selectedOptions[qIndex] === index ? 'bg-gradient-to-r from-red-400 to-red-600' : 'bg-gray-600');
+            buttonClass += index === currentQ.ans ? ' bg-gradient-to-r from-green-400 to-green-600' : (selectedOptions[qIndex] === index ? ' bg-gradient-to-r from-red-400 to-red-600' : ' bg-gray-600');
           } else {
-            buttonClass += 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-600 hover:to-blue-600';
+            buttonClass += ' bg-gradient-to-r from-blue-900 to-orange-900 hover:from-green-900 hover:to-orange-900';
           }
 
           return (
