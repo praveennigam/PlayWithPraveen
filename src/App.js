@@ -18,11 +18,17 @@ function App() {
   }, []);
 
   const startQuiz = (cat) => {
-    setQuizData(questions[cat]);
+    setQuizData(questions[cat]); // Set quiz data based on the selected category
   };
 
   const handleResult = (solvedQuestionsCount, selectedOptions) => {
-    const correctAnswers = quizData.map(q => q.ans);
+    // Ensure selectedOptions is an array
+    if (!Array.isArray(selectedOptions)) {
+      console.error('selectedOptions is not an array');
+      return;
+    }
+
+    const correctAnswers = quizData.map((q) => q.ans);
     const correctCount = selectedOptions.filter((option, index) => option === correctAnswers[index]).length;
     const wrongCount = solvedQuestionsCount - correctCount;
 
@@ -40,7 +46,7 @@ function App() {
         <div className="flex-grow flex items-center justify-center mt-16">
           <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg w-full max-w-lg">
             <Routes>
-              <Route path="/" element={<Navigate to="/category" />} />
+              <Route path="/" element={<Category startQuiz={startQuiz} />} />
               <Route path="/category" element={<Category startQuiz={startQuiz} />} />
               <Route
                 path="/quiz"

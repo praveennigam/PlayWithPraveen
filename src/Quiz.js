@@ -5,11 +5,13 @@ import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
   const [answered, setAnswered] = useState(false);
   const navigate = useNavigate();
 
   const currentQ = quizData[qIndex];
 
+  // Check if the selected answer is correct and update the score
   const checkAnswer = (selected) => {
     setSelectedOptions((prev) => {
       const newOptions = [...prev];
@@ -17,14 +19,21 @@ const Quiz = ({ quizData, handleResult }) => {
       return newOptions;
     });
     setAnswered(true);
+
+    if (selected === currentQ.ans) {
+      setCorrectAnswers((prev) => prev + 1);
+    }
   };
 
+  // Finish quiz and navigate to the result page
   const finishQuiz = () => {
-    // Pass total number of questions (quizData.length) to result page
-    handleResult(selectedOptions.length, selectedOptions, quizData.length);
+    const totalQuestions = quizData.length;
+    const wrongAnswers = totalQuestions - correctAnswers;
+    handleResult(correctAnswers, wrongAnswers, totalQuestions, selectedOptions.length);
     navigate('/result');
   };
 
+  // Move to the next question
   const handleNextQuestion = () => {
     setAnswered(false);
     if (qIndex < quizData.length - 1) {
@@ -34,13 +43,14 @@ const Quiz = ({ quizData, handleResult }) => {
     }
   };
 
+  // Progress bar calculation
   const progress = ((qIndex + 1) / quizData.length) * 100;
 
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out">
       {/* Progress Bar */}
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
-        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600" style={{ width: `${progress}%` }}></div>
+        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
       </div>
 
       {/* Question */}
@@ -60,7 +70,7 @@ const Quiz = ({ quizData, handleResult }) => {
                   ? ' bg-gradient-to-r from-red-400 to-red-600 text-white'
                   : ' bg-gray-600 text-gray-300';
           } else {
-            buttonClass += ' bg-gradient-to-r from-blue-900 to-orange-900 text-white hover:from-green-900 hover:to-orange-900';
+            buttonClass += ' bg-gradient-to-r from-blue-900 to-yellow-200 text-white hover:from-orange-400 hover:to-blue-900';
           }
 
           return (
@@ -69,6 +79,7 @@ const Quiz = ({ quizData, handleResult }) => {
               onClick={() => checkAnswer(index)}
               className={buttonClass}
               disabled={answered}
+              aria-label={`Choose option ${opt}`}
             >
               {answered && index === currentQ.ans ? <FaCheckCircle /> : answered && selectedOptions[qIndex] === index ? <FaTimesCircle /> : null}
               {opt}
@@ -89,7 +100,7 @@ const Quiz = ({ quizData, handleResult }) => {
         {answered && (
           <button
             onClick={handleNextQuestion}
-            className="next-question-btn p-3 text-sm bg-gradient-to-r from-yellow-900 to-red-800 hover:from-yellow-500 hover:to-purple-700 rounded-lg transition duration-300 text-white flex items-center"
+            className="next-question-btn p-3 text-sm bg-gradient-to-r from-orange-200 to-blue-400 hover:from-yello-500 hover:to-purple-500 rounded-lg transition duration-300 text-white flex items-center"
           >
             <FaArrowRight className="mr-2" />
             {qIndex < quizData.length - 1 ? 'Next Question' : 'Finish'}

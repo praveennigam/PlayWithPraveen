@@ -1,4 +1,3228 @@
 export const questions = {
+
+  MongoDB: [
+    {
+      "q": "What is the default port number for MongoDB?",
+      "opts": ["27017", "28017", "30000", "27019"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operation is used to check if a field exists in a document?",
+      "opts": ["$exists", "$match", "$in", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default data format used by MongoDB to store data?",
+      "opts": ["BSON", "JSON", "XML", "CSV"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `mapReduce()` method in MongoDB?",
+      "opts": ["To perform complex aggregation operations", "To map and reduce data across a collection", "To create indexes", "To find documents matching a query"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is used to filter documents in MongoDB queries?",
+      "opts": ["$match", "$filter", "$query", "$where"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB's `ObjectId`?",
+      "opts": ["It is a unique identifier for documents", "It is a special query operator", "It is a data type for storing objects", "It is used to define relationships between documents"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of MongoDB's `wire protocol`?",
+      "opts": ["To define the communication between MongoDB servers and clients", "To provide data encryption", "To define database schema", "To manage user access control"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to select documents where a field's value is not equal to a specific value?",
+      "opts": ["$ne", "$eq", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, how are relationships between documents typically handled?",
+      "opts": ["By embedding documents", "By using SQL joins", "By using foreign keys", "MongoDB does not support relationships"],
+      "ans": 0
+    },
+    {
+      "q": "Which command in MongoDB is used to delete all documents in a collection?",
+      "opts": ["deleteMany()", "remove()", "drop()", "clear()"],
+      "ans": 1
+    },
+    {
+      "q": "What is the primary purpose of the `$text` operator in MongoDB?",
+      "opts": ["To perform text search on string fields", "To select documents with specific fields", "To sort documents by text fields", "To perform aggregation on text data"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following aggregation operators can be used to calculate the sum of a field?",
+      "opts": ["$sum", "$count", "$avg", "$min"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in MongoDB is used to create a database?",
+      "opts": ["use dbname", "db.create('dbname')", "createDatabase('dbname')", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to increment the value of a field by a specified value?",
+      "opts": ["$inc", "$set", "$add", "$push"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB commands is used to start the MongoDB server?",
+      "opts": ["mongod", "mongo", "mongodb", "mongos"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB commands is used to stop the MongoDB server?",
+      "opts": ["db.shutdownServer()", "shutdown()", "mongod --stop", "mongo --exit"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following can be used to control concurrency in MongoDB?",
+      "opts": ["Transactions", "Indexes", "Aggregation", "Sharding"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `db.collection.drop()` method used for in MongoDB?",
+      "opts": ["To remove a collection from a database", "To remove all documents from a collection", "To clear the index of a collection", "To remove a database"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to match documents that have a field with a value less than a specific value in MongoDB?",
+      "opts": ["$lt", "$gt", "$lte", "$gte"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to create a new collection?",
+      "opts": ["createCollection()", "db.create()", "create()", "addCollection()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to retrieve all documents in a collection in MongoDB?",
+      "opts": ["find()", "get()", "fetch()", "findAll()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which of the following is a valid way to sort documents?",
+      "opts": ["db.collection.find().sort({field: 1})", "db.collection.find().orderBy({field: 1})", "db.collection.sort({field: 1})", "db.collection.find().orderByField({field: 1})"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$lookup` stage do in a MongoDB aggregation pipeline?",
+      "opts": ["Performs a left outer join to another collection", "Filters documents based on a condition", "Groups documents by a field", "Unwinds array fields"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to search for documents where the field contains an array of values?",
+      "opts": ["$in", "$eq", "$exists", "$gt"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to update a specific document in MongoDB?",
+      "opts": ["updateOne()", "updateMany()", "findOneAndUpdate()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does the `$unset` operator do in MongoDB?",
+      "opts": ["Removes a field from a document", "Sets a field's value to null", "Adds a field to a document", "Changes a field's value"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to show a collection's indexes?",
+      "opts": ["db.collection.getIndexes()", "db.collection.showIndexes()", "db.collection.indexes()", "db.collection.index()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB transactions?",
+      "opts": ["Transactions provide ACID guarantees", "MongoDB does not support transactions", "Transactions are supported only in sharded clusters", "Transactions provide eventual consistency"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to count the number of documents that match a query?",
+      "opts": ["countDocuments()", "count()", "getCount()", "findCount()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `mongos` process in MongoDB?",
+      "opts": ["To route queries to appropriate shards in a sharded cluster", "To store data in the cluster", "To back up data", "To perform complex aggregation operations"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB's sharding?",
+      "opts": ["Sharding distributes data across multiple servers", "Sharding is used for backup", "Sharding is only used for small databases", "Sharding does not work in replica sets"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to configure authentication in MongoDB?",
+      "opts": ["mongod.conf file", "mongos.conf file", "config database", "security database"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to check if a field value is greater than or equal to a specific value?",
+      "opts": ["$gte", "$gt", "$lte", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB's `Aggregation Pipeline`?",
+      "opts": ["It is a series of stages that process documents", "It only supports single operations", "It is used for sorting only", "It is a query method"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `db.collection.aggregate()` method do?",
+      "opts": ["Performs an aggregation operation on the collection", "Sorts the documents in a collection", "Finds documents in a collection", "Creates new documents in the collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to combine multiple conditions using logical OR?",
+      "opts": ["$or", "$and", "$nor", "$not"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to define data relationships in MongoDB?",
+      "opts": ["Embedding documents or referencing them", "Using foreign keys", "Creating indexes", "Defining joins"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB methods is used to retrieve distinct values for a field?",
+      "opts": ["distinct()", "unique()", "findUnique()", "getDistinct()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB commands is used to check the status of the server?",
+      "opts": ["db.serverStatus()", "server.status()", "mongod.status()", "db.status()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum size of an individual document in MongoDB?",
+      "opts": ["16 MB", "32 MB", "64 MB", "128 MB"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "Which MongoDB operator is used to search for documents where the field contains a specific value in an array?",
+      "opts": ["$in", "$elemMatch", "$arrayContains", "$match"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to drop a database?",
+      "opts": ["db.dropDatabase()", "dropDatabase()", "removeDatabase()", "db.drop()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to insert a single document into a collection in MongoDB?",
+      "opts": ["insertOne()", "addOne()", "newDocument()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `explain()` method in MongoDB?",
+      "opts": ["To show how MongoDB executes a query", "To create an index", "To aggregate data", "To delete a document"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$limit` stage do in MongoDB aggregation?",
+      "opts": ["Limits the number of documents", "Matches documents based on a condition", "Groups documents by a field", "Adds new fields to documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB commands is used to list all collections in a database?",
+      "opts": ["show collections", "list collections", "db.showCollections()", "db.list()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to update multiple documents in a collection?",
+      "opts": ["updateMany()", "updateAll()", "modify()", "update()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$addFields` stage do in MongoDB aggregation?",
+      "opts": ["Adds new fields to documents", "Groups documents by a field", "Sorts documents", "Filters documents based on a condition"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operators is used to combine query conditions using logical AND?",
+      "opts": ["$and", "$or", "$not", "$nor"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.findOneAndDelete()` method in MongoDB?",
+      "opts": ["Finds and deletes a single document", "Finds and updates a single document", "Deletes all documents in a collection", "Finds and removes a field"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB’s `sharding`?",
+      "opts": ["Sharding distributes data across multiple servers", "Sharding is used for data replication", "Sharding improves query performance by creating indexes", "Sharding is used for backups"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default write concern in MongoDB?",
+      "opts": ["acknowledged", "unacknowledged", "majority", "all"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents that have a specific field value equal to a given value?",
+      "opts": ["$eq", "$in", "$gt", "$exists"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to find the current server’s status?",
+      "opts": ["serverStatus()", "status()", "db.serverStatus()", "rs.status()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the primary purpose of the `$match` stage in a MongoDB aggregation pipeline?",
+      "opts": ["To filter documents based on a condition", "To group documents by a field", "To sort documents", "To calculate the sum of fields"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to check if a field is greater than or equal to a specified value?",
+      "opts": ["$gte", "$gt", "$lt", "$lte"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$group` stage in MongoDB aggregation do?",
+      "opts": ["Groups documents by a field", "Matches documents based on a condition", "Adds fields to documents", "Sorts documents by a field"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to start a MongoDB server?",
+      "opts": ["mongod", "mongo", "mongodb", "start-mongo"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to check if a field exists?",
+      "opts": ["$exists", "$in", "$not", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following commands is used to create an index on a MongoDB collection?",
+      "opts": ["createIndex()", "addIndex()", "newIndex()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to perform a logical NOT operation on a query condition?",
+      "opts": ["$not", "$nor", "$and", "$or"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$unwind` stage do in MongoDB aggregation?",
+      "opts": ["Deconstructs an array field", "Filters documents based on a condition", "Sorts documents", "Groups documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to back up a MongoDB database?",
+      "opts": ["mongodump", "backup()", "db.backup()", "mongod"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$set` operator in MongoDB?",
+      "opts": ["To update or add a field in a document", "To remove a field from a document", "To increment a field value", "To sort documents by a field"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where a field contains a value greater than a specified value?",
+      "opts": ["$gt", "$lt", "$gte", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to delete a collection in MongoDB?",
+      "opts": ["drop()", "delete()", "remove()", "dropCollection()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to insert multiple documents into a collection?",
+      "opts": ["insertMany()", "addMultiple()", "createMany()", "insertAll()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to see all the indexes in a collection?",
+      "opts": ["getIndexes()", "showIndexes()", "listIndexes()", "db.indexes()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to retrieve all documents from a MongoDB collection?",
+      "opts": ["find()", "select()", "getAll()", "findAll()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.renameCollection()` method in MongoDB?",
+      "opts": ["Renames a collection", "Removes a collection", "Renames a field", "Creates a new collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to check if a field is less than a specified value?",
+      "opts": ["$lt", "$gt", "$lte", "$gte"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where a field value is less than or equal to a specified value?",
+      "opts": ["$lte", "$gte", "$lt", "$gt"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where the field value is greater than or equal to a specified value?",
+      "opts": ["$gte", "$lte", "$lt", "$gt"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a MongoDB data type that stores binary data?",
+      "opts": ["BinData", "ObjectId", "Array", "Boolean"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum size of a MongoDB document?",
+      "opts": ["16 MB", "8 MB", "64 MB", "128 MB"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to update a single document in a collection?",
+      "opts": ["updateOne()", "modifyOne()", "update()", "edit()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$setOnInsert` operator in MongoDB?",
+      "opts": ["Sets the value of a field only when a document is inserted", "Updates a field value", "Adds a field to a document", "Deletes a field from a document"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB operators is used to specify a field to update during an update operation?",
+      "opts": ["$set", "$inc", "$push", "$pull"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.countDocuments()` method in MongoDB?",
+      "opts": ["Counts the number of documents in a collection", "Counts the number of fields in a document", "Counts the number of indexes", "Counts the number of database operations"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "Which method is used to create a new index on a field in MongoDB?",
+      "opts": ["createIndex()", "addIndex()", "newIndex()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "What is a MongoDB replica set?",
+      "opts": ["A group of MongoDB servers that replicate data", "A single MongoDB server", "A cluster of sharded MongoDB servers", "A method to back up data"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where the field value is equal to a specified value?",
+      "opts": ["$eq", "$ne", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, how can you ensure data consistency in distributed clusters?",
+      "opts": ["By using replica sets", "By using sharding only", "By disabling transactions", "By using only one server"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to specify an array field for an $elemMatch query in MongoDB?",
+      "opts": ["$elemMatch", "$in", "$match", "$exists"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$push` operator in MongoDB?",
+      "opts": ["To add an element to an array", "To remove an element from an array", "To update a field", "To increment a field value"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid method to add a new document to a MongoDB collection?",
+      "opts": ["insertOne()", "addDocument()", "newDoc()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operation is used to rename a collection?",
+      "opts": ["renameCollection()", "rename()", "changeCollectionName()", "rename()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$addToSet` operator do in MongoDB?",
+      "opts": ["Adds a value to an array only if it is not already present", "Adds a value to an array", "Removes a value from an array", "Replaces the array with a new array"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.createIndex()` method in MongoDB?",
+      "opts": ["To create an index on a collection", "To create a new collection", "To define the schema of a collection", "To group documents in a collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operators is used to check for the existence of a field in a document?",
+      "opts": ["$exists", "$ne", "$eq", "$gt"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where a field value is greater than a specific value?",
+      "opts": ["$gt", "$lt", "$gte", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to remove all documents in a collection?",
+      "opts": ["remove()", "deleteMany()", "drop()", "clear()"],
+      "ans": 1
+    },
+    {
+      "q": "What is the primary use of the `$match` stage in MongoDB aggregation?",
+      "opts": ["To filter documents based on specific conditions", "To group documents by a field", "To join documents from different collections", "To unwind an array field"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to test whether a field value is not equal to a specific value?",
+      "opts": ["$ne", "$eq", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to retrieve a specific field from a document?",
+      "opts": ["projection", "select()", "find()", "filter()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$skip` stage do in MongoDB aggregation?",
+      "opts": ["Skips the first N documents", "Skips documents based on a condition", "Sorts documents by a field", "Limits the number of documents"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `db.collection.stats()` method return?",
+      "opts": ["Statistics about the collection", "Details about the indexes in a collection", "The number of documents in the collection", "The average document size"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB methods is used to find a single document in a collection?",
+      "opts": ["findOne()", "find()", "findSingle()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the function of the `mongos` process in a MongoDB sharded cluster?",
+      "opts": ["To route client requests to the correct shard", "To store data in the cluster", "To back up data", "To perform aggregation operations"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to connect to a database?",
+      "opts": ["connect()", "use()", "connectTo()", "db.connect()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the MongoDB `db.createCollection()` method?",
+      "opts": ["It creates a new collection in the database", "It adds a field to an existing collection", "It modifies the schema of a collection", "It drops an existing collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to perform a complex aggregation in MongoDB?",
+      "opts": ["aggregate()", "findAndModify()", "update()", "group()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$sort` stage do in MongoDB aggregation?",
+      "opts": ["Sorts documents by specified fields", "Filters documents based on a condition", "Groups documents by a field", "Unwinds array fields"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to check if a field value is less than or equal to a specific value in MongoDB?",
+      "opts": ["$lte", "$lt", "$gt", "$gte"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to insert multiple documents into a collection?",
+      "opts": ["insertMany()", "insertBatch()", "addMultiple()", "createMultiple()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `db.collection.findOneAndUpdate()` method do?",
+      "opts": ["Finds and updates a single document", "Finds a document and removes it", "Finds and replaces a document", "Finds and projects a document"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to combine multiple query conditions with a logical OR?",
+      "opts": ["$or", "$and", "$nor", "$not"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB operators is used to perform a text search on a string field?",
+      "opts": ["$text", "$match", "$search", "$in"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to list all databases in MongoDB?",
+      "opts": ["show databases", "list databases", "db.show()", "show()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to backup a MongoDB database?",
+      "opts": ["mongodump", "backup()", "db.backup()", "mongobackup"],
+      "ans": 0
+    },
+    {
+      "q": "What is a MongoDB shard key?",
+      "opts": ["A field used to distribute data across multiple shards", "A field used for indexing", "A special field for joins", "A key used for sorting"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to check the status of a replica set?",
+      "opts": ["rs.status()", "db.status()", "replicaSet.status()", "rs.check()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to specify a regular expression pattern for matching field values?",
+      "opts": ["$regex", "$pattern", "$match", "$text"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to remove a specific document from a MongoDB collection?",
+      "opts": ["deleteOne()", "removeOne()", "findOneAndDelete()", "drop()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to find the distinct values for a field?",
+      "opts": ["distinct()", "unique()", "findDistinct()", "getDistinct()"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to select documents where a field value is within a range of values in MongoDB?",
+      "opts": ["$in", "$between", "$range", "$match"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to manage the schema in MongoDB?",
+      "opts": ["MongoDB does not have a strict schema", "Using collections", "Using the db.schema() method", "Using validations in the schema"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$unwind` stage in MongoDB aggregation?",
+      "opts": ["To deconstruct an array field", "To filter documents based on a condition", "To group documents by a field", "To sort documents"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What does the `MongoDB` `find()` method return?",
+      "opts": ["A cursor to the documents in the collection", "A single document", "An array of documents", "The count of documents"],
+      "ans": 0
+    },
+    {
+      "q": "What is a `MongoDB` index?",
+      "opts": ["A special data structure used to improve query performance", "A method of backup storage", "A type of collection", "A method of securing documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to query for documents with a value greater than or equal to a specific value in MongoDB?",
+      "opts": ["$gte", "$lte", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default write concern in MongoDB?",
+      "opts": ["1", "All", "Majority", "None"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to group data in MongoDB aggregation?",
+      "opts": ["$group", "$match", "$project", "$unwind"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `MongoDB` `$unwind` stage do in an aggregation pipeline?",
+      "opts": ["Deconstructs an array field from the input documents", "Sorts the documents", "Filters the documents", "Groups the documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to remove multiple documents matching a query?",
+      "opts": ["deleteMany()", "remove()", "drop()", "clear()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is a replica set?",
+      "opts": ["A group of MongoDB servers that maintain the same data set", "A backup tool", "A method of data encryption", "A type of collection"],
+      "ans": 0
+    },
+    {
+      "q": "What is a `shard` in MongoDB?",
+      "opts": ["A horizontal partition of data across multiple servers", "A replica of data in the same database", "A backup mechanism", "A type of index"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to update multiple documents that match a query?",
+      "opts": ["updateMany()", "updateOne()", "findAndModify()", "bulkWrite()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB transactions?",
+      "opts": ["MongoDB supports ACID transactions", "MongoDB does not support transactions", "MongoDB only supports transactions in sharded clusters", "MongoDB uses two-phase commit"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum document size in MongoDB?",
+      "opts": ["16 MB", "32 MB", "64 MB", "128 MB"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the MongoDB data storage format?",
+      "opts": ["BSON", "JSON", "XML", "CSV"],
+      "ans": 0
+    },
+    {
+      "q": "How does MongoDB handle schema design?",
+      "opts": ["Schema-less", "Requires a fixed schema", "Supports fixed schema with relationships", "Requires an SQL schema"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to match documents where a field value is less than a specified value?",
+      "opts": ["$lt", "$gt", "$lte", "$gte"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct syntax to create a database in MongoDB?",
+      "opts": ["use dbname", "createDatabase('dbname')", "db.create('dbname')", "db.createDatabase('dbname')"],
+      "ans": 0
+    },
+    {
+      "q": "Which command in MongoDB is used to switch to a database?",
+      "opts": ["use dbname", "switch db dbname", "changeDatabase('dbname')", "db.switchTo('dbname')"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB methods is used to create a new index on a collection?",
+      "opts": ["createIndex()", "addIndex()", "newIndex()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operation is used to replace an entire document?",
+      "opts": ["replaceOne()", "updateOne()", "insertOne()", "findOneAndUpdate()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$match` stage in MongoDB aggregation?",
+      "opts": ["Filters the documents", "Projects specific fields", "Groups the documents", "Unwinds the array field"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to check if a document exists?",
+      "opts": ["findOne()", "find()", "countDocuments()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following MongoDB methods is used to retrieve the count of documents in a collection?",
+      "opts": ["countDocuments()", "getCount()", "count()", "findCount()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a feature of MongoDB?",
+      "opts": ["Horizontal scalability", "SQL queries", "ACID compliance by default", "Relational data support"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB operator is used to perform a logical AND operation between multiple conditions?",
+      "opts": ["$and", "$or", "$nor", "$not"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to retrieve all the documents from a collection in MongoDB?",
+      "opts": ["find()", "findAll()", "get()", "findMany()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `aggregate()` function in MongoDB allow you to do?",
+      "opts": ["Perform complex operations like filtering, grouping, and sorting on data", "Retrieve a single document", "Insert a new document", "Create a new collection"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default write concern in MongoDB?",
+      "opts": ["1", "All", "Majority", "None"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct syntax to insert a document into a MongoDB collection?",
+      "opts": ["db.collection.insertOne({})", "db.insert({})", "collection.add({})", "db.collection.addDocument({})"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$addFields` stage do in MongoDB aggregation?",
+      "opts": ["Adds new fields to documents", "Filters documents", "Groups documents by field", "Sorts documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB's `ObjectId`?",
+      "opts": ["It is a unique identifier for documents", "It is a type of query operator", "It is used for indexing", "It is a built-in function"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operations can be performed in a MongoDB transaction?",
+      "opts": ["Insert, update, delete", "Only insert", "Only update", "Only read"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$set` operator do in MongoDB?",
+      "opts": ["Updates the value of a field in a document", "Sets the value of an index", "Sets the value of a new field", "Sets the value of a collection"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `findAndModify()` method do in MongoDB?",
+      "opts": ["Finds and modifies a document atomically", "Finds a document", "Modifies a document", "Removes a document"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a correct method to connect to a MongoDB database from Node.js?",
+      "opts": ["mongoose.connect()", "mongo.connect()", "mongodb.connect()", "db.connect()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about MongoDB's data consistency model?",
+      "opts": ["It provides eventual consistency by default", "It provides strong consistency by default", "It provides both strong and eventual consistency depending on configuration", "MongoDB does not support consistency"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operations can be performed using MongoDB's aggregation framework?",
+      "opts": ["Filtering, grouping, and sorting data", "Updating documents", "Inserting documents", "Deleting documents"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$limit` stage do in MongoDB aggregation?",
+      "opts": ["Limits the number of documents", "Groups documents by a field", "Matches documents based on a condition", "Adds new fields to documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is an advantage of using MongoDB over relational databases?",
+      "opts": ["Schema flexibility", "Better SQL support", "ACID transactions", "Table joins"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `MongoDB Atlas` service?",
+      "opts": ["To provide a fully managed cloud service for MongoDB", "To provide MongoDB backups", "To provide MongoDB analytics", "To host MongoDB on-premise"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following commands can be used to list all collections in a MongoDB database?",
+      "opts": ["show collections", "list collections", "db.showCollections()", "db.list()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method can be used to retrieve documents from a collection that match specific conditions?",
+      "opts": ["find()", "select()", "query()", "getDocuments()"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What is MongoDB?",
+      "opts": ["A NoSQL database", "A relational database", "A cloud storage service", "A JavaScript framework"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used as the default database in MongoDB?",
+      "opts": ["admin", "local", "test", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What type of database is MongoDB?",
+      "opts": ["Document-based NoSQL database", "Relational database", "Key-value store", "Graph database"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is a collection?",
+      "opts": ["A group of documents", "A type of database", "A single record", "A column in a table"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.find()` method in MongoDB?",
+      "opts": ["To retrieve documents from a collection", "To insert documents into a collection", "To create a new database", "To drop a collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to insert a document into a MongoDB collection?",
+      "opts": ["insertOne()", "add()", "create()", "put()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the data format used by MongoDB to store documents?",
+      "opts": ["BSON", "JSON", "XML", "CSV"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid MongoDB query to find a document with a specific field value?",
+      "opts": ["db.collection.find({field: value})", "db.find({field: value})", "db.collection.findAll({field: value})", "db.collection.get({field: value})"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `insertMany()` method in MongoDB do?",
+      "opts": ["Inserts multiple documents into a collection", "Inserts a single document into a collection", "Deletes multiple documents from a collection", "Updates multiple documents in a collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to update a document in MongoDB?",
+      "opts": ["updateOne()", "insertOne()", "findOne()", "getOne()"],
+      "ans": 0
+    },
+    {
+      "q": "How does MongoDB handle relationships between data?",
+      "opts": ["By embedding documents", "By using foreign keys", "By using joins", "MongoDB does not handle relationships"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to remove a document from a collection?",
+      "opts": ["remove()", "deleteOne()", "drop()", "clear()"],
+      "ans": 1
+    },
+    {
+      "q": "Which method is used to find the first document in a collection in MongoDB?",
+      "opts": ["findOne()", "findFirst()", "getFirst()", "getOne()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is the purpose of an index?",
+      "opts": ["To speed up query performance", "To store additional data", "To store backups", "To prevent data duplication"],
+      "ans": 0
+    },
+    {
+      "q": "How do you create an index on a field in MongoDB?",
+      "opts": ["db.collection.createIndex({field: 1})", "db.collection.addIndex({field: 1})", "db.createIndex({field: 1})", "db.collection.index({field: 1})"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to count the number of documents in a MongoDB collection?",
+      "opts": ["countDocuments()", "getCount()", "count()", "findCount()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `aggregate()` method in MongoDB do?",
+      "opts": ["Performs complex queries and transformations on documents", "Deletes documents", "Inserts new documents", "Returns all documents from a collection"],
+      "ans": 0
+    },
+    {
+      "q": "What is a shard in MongoDB?",
+      "opts": ["A horizontal partition of data in a database", "A backup mechanism", "A tool for database indexing", "A type of replica set"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of replica sets in MongoDB?",
+      "opts": ["To provide high availability and data redundancy", "To partition data across multiple nodes", "To speed up data retrieval", "To optimize indexing"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operators is used to match a field in a MongoDB query?",
+      "opts": ["$eq", "$gt", "$lt", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which operator is used to match documents where a field value is greater than a specified value?",
+      "opts": ["$gt", "$lt", "$eq", "$gte"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `$project` stage in MongoDB aggregation?",
+      "opts": ["To reshape documents by including, excluding, or adding fields", "To filter documents based on criteria", "To sort documents", "To group documents by a field"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `$lookup` operator do in MongoDB?",
+      "opts": ["Performs a left outer join to another collection", "Filters documents based on criteria", "Groups documents by a field", "Sorts documents in ascending order"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following commands is used to create a new MongoDB database?",
+      "opts": ["use dbname", "createDatabase('dbname')", "db.create('dbname')", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is a document?",
+      "opts": ["A record that contains data in a collection", "A collection of tables", "A type of index", "A database schema"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the default data format for MongoDB?",
+      "opts": ["BSON", "JSON", "CSV", "XML"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `MongoDB Atlas`?",
+      "opts": ["A fully managed cloud database service", "A command-line tool", "A storage engine", "A backup tool"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to show all the databases in the current instance?",
+      "opts": ["show dbs", "list databases", "db.getDatabases()", "list()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to check if a database exists in MongoDB?",
+      "opts": ["db.exists()", "db.getMongo().getDBNames()", "db.list()", "db.find()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is a valid way to filter documents in MongoDB?",
+      "opts": ["db.collection.find({field: value})", "db.collection.findAll({field: value})", "db.collection.get({field: value})", "db.collection.filter({field: value})"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `distinct()` method in MongoDB?",
+      "opts": ["To return unique values for a specific field", "To find the first matching document", "To sort documents by a field", "To delete duplicate documents"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `findAndModify()` method in MongoDB do?",
+      "opts": ["Modifies a document and returns the old or new document", "Finds a document", "Removes a document", "Creates a new collection"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `db.collection.drop()` method?",
+      "opts": ["To remove a collection from the database", "To clear all documents in a collection", "To delete a database", "To remove a document from a collection"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to secure a MongoDB instance?",
+      "opts": ["Authentication and Authorization", "Data Encryption", "Firewall settings", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the primary purpose of MongoDB’s aggregation framework?",
+      "opts": ["To perform data transformations and computations", "To filter documents", "To retrieve documents", "To handle backups"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to retrieve the first document matching a query in MongoDB?",
+      "opts": ["findOne()", "find()", "getFirst()", "fetchOne()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to update a document in MongoDB?",
+      "opts": ["updateOne()", "updateMany()", "findAndModify()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following can be used as a field in MongoDB?",
+      "opts": ["Any valid string or object", "Only numbers", "Only strings", "Only arrays"],
+      "ans": 0
+    }
+  ]
+  ,
+
+  CSS: [
+    {
+      "q": "Which CSS property is used to control the font size of text?",
+      "opts": ["font-size", "font-style", "font-weight", "text-size"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to create space between elements in CSS?",
+      "opts": ["margin", "padding", "border", "spacing"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `position` property for a `<div>` element?",
+      "opts": ["static", "relative", "absolute", "fixed"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to add a shadow effect to an element in CSS?",
+      "opts": ["box-shadow", "text-shadow", "border-shadow", "shadow-effect"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `opacity` property in CSS do?",
+      "opts": ["Sets the transparency level of an element", "Sets the color of an element", "Changes the size of an element", "Controls the visibility of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to change the font style of an element?",
+      "opts": ["font-style", "font-family", "text-style", "text-transform"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to align text horizontally?",
+      "opts": ["text-align", "vertical-align", "align-items", "text-position"],
+      "ans": 0
+    },
+    {
+      "q": "How do you select all `<p>` elements with the class `intro` in CSS?",
+      "opts": [".intro p", "p.intro", "p.classintro", "p#intro"],
+      "ans": 1
+    },
+    {
+      "q": "Which CSS property is used to change the color of the text?",
+      "opts": ["color", "background-color", "font-color", "text-color"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to set the background color of an element?",
+      "opts": ["background-color", "color", "background", "bg-color"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `border-radius` property do in CSS?",
+      "opts": ["Rounds the corners of an element", "Sets the width of the border", "Sets the margin of an element", "Controls the padding of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to create a gap between flex items in CSS?",
+      "opts": ["gap", "space", "flex-gap", "item-spacing"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `float` property do in CSS?",
+      "opts": ["Floats an element to the left or right of its container", "Aligns an element in the center", "Controls the stacking order of elements", "Defines the width of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct way to define a CSS rule for all `div` elements?",
+      "opts": ["div {}", "div{background-color:red;}", "div{color:red;}", "div{}"],
+      "ans": 0
+    },
+    {
+      "q": "How can you make a background image cover the entire element in CSS?",
+      "opts": ["background-size: cover;", "background-position: center;", "background-attachment: fixed;", "background-repeat: no-repeat;"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to create a responsive layout in CSS?",
+      "opts": ["flex", "grid", "display", "media queries"],
+      "ans": 3
+    },
+    {
+      "q": "Which property can be used to set the space between columns in a CSS grid layout?",
+      "opts": ["column-gap", "row-gap", "grid-gap", "gap"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to specify the type of list marker for list items?",
+      "opts": ["list-style-type", "list-style-position", "list-style-image", "list-style"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `display: flex;` property do in CSS?",
+      "opts": ["Enables a flexible box layout", "Displays elements inline", "Aligns elements to the left", "Adds a grid layout to elements"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to specify the width of an element's border?",
+      "opts": ["border-width", "border-style", "border-color", "border-radius"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `visibility` property in CSS do?",
+      "opts": ["Makes an element visible or invisible without removing it from the document flow", "Hides an element from the page", "Makes an element transparent", "Makes an element hidden but still take up space"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to create a gradient in CSS?",
+      "opts": ["background-image", "background-color", "linear-gradient", "gradient"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the width of a column in a CSS grid layout?",
+      "opts": ["grid-template-columns", "grid-template-rows", "column-width", "grid-column-width"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `position` property for an element?",
+      "opts": ["static", "relative", "absolute", "fixed"],
+      "ans": 0
+    },
+    {
+      "q": "How can you make text uppercase in CSS?",
+      "opts": ["text-transform: uppercase;", "text-style: uppercase;", "font-style: uppercase;", "font-weight: uppercase;"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to control the spacing between letters in a text?",
+      "opts": ["letter-spacing", "word-spacing", "line-height", "text-spacing"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following CSS properties is used to control the spacing between words in a text?",
+      "opts": ["word-spacing", "letter-spacing", "text-align", "text-indent"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following values can be used with the `position` property in CSS?",
+      "opts": ["static", "relative", "absolute", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "How can you add custom fonts to a webpage in CSS?",
+      "opts": ["@font-face", "font-family", "import-font", "link-font"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `flex-wrap` property do in CSS?",
+      "opts": ["Specifies whether the flex container should wrap its items", "Specifies the direction of the flex items", "Specifies how to align the flex items", "Specifies the size of the flex container"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following values can the `display` property take in CSS?",
+      "opts": ["block", "inline", "flex", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following CSS properties is used to make an element fixed at the top of the page?",
+      "opts": ["position: fixed;", "position: absolute;", "position: relative;", "position: sticky;"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to set the background image of an element?",
+      "opts": ["background-image", "background-color", "image-background", "bg-image"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to make an element's text bold in CSS?",
+      "opts": ["font-weight", "font-style", "font-family", "font-size"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `@keyframes` rule in CSS?",
+      "opts": ["To define animations", "To define the styles for elements", "To control media queries", "To define layout"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to create a fixed-size grid layout?",
+      "opts": ["grid-template-columns", "grid-template-rows", "grid-gap", "grid-rows"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `text-transform` property do in CSS?",
+      "opts": ["Changes the case of the text", "Changes the alignment of the text", "Changes the spacing of the text", "Changes the color of the text"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to make an element take up the full width of its parent container?",
+      "opts": ["width: 100%;", "width: auto;", "display: block;", "margin: 0 auto;"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to create a fixed-position navigation bar?",
+      "opts": ["position: fixed;", "position: sticky;", "position: relative;", "position: absolute;"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the space between the rows in a CSS grid layout?",
+      "opts": ["row-gap", "column-gap", "gap", "grid-gap"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to create an animation effect?",
+      "opts": ["animation", "transition", "motion", "transform"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the border width in CSS?",
+      "opts": ["border-width", "border-style", "border-color", "border-radius"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the height of an element in CSS?",
+      "opts": ["height", "width", "size", "depth"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What does CSS stand for?",
+      "opts": ["Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets", "Computer Style Sheets"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct syntax for adding a comment in CSS?",
+      "opts": ["/* This is a comment */", "// This is a comment", "<!-- This is a comment -->", "' This is a comment"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to change the font of an element in CSS?",
+      "opts": ["font-family", "font-size", "font-style", "text-align"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `position` property in CSS?",
+      "opts": ["static", "relative", "absolute", "fixed"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property controls the layout of columns in a page?",
+      "opts": ["column-count", "columns", "column-gap", "column-width"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to change the background color of an element?",
+      "opts": ["background-color", "color", "background-image", "background-position"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct way to select an element with the class name 'example' in CSS?",
+      "opts": [".example", "#example", "example", "element.example"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `z-index` property in CSS do?",
+      "opts": ["Controls the stacking order of elements", "Sets the transparency of an element", "Defines the font size", "Controls the width of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following properties is used to add space between the border of an element and its content?",
+      "opts": ["padding", "margin", "border-spacing", "width"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `float` property do in CSS?",
+      "opts": ["It allows an element to be taken out of the normal document flow", "It changes the background color of an element", "It adds margins to an element", "It hides an element"],
+      "ans": 0
+    },
+    {
+      "q": "How can you apply a style to an element with the id 'header' in CSS?",
+      "opts": ["#header", ".header", "header", "header#"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to control the spacing between lines of text in CSS?",
+      "opts": ["line-height", "letter-spacing", "word-spacing", "text-indent"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `display` property in CSS?",
+      "opts": ["Defines how an element is displayed", "Sets the position of an element", "Defines the font size", "Sets the background image of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to make an element’s text bold?",
+      "opts": ["font-weight", "font-style", "font-size", "text-transform"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `overflow` property in CSS control?",
+      "opts": ["How content is handled if it overflows an element's box", "The visibility of an element", "The width of an element", "The position of an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these values can be used with the `position` property in CSS?",
+      "opts": ["static", "relative", "absolute", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which property is used to change the text color in CSS?",
+      "opts": ["color", "background-color", "font-color", "text-color"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following properties defines the space between the content and the border of an element in CSS?",
+      "opts": ["padding", "margin", "border-width", "spacing"],
+      "ans": 0
+    },
+    {
+      "q": "How can you center a block-level element horizontally in CSS?",
+      "opts": ["By setting `margin-left: auto; margin-right: auto;`", "By using `text-align: center;`", "By using `position: absolute;`", "By using `float: left;`"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to control the size of an element?",
+      "opts": ["width", "height", "size", "Both width and height"],
+      "ans": 3
+    },
+    {
+      "q": "How can you create a border around an element in CSS?",
+      "opts": ["By using the `border` property", "By using `border-style`", "By using `border-width`", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following CSS properties is used to style lists?",
+      "opts": ["list-style-type", "list-item-style", "list-style-position", "list-decoration"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `display` property in CSS for a `<div>` element?",
+      "opts": ["block", "inline", "inline-block", "flex"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property can be used to create rounded corners for an element?",
+      "opts": ["border-radius", "border-corner", "corner-radius", "round-corners"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `visibility` property in CSS do?",
+      "opts": ["Controls the visibility of an element without removing it from the document flow", "Hides the element from the document", "Sets the transparency of the element", "Controls the positioning of the element"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the space between individual words in CSS?",
+      "opts": ["word-spacing", "letter-spacing", "text-spacing", "line-spacing"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these properties controls the alignment of text within a block in CSS?",
+      "opts": ["text-align", "align-items", "vertical-align", "text-align-vertical"],
+      "ans": 0
+    },
+    {
+      "q": "How can you make an image responsive in CSS?",
+      "opts": ["By setting `max-width: 100%`", "By setting `height: auto`", "By using `display: block`", "By using `position: absolute`"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following CSS properties can be used to style the cursor when hovering over an element?",
+      "opts": ["cursor", "pointer", "mouse", "hover"],
+      "ans": 0
+    },
+    {
+      "q": "How do you make text italic in CSS?",
+      "opts": ["By using `font-style: italic;`", "By using `font-weight: italic;`", "By using `font-size: italic;`", "By using `text-style: italic;`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `box-sizing` property in CSS?",
+      "opts": ["To include padding and border in the element's total width and height", "To define the border style", "To control the element's visibility", "To define the layout of the box model"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to control the transparency of an element?",
+      "opts": ["opacity", "visibility", "transparent", "color"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `@media` rule in CSS allow you to do?",
+      "opts": ["Apply styles for specific screen sizes or device types", "Apply styles for specific browsers", "Apply styles for specific HTML elements", "Apply styles for specific classes"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following values can be used with the `position` property in CSS?",
+      "opts": ["static", "relative", "absolute", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the purpose of the `flex` property in CSS?",
+      "opts": ["To define flexible items within a flex container", "To make items fixed size", "To center elements", "To set grid-based layouts"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `align-items` property in CSS do?",
+      "opts": ["Aligns items vertically within a flex container", "Aligns items horizontally", "Sets the gap between items", "Aligns the text within an element"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to create a gradient background in CSS?",
+      "opts": ["background-image: linear-gradient()", "background-color: gradient()", "background-gradient: linear", "background-image: gradient()"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to change the font size in CSS?",
+      "opts": ["font-size", "font-style", "font-weight", "font-family"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `@font-face` rule in CSS?",
+      "opts": ["To define custom fonts", "To set the background color", "To define animations", "To change text alignment"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to set the distance between the border of an element and its content?",
+      "opts": ["padding", "margin", "border-width", "content-spacing"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `display` property for a `<span>` element?",
+      "opts": ["inline", "block", "inline-block", "flex"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct way to add a background image in CSS?",
+      "opts": ["background-image: url('image.jpg');", "background: url('image.jpg');", "bg-image: url('image.jpg');", "image: url('image.jpg');"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to set the border style of an element in CSS?",
+      "opts": ["border-style", "border-color", "border-width", "border-radius"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `@keyframes` rule in CSS?",
+      "opts": ["To define CSS animations", "To define custom fonts", "To style lists", "To set element positions"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following properties is used to add shadows to text in CSS?",
+      "opts": ["text-shadow", "box-shadow", "shadow-text", "shadow-box"],
+      "ans": 0
+    }
+  ]
+
+  ,
+
+  Node: [
+    {
+      "q": "Which of the following modules is used to parse JSON data in Node.js?",
+      "opts": ["JSON", "fs", "url", "http"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'res.sendFile()' method do in Express.js?",
+      "opts": ["Sends a file as an HTTP response", "Sends a JSON response", "Sends a status code", "Sends text data"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to register middleware in Express.js?",
+      "opts": ["app.use()", "app.listen()", "app.get()", "app.register()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to run a Node.js script in a debugger?",
+      "opts": ["node --inspect <script>", "node debug <script>", "npm start --debug", "node -d <script>"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following modules is used to generate random numbers in Node.js?",
+      "opts": ["crypto", "math", "random", "uuid"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default method of 'res' object in Express to send a response?",
+      "opts": ["res.send()", "res.write()", "res.end()", "res.sendFile()"],
+      "ans": 0
+    },
+    {
+      "q": "How do you execute a command in Node.js from the terminal?",
+      "opts": ["node <file-name>.js", "npm run <file-name>", "npm start <file-name>", "run node <file-name>.js"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following tools is used to test Node.js applications for security vulnerabilities?",
+      "opts": ["npm audit", "npm test", "eslint", "prettier"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to get the environment variables in Node.js?",
+      "opts": ["process.env", "process.vars", "env.get()", "process.env()"],
+      "ans": 0
+    },
+    {
+      "q": "Which module in Node.js is used for handling filesystem operations?",
+      "opts": ["fs", "path", "http", "url"],
+      "ans": 0
+    },
+    {
+      "q": "How do you run an asynchronous function in Node.js?",
+      "opts": ["By using a callback", "By using promises", "By using async/await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following methods in Node.js is used to write data to a file?",
+      "opts": ["fs.writeFile()", "fs.appendFile()", "fs.createWriteStream()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does the 'process.argv' array contain in Node.js?",
+      "opts": ["Command-line arguments", "Environment variables", "File system paths", "Standard input/output"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods can be used to make a request to a server in Node.js?",
+      "opts": ["http.request()", "fs.request()", "node.request()", "request()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the 'express.Router()' method in Express?",
+      "opts": ["It allows you to define routes in a modular fashion", "It is used to handle HTTP requests", "It is used to register middleware", "It is used for error handling"],
+      "ans": 0
+    },
+    {
+      "q": "How do you add a custom error handler in Express.js?",
+      "opts": ["By using app.use()", "By using app.errorHandler()", "By using res.send()", "By using res.sendError()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following HTTP methods is used to update data on the server?",
+      "opts": ["GET", "POST", "PUT", "DELETE"],
+      "ans": 2
+    },
+    {
+      "q": "Which method is used to create a server in Node.js?",
+      "opts": ["http.createServer()", "server.create()", "app.create()", "create.server()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct way to install a package locally in Node.js?",
+      "opts": ["npm install <package-name>", "npm install --global <package-name>", "npm install <package-name> --local", "npm add <package-name>"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'path.join()' method in Node.js?",
+      "opts": ["To join two or more file paths", "To parse URL strings", "To check if a file exists", "To get file extensions"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'res.status()' method do in Express.js?",
+      "opts": ["Sets the HTTP status code of the response", "Sets the content type of the response", "Sends a JSON response", "Closes the response stream"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the 'npm init' command?",
+      "opts": ["It creates a new Node.js project", "It installs all dependencies", "It starts a server", "It creates a package-lock.json file"],
+      "ans": 0
+    },
+    {
+      "q": "What is the 'app.all()' method used for in Express.js?",
+      "opts": ["To handle all HTTP methods for a given route", "To start the server", "To send an HTTP response", "To parse JSON data"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle streams in Node.js?",
+      "opts": ["stream", "http", "buffer", "events"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'res.json()' method do in Express.js?",
+      "opts": ["Sends a JSON response", "Sends an HTML response", "Sends a plain text response", "Sends an error response"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to parse incoming request bodies in Express?",
+      "opts": ["express.json()", "express.urlencoded()", "body-parser", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "How do you handle route parameters in Express?",
+      "opts": ["By using req.params", "By using req.query", "By using req.body", "By using req.headers"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following Node.js modules is used for creating command-line applications?",
+      "opts": ["commander", "express", "async", "socket.io"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'buffer' class in Node.js?",
+      "opts": ["To work with raw binary data", "To parse incoming data", "To interact with the database", "To stream data over HTTP"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default response type when using 'res.send()' in Express?",
+      "opts": ["String", "JSON", "Buffer", "HTML"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to read a file synchronously in Node.js?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.createReadStream()", "fs.appendFile()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'process.stdin' in Node.js?",
+      "opts": ["To read input from the terminal", "To write output to the terminal", "To create a new process", "To manage environment variables"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the 'fs.existsSync()' method?",
+      "opts": ["It checks if a file exists synchronously", "It checks if a directory exists", "It creates a file if it doesn't exist", "It deletes a file if it exists"],
+      "ans": 0
+    },
+    {
+      "q": "How can you parse a URL in Node.js?",
+      "opts": ["url.parse()", "path.parse()", "fs.parse()", "http.parse()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js is used to handle errors in asynchronous code?",
+      "opts": ["try-catch", "callback error", "res.error()", "process.exit()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is the correct syntax to include a module in Node.js?",
+      "opts": ["require('module-name')", "import 'module-name'", "load('module-name')", "include('module-name')"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle streams of data in Node.js?",
+      "opts": ["stream module", "http module", "url module", "fs module"],
+      "ans": 0
+    },
+    {
+      "q": "How can you get the current working directory in Node.js?",
+      "opts": ["process.cwd()", "path.current()", "os.cwd()", "process.dir()"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code represents an internal server error?",
+      "opts": ["404", "400", "500", "301"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is used to monitor Node.js performance in production environments?",
+      "opts": ["pm2", "express", "mongoose", "npm"],
+      "ans": 0
+    }
+    ,
+
+    {
+      "q": "Which of the following methods in Node.js is used to stop a server?",
+      "opts": ["server.close()", "server.stop()", "http.end()", "server.shutdown()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'querystring' module in Node.js?",
+      "opts": ["To parse and format query strings", "To perform regular expressions", "To handle HTTP requests", "To interact with the file system"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following modules is used to perform HTTP requests in Node.js?",
+      "opts": ["request", "url", "path", "http"],
+      "ans": 0
+    },
+    {
+      "q": "Which function in Node.js is used to handle uncaught exceptions?",
+      "opts": ["process.on('uncaughtException')", "process.exit()", "process.uncaught()", "process.crash()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements is true about the 'async' and 'await' keywords in Node.js?",
+      "opts": ["They make asynchronous code behave like synchronous code", "They are used for error handling", "They are used for creating promises", "They are only available in Node.js 12 and later"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default file extension for Node.js modules?",
+      "opts": [".js", ".json", ".node", ".html"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'path' module in Node.js provide?",
+      "opts": ["Path manipulation utilities", "HTTP request handling", "Database connection utilities", "File stream utilities"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements is true about Node.js?",
+      "opts": ["It uses a single-threaded event loop for non-blocking I/O", "It is a multi-threaded environment", "It uses multiple processes to handle I/O", "It can only handle synchronous requests"],
+      "ans": 0
+    },
+    {
+      "q": "What is the 'cluster' module used for in Node.js?",
+      "opts": ["To create multiple instances of a Node.js process", "To handle asynchronous events", "To create worker threads", "To manage database connections"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js is used to send an HTTP response?",
+      "opts": ["res.write()", "res.send()", "res.writeHead()", "res.sendFile()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is true about Node.js streams?",
+      "opts": ["Streams allow for data to be processed in chunks", "Streams only handle file I/O", "Streams must always be used with callbacks", "Streams block the event loop until the data is processed"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following Node.js modules can be used for interacting with MySQL databases?",
+      "opts": ["mysql", "pg", "mongodb", "sqlite3"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'Buffer' class in Node.js do?",
+      "opts": ["Handles binary data", "Handles asynchronous I/O", "Provides access to HTTP headers", "Manages memory usage"],
+      "ans": 0
+    },
+    {
+      "q": "How do you stop a running Node.js server in code?",
+      "opts": ["server.close()", "server.stop()", "http.end()", "process.exit()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'console.log()' method do in Node.js?",
+      "opts": ["Logs messages to the console", "Logs errors to the console", "Executes JavaScript code", "Writes data to a file"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following can be used to manage processes and monitor Node.js applications in production?",
+      "opts": ["PM2", "Nginx", "MongoDB", "Redis"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to handle a route in Express.js?",
+      "opts": ["app.get()", "app.route()", "app.all()", "app.use()"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to install a Node.js package globally?",
+      "opts": ["npm install -g <package>", "npm global install <package>", "npm install --global <package>", "npm install <package>"],
+      "ans": 0
+    },
+    {
+      "q": "What is the use of the 'express.static()' middleware?",
+      "opts": ["To serve static files like images, CSS, and JavaScript", "To handle HTTP requests", "To parse request bodies", "To log requests to the console"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a popular testing framework for Node.js?",
+      "opts": ["Mocha", "Express", "Babel", "React"],
+      "ans": 0
+    },
+    {
+      "q": "How do you handle errors in Node.js asynchronously?",
+      "opts": ["By using try-catch blocks", "By using promises and .catch()", "By using the 'error' event", "By using process.exit()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following packages is used to work with MongoDB in Node.js?",
+      "opts": ["mongoose", "sequelize", "pg", "mysql2"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the 'async/await' syntax in Node.js?",
+      "opts": ["It is syntactic sugar for handling promises", "It is only supported in Node.js 12 and later", "It is used for synchronous code", "It is only for handling callbacks"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a core module of Node.js?",
+      "opts": ["http", "fs", "express", "url"],
+      "ans": 2
+    },
+    {
+      "q": "What is the main purpose of the 'express.json()' middleware?",
+      "opts": ["To parse incoming JSON request bodies", "To parse incoming form data", "To log HTTP requests", "To handle errors in HTTP requests"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code indicates that the resource could not be found?",
+      "opts": ["200", "404", "500", "301"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is a method to perform a GET request in Node.js using the 'axios' library?",
+      "opts": ["axios.get()", "axios.post()", "axios.put()", "axios.request()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to make asynchronous calls in Node.js?",
+      "opts": ["callbacks", "promises", "async/await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following is true about 'npm' in Node.js?",
+      "opts": ["npm stands for Node Package Manager", "npm is used to manage Node.js applications", "npm installs dependencies from package.json", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "How do you check for updates of installed packages in Node.js?",
+      "opts": ["npm check", "npm outdated", "npm status", "npm list"],
+      "ans": 1
+    },
+    {
+      "q": "What is the 'express.Router()' function used for in Express.js?",
+      "opts": ["To handle middleware", "To define route handlers", "To manage HTTP requests", "To handle form data"],
+      "ans": 1
+    },
+    {
+      "q": "Which command is used to create a new package.json file?",
+      "opts": ["npm init", "npm create", "npm start", "npm install"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'express.json()' middleware do?",
+      "opts": ["Parses JSON request bodies", "Serves static files", "Logs requests", "Handles errors"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'process.exit()' method do in Node.js?",
+      "opts": ["Stops the application and exits the process", "Sends a response to the client", "Logs errors", "Handles signals"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following packages is used to handle form data in Node.js?",
+      "opts": ["body-parser", "express", "mysql", "path"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default behavior of HTTP requests in Node.js?",
+      "opts": ["Synchronous", "Asynchronous", "Multithreaded", "Non-blocking"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following libraries is commonly used to perform validation in Express.js applications?",
+      "opts": ["joi", "express-validator", "validator", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following is the command to start a Node.js application?",
+      "opts": ["node app.js", "npm start", "node server.js", "npm run app"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to send data to a server using HTTP in Node.js?",
+      "opts": ["GET", "POST", "PUT", "All of the above"],
+      "ans": 3
+    }
+    ,
+    {
+      "q": "What is the primary advantage of using asynchronous programming in Node.js?",
+      "opts": ["It allows non-blocking I/O operations", "It runs multiple processes concurrently", "It is easier to debug", "It uses multiple threads"],
+      "ans": 0
+    },
+    {
+      "q": "What is the 'npm install' command used for in Node.js?",
+      "opts": ["To install a package globally", "To install the dependencies listed in package.json", "To update a package", "To install Node.js itself"],
+      "ans": 1
+    },
+    {
+      "q": "Which function is used to start an HTTP server in Node.js?",
+      "opts": ["http.createServer()", "server.start()", "http.listen()", "server.create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js allows you to listen for HTTP requests?",
+      "opts": ["server.listen()", "http.listen()", "http.createServer()", "app.listen()"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following tools is used to test Node.js applications?",
+      "opts": ["Jest", "Mocha", "Chai", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the use of the 'require' function in Node.js?",
+      "opts": ["To import a built-in module", "To start the server", "To write to the console", "To install a module"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the event loop in Node.js?",
+      "opts": ["It allows asynchronous code to run in a non-blocking manner", "It handles all synchronous code execution", "It makes Node.js run on multiple threads", "It is only used for database operations"],
+      "ans": 0
+    },
+    {
+      "q": "Which module in Node.js is used for creating HTTP requests?",
+      "opts": ["http", "url", "querystring", "fs"],
+      "ans": 0
+    },
+    {
+      "q": "How can you handle multiple incoming HTTP requests concurrently in Node.js?",
+      "opts": ["By using threads", "By using the event loop", "By using worker processes", "By using the cluster module"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'os' module in Node.js provide?",
+      "opts": ["Operating system-related utility methods", "Network-related utility methods", "File system-related methods", "Database utility methods"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in the 'fs' module is used to asynchronously read a file?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.open()", "fs.createReadStream()"],
+      "ans": 1
+    },
+    {
+      "q": "Which HTTP status code indicates a successful HTTP request?",
+      "opts": ["200", "404", "500", "301"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct way to create a new Node.js module?",
+      "opts": ["By defining a new class", "By writing a JavaScript file and using 'module.exports'", "By using 'require' on a built-in module", "By using 'npm init'"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'JSON.parse()' function do in Node.js?",
+      "opts": ["Converts JSON string to a JavaScript object", "Converts JavaScript object to JSON string", "Reads JSON data from a file", "Writes JSON data to a file"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a feature of Node.js?",
+      "opts": ["Non-blocking I/O", "Event-driven architecture", "Runs JavaScript on the server", "Built-in GUI libraries"],
+      "ans": 3
+    },
+    {
+      "q": "How do you create a promise in Node.js?",
+      "opts": ["new Promise()", "Promise.resolve()", "Promise.reject()", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to send an HTTP response in an Express.js route handler?",
+      "opts": ["res.send()", "res.end()", "res.write()", "res.respond()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following does the 'npm run' command do?",
+      "opts": ["Runs a custom script defined in package.json", "Installs Node.js packages", "Starts the Node.js server", "Updates the Node.js version"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default behavior when a file is not found using the 'fs.readFile()' method?",
+      "opts": ["It throws an error", "It returns null", "It returns undefined", "It automatically creates the file"],
+      "ans": 0
+    },
+    {
+      "q": "Which module in Node.js is used to create and manage streams?",
+      "opts": ["stream", "buffer", "os", "path"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the 'express' module in Node.js?",
+      "opts": ["It is a Node.js core module", "It is a middleware for handling HTTP requests", "It is a templating engine", "It is used for connecting to databases"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following methods is used to parse URL query parameters in Node.js?",
+      "opts": ["url.parse()", "querystring.parse()", "url.query()", "fs.parse()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is NOT a common use case for Node.js?",
+      "opts": ["Creating REST APIs", "Real-time chat applications", "File I/O and data processing", "Building graphical user interfaces"],
+      "ans": 3
+    },
+    {
+      "q": "Which module in Node.js can be used to spawn child processes?",
+      "opts": ["child_process", "fs", "path", "http"],
+      "ans": 0
+    },
+    {
+      "q": "Which method would you use to read a file synchronously in Node.js?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.openSync()", "fs.createReadStreamSync()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a popular database driver used with Node.js?",
+      "opts": ["mongoose", "sequelize", "pg", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "How can you prevent errors from causing the Node.js process to crash?",
+      "opts": ["By using a 'try-catch' block", "By using process.on('uncaughtException')", "By handling errors in callbacks", "By using promises"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'express.Router()' method in Express.js do?",
+      "opts": ["Creates a new HTTP server", "Defines routing for HTTP requests", "Handles static files", "Sends HTTP responses"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'stream.pipe()' method do in Node.js?",
+      "opts": ["Sends data from one stream to another", "Creates a new stream", "Reads from a stream", "Closes the stream"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js is used to send a JSON response to the client?",
+      "opts": ["res.send()", "res.json()", "res.end()", "res.write()"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is a correct way to handle a promise in Node.js?",
+      "opts": ["Promise.then()", "Promise.catch()", "Promise.finally()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following commands will remove a Node.js package?",
+      "opts": ["npm delete <package>", "npm uninstall <package>", "npm remove <package>", "npm clean <package>"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is true about Node.js modules?",
+      "opts": ["Modules are cached after the first 'require' call", "Modules can only be used once", "Modules are not reusable", "Modules cannot be imported from external sources"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'process.env' in Node.js?",
+      "opts": ["To set environment variables", "To access system logs", "To store configuration files", "To handle errors"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements is true about Node.js?",
+      "opts": ["Node.js is a programming language", "Node.js is single-threaded", "Node.js is used only for front-end development", "Node.js uses JavaScript in the browser"],
+      "ans": 1
+    },
+    {
+      "q": "What is the function of 'npm start' in a Node.js project?",
+      "opts": ["Installs dependencies", "Starts the Node.js application", "Installs Node.js itself", "Executes a custom script defined in package.json"],
+      "ans": 3
+    },
+    {
+      "q": "Which method is used to define an HTTP GET route in Express.js?",
+      "opts": ["app.get()", "app.post()", "app.put()", "app.delete()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a correct way to read environment variables in Node.js?",
+      "opts": ["process.env.VARIABLE_NAME", "environment.VARIABLE_NAME", "os.VARIABLE_NAME", "config.get('VARIABLE_NAME')"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following HTTP status codes indicates a client-side error?",
+      "opts": ["200", "404", "500", "301"],
+      "ans": 1
+    },
+    {
+      "q": "What is the default port for a Node.js HTTP server?",
+      "opts": ["8080", "3000", "5000", "80"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is a core module in Node.js?",
+      "opts": ["express", "async", "path", "mongoose"],
+      "ans": 2
+    },
+    {
+      "q": "Which command is used to create a new Express.js project?",
+      "opts": ["npm init express", "express create", "npm init", "npx express-generator"],
+      "ans": 3
+    }
+    ,
+    {
+      "q": "What is Node.js?",
+      "opts": ["A database", "A web server", "A runtime environment for JavaScript", "A JavaScript framework"],
+      "ans": 2
+    },
+    {
+      "q": "Which module in Node.js is used to work with the file system?",
+      "opts": ["http", "fs", "os", "url"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is the default HTTP port in Node.js?",
+      "opts": ["443", "80", "3000", "8080"],
+      "ans": 2
+    },
+    {
+      "q": "Which command is used to install Node.js packages?",
+      "opts": ["npm install", "node install", "install node", "nodejs install"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about Node.js?",
+      "opts": ["It uses a non-blocking I/O model", "It is based on JavaScript running in the browser", "It is synchronous by default", "It only supports the REST API"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a core module in Node.js?",
+      "opts": ["http", "fs", "express", "url"],
+      "ans": 2
+    },
+    {
+      "q": "What is the purpose of the 'require()' function in Node.js?",
+      "opts": ["To load and cache modules", "To start a server", "To declare variables", "To compile JavaScript"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following functions is used to create a basic HTTP server in Node.js?",
+      "opts": ["http.createServer()", "http.listen()", "server.create()", "server.start()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'fs' module in Node.js provide?",
+      "opts": ["Network functionality", "File system functionality", "Stream functionality", "Database management functionality"],
+      "ans": 1
+    },
+    {
+      "q": "Which method is used to read the contents of a file asynchronously in Node.js?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.open()", "fs.createReadStream()"],
+      "ans": 1
+    },
+    {
+      "q": "What is the default file extension for Node.js modules?",
+      "opts": [".js", ".json", ".node", ".html"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the package.json file in a Node.js project?",
+      "opts": ["To define project dependencies", "To configure server settings", "To store environment variables", "To manage database connections"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js is used to parse incoming JSON request bodies in Express?",
+      "opts": ["express.json()", "express.parseJson()", "express.bodyParser()", "express.urlencoded()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'EventEmitter' class in Node.js do?",
+      "opts": ["Handles HTTP requests", "Emits and listens to events", "Handles file system operations", "Controls database connections"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is true about Node.js's event loop?",
+      "opts": ["It is a single-threaded process", "It runs multiple threads concurrently", "It only processes asynchronous tasks", "It blocks the execution of synchronous code"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following modules is used for working with URLs in Node.js?",
+      "opts": ["url", "http", "querystring", "path"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js streams is used to read data from a stream?",
+      "opts": ["stream.read()", "stream.on()", "stream.write()", "stream.pipe()"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP method is used to retrieve data from a server?",
+      "opts": ["POST", "GET", "PUT", "DELETE"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is the default encoding in Node.js?",
+      "opts": ["utf-8", "ascii", "binary", "utf-16"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to start a Node.js application?",
+      "opts": ["node app.js", "npm start", "node run app.js", "start node app.js"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'process' object in Node.js provide?",
+      "opts": ["Information about the running server", "Environment variables and command-line arguments", "File system methods", "HTTP request handling"],
+      "ans": 1
+    },
+    {
+      "q": "How do you handle errors in asynchronous code in Node.js?",
+      "opts": ["Using try-catch blocks", "By using callbacks", "By using promises and .catch()", "By using synchronous methods only"],
+      "ans": 2
+    },
+    {
+      "q": "What is the purpose of middleware in Express.js?",
+      "opts": ["To handle HTTP requests", "To intercept requests and responses for modification", "To initialize server settings", "To manage database connections"],
+      "ans": 1
+    },
+    {
+      "q": "Which method is used to send a response from an Express.js route handler?",
+      "opts": ["res.send()", "res.end()", "res.json()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following is a templating engine commonly used with Express.js?",
+      "opts": ["EJS", "Handlebars", "Pug", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does the 'next()' function do in Express middleware?",
+      "opts": ["Stops the request-response cycle", "Sends a response", "Passes control to the next middleware function", "Closes the HTTP connection"],
+      "ans": 2
+    },
+    {
+      "q": "Which method is used to handle URL-encoded data in Express.js?",
+      "opts": ["express.urlencoded()", "express.urlencoded()", "express.parse()", "express.bodyParser()"],
+      "ans": 1
+    },
+    {
+      "q": "Which tool can you use to monitor your Node.js application in production?",
+      "opts": ["Node Inspector", "PM2", "Jest", "Mocha"],
+      "ans": 1
+    },
+    {
+      "q": "What is the use of the 'cluster' module in Node.js?",
+      "opts": ["To cluster server logs", "To distribute incoming requests across multiple Node.js processes", "To manage file streams", "To enable multi-threading"],
+      "ans": 1
+    },
+    {
+      "q": "How do you execute a shell command in Node.js?",
+      "opts": ["Using the exec() method in the 'child_process' module", "Using the execFile() method in the 'fs' module", "Using the shell() method in the 'path' module", "Using the spawn() method in the 'http' module"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'npm init' command do?",
+      "opts": ["Installs dependencies", "Creates a package.json file", "Initializes a new Node.js application", "Runs a Node.js server"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following methods can be used to make HTTP requests in Node.js?",
+      "opts": ["http.request()", "axios.get()", "fetch()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which event is triggered when a Node.js HTTP server receives a request?",
+      "opts": ["data", "request", "error", "close"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'npm install --save' command do?",
+      "opts": ["Installs the package and saves it as a dependency", "Installs the package without saving it", "Installs the package globally", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of the 'res' object in an Express.js route handler?",
+      "opts": ["It stores the request data", "It stores the server settings", "It contains the response methods", "It parses the incoming data"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is a non-blocking I/O operation in Node.js?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.writeFileSync()", "fs.renameSync()"],
+      "ans": 1
+    },
+    {
+      "q": "Which method is used to handle multiple parameters in Express route handlers?",
+      "opts": ["app.all()", "app.route()", "app.use()", "app.get()"],
+      "ans": 1
+    },
+    {
+      "q": "What does the 'res.json()' method do in Express?",
+      "opts": ["Sends a JSON response", "Sends an HTML response", "Sends a plain text response", "Sends a file response"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following packages is used to create and manage a RESTful API in Node.js?",
+      "opts": ["Express", "React", "Redux", "Angular"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the 'path' module in Node.js?",
+      "opts": ["To handle HTTP requests", "To handle file paths and directories", "To parse URL queries", "To manage streams"],
+      "ans": 1
+    },
+    {
+      "q": "What is the main purpose of the 'package-lock.json' file?",
+      "opts": ["To track package dependencies", "To store application settings", "To store API keys", "To track versions of Node.js modules"],
+      "ans": 0
+    },
+    {
+      "q": "Which module provides the functionality to parse and generate URL query strings in Node.js?",
+      "opts": ["url", "querystring", "path", "fs"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is true about the Node.js 'process' object?",
+      "opts": ["It contains the environment variables", "It is used to interact with the database", "It can only be used with synchronous functions", "It runs in a browser environment"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the command to install a package globally in Node.js?",
+      "opts": ["npm install", "npm install -g", "npm install --global", "npm install -d"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following best describes Node.js's architecture?",
+      "opts": ["Single-threaded", "Multi-threaded", "Distributed", "Event-driven"],
+      "ans": 0
+    },
+    {
+      "q": "What is the function of the 'node_modules' folder in a Node.js project?",
+      "opts": ["It stores project files", "It contains third-party libraries and dependencies", "It stores configuration files", "It stores data files"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following Node.js modules is used to work with streams?",
+      "opts": ["stream", "file", "request", "url"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements about the 'callback' function in Node.js is true?",
+      "opts": ["It is always asynchronous", "It is used to handle errors", "It is only used in file I/O operations", "It must always be used with promises"],
+      "ans": 1
+    },
+    {
+      "q": "What is the default behavior of Node.js regarding I/O operations?",
+      "opts": ["Blocking", "Non-blocking", "Synchronous", "Multithreaded"],
+      "ans": 1
+    },
+    {
+      "q": "How can you handle errors in Node.js callbacks?",
+      "opts": ["By using try-catch blocks", "By passing an error object as the first argument", "By using promises", "By using async/await"],
+      "ans": 1
+    },
+    {
+      "q": "Which package manager is commonly used in Node.js?",
+      "opts": ["npm", "yarn", "pip", "composer"],
+      "ans": 0
+    },
+    {
+      "q": "What is the use of the 'assert' module in Node.js?",
+      "opts": ["To handle errors", "To write HTTP responses", "To create unit tests", "To manage database connections"],
+      "ans": 2
+    },
+    {
+      "q": "What does the 'npm audit' command do?",
+      "opts": ["Installs missing dependencies", "Checks for security vulnerabilities in dependencies", "Lists outdated packages", "Clears the npm cache"],
+      "ans": 1
+    }
+  ]
+  ,
+
+
+
+  React: [
+    {
+      "q": "What is a controlled component in React?",
+      "opts": ["A component whose value is controlled by React state", "A component that doesn't have state", "A component that updates props", "A component that renders JSX elements"],
+      "ans": 0
+    },
+    {
+      "q": "How do you pass data between React components?",
+      "opts": ["By using props", "By using Redux", "By using useState", "By using useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these lifecycle methods is invoked when a component is first rendered?",
+      "opts": ["componentDidMount", "componentDidUpdate", "componentWillUnmount", "render"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `useEffect` hook?",
+      "opts": ["To perform side effects like fetching data, updating the DOM", "To trigger state updates", "To optimize performance", "To manage event listeners"],
+      "ans": 0
+    },
+    {
+      "q": "What is the use of `key` in React lists?",
+      "opts": ["To help React identify which items have changed, are added, or are removed", "To bind data to components", "To control the rendering of components", "To pass dynamic props to children"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to access props in a functional component?",
+      "opts": ["By passing them as an argument to the function", "By using `this.props` inside the function", "By using `useProps()`", "By calling `React.createElement()`"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these hooks is used to access the context in React?",
+      "opts": ["useContext", "useState", "useEffect", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useMemo` hook?",
+      "opts": ["To memoize expensive calculations and avoid re-running them", "To manage component state", "To store context values", "To handle side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.createElement()` do?",
+      "opts": ["It creates a React element", "It creates a React component", "It updates the state", "It renders JSX code"],
+      "ans": 0
+    },
+    {
+      "q": "How do you handle events in React?",
+      "opts": ["By passing event handler functions to props", "By using the `render()` method", "By using inline callbacks inside JSX", "By using `setState()`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `useEffect()` and `useLayoutEffect()`?",
+      "opts": ["`useEffect` runs after the render, while `useLayoutEffect` runs before it", "`useLayoutEffect` is used to manage state", "`useLayoutEffect` is asynchronous", "`useEffect` is only for class components"],
+      "ans": 0
+    },
+    {
+      "q": "What does `useRef` do in React?",
+      "opts": ["It creates a reference to a DOM element or persists a value across renders", "It manages component state", "It triggers a re-render", "It handles component lifecycle methods"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of `componentWillUnmount` in React?",
+      "opts": ["It is used for cleanup before a component is removed from the DOM", "It initializes component state", "It handles side effects", "It re-renders the component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between a functional and a class component?",
+      "opts": ["Functional components are simpler and can use hooks, while class components need lifecycle methods", "Class components use hooks", "Functional components cannot use state", "Class components are deprecated"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useReducer` used for?",
+      "opts": ["To manage more complex state logic in functional components", "To manage side effects", "To optimize performance", "To store context data"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of `componentDidUpdate` in React?",
+      "opts": ["It is called after the component updates", "It initializes the component", "It renders the component", "It triggers side effects"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to schedule an update to a component's state?",
+      "opts": ["this.setState()", "this.forceUpdate()", "render()", "useState()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `setState()` and `useState()`?",
+      "opts": ["`setState()` is used in class components, while `useState()` is used in functional components", "`useState()` is used in class components, while `setState()` is used in functional components", "`setState()` is only used for state management", "`useState()` is for lifecycle methods"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of `React.Fragment`?",
+      "opts": ["It allows grouping of multiple elements without adding extra nodes to the DOM", "It renders a component", "It initializes component state", "It manages context data"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `useCallback` hook?",
+      "opts": ["To memoize callback functions to prevent unnecessary re-creations", "To manage state", "To persist values across renders", "To render the component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to handle errors in React?",
+      "opts": ["By using Error Boundaries", "By using try-catch blocks inside components", "By using `useEffect`", "By using `setState()`"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.StrictMode` do?",
+      "opts": ["It helps identify potential problems in an application", "It optimizes performance", "It triggers lifecycle methods", "It stores state values"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `state` and `props` in React?",
+      "opts": ["`state` is managed inside the component, while `props` are passed to the component from its parent", "`state` is read-only, while `props` are mutable", "`state` is used for rendering, while `props` manage side effects", "`props` are used in class components, while `state` is used in functional components"],
+      "ans": 0
+    },
+    {
+      "q": "What does `useEffect` with an empty dependency array (`[]`) do?",
+      "opts": ["It runs the effect only once after the initial render", "It runs every time the component renders", "It runs only when a specific prop changes", "It does nothing"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of `componentWillMount`?",
+      "opts": ["It is called before the component is mounted", "It initializes state", "It is used to handle events", "It renders JSX elements"],
+      "ans": 0
+    },
+    {
+      "q": "How can you optimize the performance of a React application?",
+      "opts": ["By using `React.memo()` and `shouldComponentUpdate`", "By using `useState()` for all components", "By avoiding hooks", "By always using class components"],
+      "ans": 0
+    },
+    {
+      "q": "What is the main purpose of `ReactDOM.render()`?",
+      "opts": ["To render a React element into the DOM", "To create a component", "To trigger state updates", "To handle lifecycle methods"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentWillReceiveProps` used for in React?",
+      "opts": ["It is called before a component receives new props", "It is used to manage state", "It is used to handle errors", "It initializes the component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `useEffect` and `useLayoutEffect`?",
+      "opts": ["`useEffect` is asynchronous and runs after rendering, while `useLayoutEffect` is synchronous and runs before rendering", "`useLayoutEffect` is only available in class components", "`useLayoutEffect` runs only on state changes", "`useEffect` triggers side effects in class components"],
+      "ans": 0
+    },
+    {
+      "q": "What is `React.PureComponent`?",
+      "opts": ["A component that only re-renders when props or state change", "A component that cannot use state", "A component that is used for routing", "A component with hooks support"],
+      "ans": 0
+    },
+    {
+      "q": "How do you create a functional component in React?",
+      "opts": ["By defining a function that returns JSX", "By extending `React.Component`", "By using `React.createElement`", "By using `useEffect`"],
+      "ans": 0
+    },
+    {
+      "q": "How do you create a ref in React?",
+      "opts": ["By using `React.createRef()`", "By using `useRef()`", "By using `React.ref()`", "By passing a function as the `ref` prop"],
+      "ans": 0
+    },
+    {
+      "q": "What is `React.memo` used for?",
+      "opts": ["To prevent unnecessary re-renders of functional components", "To optimize class components", "To render JSX elements", "To manage state"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to update the state in a class component?",
+      "opts": ["By using `this.setState()`", "By using `useState()`", "By directly modifying `this.state`", "By using `useEffect()`"],
+      "ans": 0
+    },
+    {
+      "q": "What does `dangerouslySetInnerHTML` do in React?",
+      "opts": ["It sets raw HTML content inside a component", "It renders JSX", "It creates components", "It manages state"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these hooks allows you to handle side effects in functional components?",
+      "opts": ["useEffect", "useContext", "useState", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "What is the role of `getDerivedStateFromProps`?",
+      "opts": ["It updates the state based on changes to props", "It renders JSX", "It is used to handle side effects", "It is called before component mounts"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What does the `useState` hook return?",
+      "opts": ["An array with the current state and a function to update it", "A boolean value", "A method to force an update", "An object with all state properties"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about React components?",
+      "opts": ["A component must return JSX", "A component must always be a class", "Components cannot use hooks", "Components do not manage state"],
+      "ans": 0
+    },
+    {
+      "q": "How can you prevent a child component from re-rendering in React?",
+      "opts": ["By using `React.memo()`", "By passing a `key` prop", "By using `shouldComponentUpdate`", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the purpose of `React.createContext()`?",
+      "opts": ["To create a context for sharing data across components", "To create a new component", "To manage component state", "To handle side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `useState` and `useReducer`?",
+      "opts": ["`useState` is for managing simple state, while `useReducer` is for more complex state logic", "`useState` uses context internally, while `useReducer` does not", "`useReducer` is only for class components", "`useState` is used for managing side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useContext` used for in React?",
+      "opts": ["To consume values from a context", "To update the component state", "To optimize component re-renders", "To reference a DOM element"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about `props`?",
+      "opts": ["Props are read-only", "Props can be modified within the component", "Props can only be passed from parent to child", "Props are mutable"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.Fragment` allow you to do?",
+      "opts": ["Group multiple elements without adding extra nodes to the DOM", "Create a new component", "Handle form submissions", "Reference a DOM element"],
+      "ans": 0
+    },
+    {
+      "q": "How do you handle form submissions in React?",
+      "opts": ["By using `onSubmit` event handler", "By using `setState()`", "By passing a prop from parent to child", "By manually updating the DOM"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentDidMount` in React?",
+      "opts": ["A lifecycle method that is called after the component is rendered to the DOM", "A method for updating state", "A method for rendering JSX", "A hook for managing side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useEffect` used for in React?",
+      "opts": ["To perform side effects in function components", "To manage state", "To handle form inputs", "To render the component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `shouldComponentUpdate` in React?",
+      "opts": ["To optimize re-renders by preventing unnecessary updates", "To set initial state", "To trigger component lifecycle methods", "To handle errors in the component"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these is a feature of React's virtual DOM?",
+      "opts": ["It allows for fast updates by re-rendering only changed components", "It directly manipulates the real DOM", "It uses a web worker to handle updates", "It synchronizes state with the backend"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a correct way to conditionally render a component in React?",
+      "opts": ["Using a ternary operator", "Using `if` statement inside `render()`", "Using `React.memo()`", "Using `useEffect()`"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.PureComponent` do?",
+      "opts": ["Optimizes component re-renders by shallowly comparing props and state", "Allows you to manage state", "Creates a new context", "Defines an event handler"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook is used to store mutable values that do not trigger re-renders?",
+      "opts": ["useRef", "useState", "useEffect", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.memo()`?",
+      "opts": ["It prevents re-renders of functional components when props don't change", "It stores state", "It references DOM elements", "It initializes a component's state"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useLayoutEffect` used for?",
+      "opts": ["It runs synchronously after all DOM mutations", "It runs after the component renders", "It is used to manage form state", "It is used to update the context"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentWillUnmount` used for in React?",
+      "opts": ["To clean up before a component is removed from the DOM", "To trigger an update to the component", "To initialize state", "To perform side effects"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in React is used to force a component to re-render?",
+      "opts": ["forceUpdate()", "render()", "setState()", "useState()"],
+      "ans": 0
+    },
+    {
+      "q": "What does `dangerouslySetInnerHTML` do in React?",
+      "opts": ["It sets raw HTML content inside a component", "It renders JSX", "It initializes state", "It updates props"],
+      "ans": 0
+    },
+    {
+      "q": "What does `useReducer` hook do in React?",
+      "opts": ["It is used to manage more complex state logic", "It replaces `useState`", "It handles side effects", "It renders the component"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following hooks can you use to read and update the context in React?",
+      "opts": ["useContext", "useState", "useEffect", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "What is the primary difference between a class component and a functional component in React?",
+      "opts": ["Functional components are simpler and do not have lifecycle methods by default", "Class components use hooks, while functional components do not", "Functional components cannot have props", "Class components are deprecated in React"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to handle errors in React components?",
+      "opts": ["componentDidCatch", "handleError", "catchError", "useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useRef` used for in React?",
+      "opts": ["To reference a DOM element or persist a value across renders", "To manage form input", "To store context values", "To perform side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `key` prop in React lists do?",
+      "opts": ["Helps React identify which items have changed, been added, or removed", "Defines the class of the component", "Specifies the state of the component", "Sets event listeners"],
+      "ans": 0
+    },
+    {
+      "q": "What is a React fragment?",
+      "opts": ["A component that allows you to group elements without adding extra nodes to the DOM", "A method for creating components", "A special component that uses hooks", "A part of the state management library"],
+      "ans": 0
+    },
+    {
+      "q": "How can you define a component in React?",
+      "opts": ["By using a function or a class", "By using only JSX", "By using React.createElement", "By using state management only"],
+      "ans": 0
+    },
+    {
+      "q": "What does `setState` do in React?",
+      "opts": ["It schedules an update to the component's state object", "It initializes props", "It returns a new component", "It defines the component's lifecycle methods"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.StrictMode`?",
+      "opts": ["To help detect potential problems in an application", "To optimize rendering", "To manage state", "To handle events"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `useEffect` hook's dependency array?",
+      "opts": ["To specify when the effect should run based on certain values", "To initialize state", "To reference DOM elements", "To define context values"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is not available in class components?",
+      "opts": ["useState", "componentDidMount", "render", "componentDidUpdate"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to handle form inputs in React?",
+      "opts": ["By using controlled components", "By using uncontrolled components", "By directly manipulating the DOM", "By passing state to input components as props"],
+      "ans": 0
+    },
+    {
+      "q": "How do you update the state of a component in React?",
+      "opts": ["By using `setState` method or `useState` hook", "By using `useEffect`", "By manually modifying the DOM", "By using `ReactDOM.render()`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the primary function of React Router?",
+      "opts": ["To handle routing and navigation in a React application", "To manage state in React", "To optimize rendering", "To create context"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What is a Higher Order Component (HOC) in React?",
+      "opts": ["A function that takes a component and returns a new component", "A component that holds state", "A class component", "A built-in React component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `useEffect` and `useLayoutEffect`?",
+      "opts": ["`useEffect` runs after the paint, `useLayoutEffect` runs before the paint", "`useEffect` runs before rendering, `useLayoutEffect` after", "`useEffect` is for functional components, `useLayoutEffect` for class components", "`useEffect` and `useLayoutEffect` are identical"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to trigger a re-render in a class component?",
+      "opts": ["this.setState()", "this.forceUpdate()", "this.render()", "ReactDOM.render()"],
+      "ans": 1
+    },
+    {
+      "q": "What is the default behavior of a form element in React?",
+      "opts": ["It is controlled by React state", "It is uncontrolled by React", "It always triggers a rerender", "It uses local storage for data storage"],
+      "ans": 0
+    },
+    {
+      "q": "What is `React.StrictMode` in React?",
+      "opts": ["A tool to detect potential problems in an app", "A performance optimization feature", "A state management tool", "A React plugin for testing"],
+      "ans": 0
+    },
+    {
+      "q": "How can you conditionally render a component in React?",
+      "opts": ["By using JavaScript conditional operators like `if`, `else` or ternary", "By using `setState` to change the component", "By using `React.createElement()`", "By calling `render()` conditionally"],
+      "ans": 0
+    },
+    {
+      "q": "What does `useMemo` do in React?",
+      "opts": ["Memoizes expensive function results", "Provides a way to manage component state", "Creates a new ref", "Returns a new JSX element"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook can be used to update the state of a component in a functional component?",
+      "opts": ["useState", "useEffect", "useRef", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `key` prop in React lists?",
+      "opts": ["To give each element a unique identifier for efficient updates", "To determine the order of the items", "To store additional data", "To define the event handler for list items"],
+      "ans": 0
+    },
+    {
+      "q": "What is a 'stateless' component in React?",
+      "opts": ["A component that does not have internal state", "A component that uses Redux for state management", "A component with only `props` but no `state` or lifecycle methods", "A component that uses `useState` hook"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `useEffect` hook commonly used for?",
+      "opts": ["Side effects like fetching data, subscriptions, and manual DOM manipulations", "Memoizing function results", "Handling user input", "Managing state updates"],
+      "ans": 0
+    },
+    {
+      "q": "How do you create a functional component in React?",
+      "opts": ["By defining a function that returns JSX", "By using `React.Component`", "By using a class declaration", "By using `React.createElement()`"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these methods are used for handling errors in React?",
+      "opts": ["Error Boundaries", "ComponentDidCatch", "try-catch blocks", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the main advantage of using `React.memo()`?",
+      "opts": ["It prevents unnecessary re-renders of functional components", "It allows you to memoize state", "It helps in handling events", "It reduces code complexity"],
+      "ans": 0
+    },
+    {
+      "q": "What are React hooks?",
+      "opts": ["Functions that let you hook into React features from functional components", "Functions that allow you to manage state in class components", "A way to manage forms", "A set of utility functions for JSX"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following can be used for routing in a React application?",
+      "opts": ["React Router", "ReactDOM", "React Redux", "React Hooks"],
+      "ans": 0
+    },
+    {
+      "q": "What does `useContext` do in React?",
+      "opts": ["Allows components to consume values from a context", "Manages state in a component", "References a DOM element", "Sets event handlers"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useEffect`'s cleanup function used for?",
+      "opts": ["To clean up side effects before the component is removed", "To handle state updates", "To call lifecycle methods in functional components", "To optimize rendering performance"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.lazy()` in React?",
+      "opts": ["To dynamically import a component", "To define a stateful component", "To handle side effects", "To create a context provider"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to access state inside a functional component?",
+      "opts": ["Using `useState` hook", "By using `this.state`", "By using `state` prop", "By calling `useState()` in a class component"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to update the state in a class component?",
+      "opts": ["this.setState()", "this.updateState()", "this.render()", "useState()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `useCallback` hook do in React?",
+      "opts": ["It memoizes callback functions to prevent unnecessary re-creations", "It creates new state", "It references a DOM element", "It stores context data"],
+      "ans": 0
+    },
+    {
+      "q": "Which lifecycle method is called when a component's state or props change?",
+      "opts": ["componentDidUpdate", "componentDidMount", "shouldComponentUpdate", "render"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useReducer` used for in React?",
+      "opts": ["Managing complex state logic", "To reference a DOM element", "To handle side effects", "To memorize expensive calculations"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook can be used to persist state across renders?",
+      "opts": ["useRef", "useState", "useContext", "useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.createElement()` do?",
+      "opts": ["Creates a React element", "Creates a component", "Renders the DOM", "Handles component props"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about React's virtual DOM?",
+      "opts": ["It is a lightweight copy of the actual DOM", "It stores the entire page structure", "It does not allow for updates", "It directly updates the DOM"],
+      "ans": 0
+    },
+    {
+      "q": "How can you make sure that a component only re-renders when necessary?",
+      "opts": ["By using `shouldComponentUpdate` or `React.memo()`", "By always updating state inside `componentDidUpdate`", "By avoiding hooks", "By using inline functions in render"],
+      "ans": 0
+    },
+    {
+      "q": "What is a controlled component in React?",
+      "opts": ["A component whose state is controlled by React", "A component that doesn't use state", "A component that manages external state", "A component that interacts with the backend"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentDidMount` in React?",
+      "opts": ["A lifecycle method that is called after the component is mounted", "A method that updates the state", "A method to manage component props", "A method that performs side effects"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useRef` hook?",
+      "opts": ["To persist state across renders without causing re-renders", "To create references to DOM elements", "To handle side effects", "To manage context data"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `props` and `state` in React?",
+      "opts": ["`props` are passed from parent to child components, while `state` is managed inside a component", "`props` store mutable data, while `state` stores static data", "`state` is always required, while `props` are optional", "`state` can be changed by parent components, while `props` are immutable"],
+      "ans": 0
+    },
+    {
+      "q": "How do you avoid unnecessary re-renders in React?",
+      "opts": ["By using `React.memo()` and `shouldComponentUpdate`", "By using `useState()`", "By calling `render()` only once", "By updating props frequently"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to subscribe to context values in React?",
+      "opts": ["useContext", "React.createContext", "useState", "useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `setState()` and `useState()`?",
+      "opts": ["`setState()` is used in class components, while `useState()` is used in functional components", "`setState()` is for state management, while `useState()` is for hooks", "`useState()` is a global state manager", "`setState()` can only be used in functional components"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What is the default return value of a functional component?",
+      "opts": ["A React element", "A string", "An array", "A number"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook can be used to reference a DOM element directly in React?",
+      "opts": ["useRef", "useEffect", "useState", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useContext` hook used for in React?",
+      "opts": ["To access global state or context values", "To manage component state", "To perform side effects", "To reference a DOM element"],
+      "ans": 0
+    },
+    {
+      "q": "What is `React.createElement()` used for?",
+      "opts": ["Creating React elements manually", "Creating a new React component", "Handling events", "Creating a new state"],
+      "ans": 0
+    },
+    {
+      "q": "What does `dangerouslySetInnerHTML` attribute do in React?",
+      "opts": ["It sets HTML content in a component", "It creates a new HTML element", "It updates a React component's state", "It sets CSS styles dynamically"],
+      "ans": 0
+    },
+    {
+      "q": "What is a 'fragment' in React?",
+      "opts": ["A lightweight wrapper for grouping multiple elements", "A new type of React component", "A method for managing component state", "A special kind of event handler"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentWillUnmount` used for in React?",
+      "opts": ["To clean up before a component is removed from the DOM", "To initialize component state", "To perform a side effect", "To update the component's state"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useCallback` hook?",
+      "opts": ["To memoize callback functions", "To update component state", "To perform side effects", "To store references to DOM elements"],
+      "ans": 0
+    },
+    {
+      "q": "How do you pass a function as a prop in React?",
+      "opts": ["By defining the function in the parent and passing it as a prop", "By declaring it in the child component", "By using `useState`", "By using `useEffect`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.StrictMode`?",
+      "opts": ["To help identify potential problems in an application", "To enable routing", "To optimize component rendering", "To initialize context"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle form inputs in React?",
+      "opts": ["Controlled components", "Uncontrolled components", "useState", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is `React.PureComponent`?",
+      "opts": ["A component that only re-renders when its props or state change", "A class component with no state", "A functional component", "A component with no rendering logic"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useReducer` hook in React?",
+      "opts": ["To manage complex state logic", "To manage simple state", "To perform side effects", "To reference DOM elements"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.createContext()` do?",
+      "opts": ["Creates a context to manage global state", "Creates a new React component", "Defines a new event handler", "Creates a new state variable"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useLayoutEffect` hook?",
+      "opts": ["To run side effects synchronously after all DOM mutations", "To set up an event listener", "To manage form data", "To manage component rendering"],
+      "ans": 0
+    },
+    {
+      "q": "How can you avoid re-rendering components unnecessarily in React?",
+      "opts": ["By using `React.memo`", "By using `shouldComponentUpdate`", "By using `useMemo`", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does `React.Fragment` allow you to do?",
+      "opts": ["Return multiple elements without adding an extra node to the DOM", "Store data", "Create context", "Initialize state"],
+      "ans": 0
+    },
+    {
+      "q": "How do you handle events in React?",
+      "opts": ["By passing functions as props", "By using `eventHandler` methods", "By directly binding events to elements", "By using `useState`"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `setState()` method do in React?",
+      "opts": ["Updates the state of a component", "Creates a new component", "Renders the component", "Adds new props to a component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `useRef` hook used for in React?",
+      "opts": ["To reference a DOM element", "To store mutable values that do not cause re-renders", "To handle side effects", "To manage state"],
+      "ans": 1
+    },
+    {
+      "q": "How do you prevent a component from rendering in React?",
+      "opts": ["By using `shouldComponentUpdate`", "By using `useEffect`", "By setting the state to null", "By using `useState`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `componentDidMount` and `useEffect`?",
+      "opts": ["`componentDidMount` is for class components, while `useEffect` is for functional components", "`componentDidMount` runs synchronously", "`useEffect` runs before rendering", "`componentDidMount` is deprecated"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.Fragment`?",
+      "opts": ["To group multiple elements without adding extra nodes to the DOM", "To define a functional component", "To create new event handlers", "To manage state"],
+      "ans": 0
+    },
+    {
+      "q": "Which lifecycle method is called when a component is about to be removed from the DOM?",
+      "opts": ["componentWillUnmount", "componentDidMount", "componentDidUpdate", "render"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.StrictMode` do?",
+      "opts": ["Helps identify potential problems in the app", "Optimizes the app for production", "Creates new context", "Handles state changes"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What is ReactJS?",
+      "opts": ["A JavaScript library for building user interfaces", "A programming language", "A database", "A framework for backend development"],
+      "ans": 0
+    },
+    {
+      "q": "What does JSX stand for?",
+      "opts": ["JavaScript XML", "JavaScript Extension", "JavaScript Extra", "JavaScript Execution"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to render a React component?",
+      "opts": ["render()", "display()", "show()", "paint()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of `props` in a React component?",
+      "opts": ["undefined", "null", "empty object", "empty array"],
+      "ans": 2
+    },
+    {
+      "q": "Which function is used to create a class component in React?",
+      "opts": ["React.createClass", "React.Component", "React.createElement", "React.classComponent"],
+      "ans": 1
+    },
+    {
+      "q": "What is the purpose of the `useState` hook in React?",
+      "opts": ["To store state variables in a functional component", "To create a class component", "To create a context", "To define props for a component"],
+      "ans": 0
+    },
+    {
+      "q": "What is a 'state' in React?",
+      "opts": ["A property of a class component", "A feature to store dynamic data in a component", "A way to handle events", "A method to manage routing"],
+      "ans": 1
+    },
+    {
+      "q": "What is the role of the `render()` method in React?",
+      "opts": ["It defines how to display the component", "It updates the component's state", "It defines event handlers", "It mounts the component"],
+      "ans": 0
+    },
+    {
+      "q": "What is a 'controlled component' in React?",
+      "opts": ["A component that manages its own state", "A component whose state is controlled by the parent component", "A component that only displays content", "A component that does not render"],
+      "ans": 1
+    },
+    {
+      "q": "What is `ReactDOM.render()` used for?",
+      "opts": ["To render a React component into the DOM", "To create a virtual DOM", "To initialize React context", "To bind a React component to a database"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a React lifecycle method?",
+      "opts": ["componentDidMount", "useEffect", "handleClick", "render"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook is used to perform side effects in React functional components?",
+      "opts": ["useEffect", "useState", "useContext", "useRef"],
+      "ans": 0
+    },
+    {
+      "q": "What is 'React Router' used for?",
+      "opts": ["Routing in React applications", "Managing state in React", "Handling events", "Creating forms in React"],
+      "ans": 0
+    },
+    {
+      "q": "How can you pass data from a parent component to a child component in React?",
+      "opts": ["Using props", "Using state", "Using context", "Using event handlers"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `useEffect` hook used for?",
+      "opts": ["Handling side effects in functional components", "Setting initial state", "Updating state", "Rendering JSX"],
+      "ans": 0
+    },
+    {
+      "q": "What does `key` prop do in a list of components?",
+      "opts": ["Helps React identify which items have changed", "Defines the component's state", "Determines the component's class", "Sets the component's CSS class"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct syntax to create a functional component in React?",
+      "opts": ["function MyComponent() {}", "const MyComponent = () => {}", "MyComponent = function() {}", "class MyComponent extends React.Component {}"],
+      "ans": 1
+    },
+    {
+      "q": "What is a 'pure' component in React?",
+      "opts": ["A component that does not re-render when its props or state change", "A component that always re-renders", "A component that only handles input fields", "A component that handles errors"],
+      "ans": 0
+    },
+    {
+      "q": "What is the main purpose of `shouldComponentUpdate`?",
+      "opts": ["To optimize rendering by preventing unnecessary re-renders", "To update the component's state", "To perform a side effect", "To update props"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.memo`?",
+      "opts": ["To prevent re-rendering of functional components", "To manage state in functional components", "To create context", "To perform a side effect"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default return value of a functional component?",
+      "opts": ["A React element", "A string", "An array", "A number"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook can be used to reference a DOM element directly in React?",
+      "opts": ["useRef", "useEffect", "useState", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "What is `useContext` hook used for in React?",
+      "opts": ["To access global state or context values", "To manage component state", "To perform side effects", "To reference a DOM element"],
+      "ans": 0
+    },
+    {
+      "q": "What is `React.createElement()` used for?",
+      "opts": ["Creating React elements manually", "Creating a new React component", "Handling events", "Creating a new state"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `dangerouslySetInnerHTML` attribute do in React?",
+      "opts": ["It sets HTML content in a component", "It creates a new HTML element", "It updates a React component's state", "It sets CSS styles dynamically"],
+      "ans": 0
+    },
+    {
+      "q": "What is a 'fragment' in React?",
+      "opts": ["A lightweight wrapper for grouping multiple elements", "A new type of React component", "A method for managing component state", "A special kind of event handler"],
+      "ans": 0
+    },
+    {
+      "q": "What is `componentWillUnmount` used for in React?",
+      "opts": ["To clean up before a component is removed from the DOM", "To initialize component state", "To perform a side effect", "To update the component's state"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useCallback` hook?",
+      "opts": ["To memoize callback functions", "To update component state", "To perform side effects", "To store references to DOM elements"],
+      "ans": 0
+    },
+    {
+      "q": "How do you pass a function as a prop in React?",
+      "opts": ["By defining the function in the parent and passing it as a prop", "By declaring it in the child component", "By using `useState`", "By using `useEffect`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.StrictMode`?",
+      "opts": ["To help identify potential problems in an application", "To enable routing", "To optimize component rendering", "To initialize context"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle form inputs in React?",
+      "opts": ["Controlled components", "Uncontrolled components", "useState", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is `React.PureComponent`?",
+      "opts": ["A component that only re-renders when its props or state change", "A class component with no state", "A functional component", "A component with no rendering logic"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useReducer` hook in React?",
+      "opts": ["To manage complex state logic", "To manage simple state", "To perform side effects", "To reference DOM elements"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.createContext()` do?",
+      "opts": ["Creates a context to manage global state", "Creates a new React component", "Defines a new event handler", "Creates a new state variable"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useLayoutEffect` hook?",
+      "opts": ["To run side effects synchronously after all DOM mutations", "To set up an event listener", "To manage form data", "To manage component rendering"],
+      "ans": 0
+    },
+    {
+      "q": "How can you avoid re-rendering components unnecessarily in React?",
+      "opts": ["By using `React.memo`", "By using `shouldComponentUpdate`", "By using `useMemo`", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does `React.Fragment` allow you to do?",
+      "opts": ["Return multiple elements without adding an extra node to the DOM", "Store data", "Create context", "Initialize state"],
+      "ans": 0
+    },
+    {
+      "q": "How do you handle events in React?",
+      "opts": ["By passing functions as props", "By using `eventHandler` methods", "By directly binding events to elements", "By using `useState`"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `setState()` method do in React?",
+      "opts": ["Updates the state of a component", "Creates a new component", "Renders the component", "Adds new props to a component"],
+      "ans": 0
+    },
+    {
+      "q": "What is the `useRef` hook used for in React?",
+      "opts": ["To reference a DOM element", "To store mutable values that do not cause re-renders", "To handle side effects", "To manage state"],
+      "ans": 1
+    },
+    {
+      "q": "How do you prevent a component from rendering in React?",
+      "opts": ["By using `shouldComponentUpdate`", "By using `useEffect`", "By setting the state to null", "By using `useState`"],
+      "ans": 0
+    },
+    {
+      "q": "What is the difference between `componentDidMount` and `useEffect`?",
+      "opts": ["`componentDidMount` is for class components, while `useEffect` is for functional components", "`componentDidMount` runs synchronously", "`useEffect` runs before rendering", "`componentDidMount` is deprecated"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `React.Fragment`?",
+      "opts": ["To group multiple elements without adding extra nodes to the DOM", "To define a functional component", "To create new event handlers", "To manage state"],
+      "ans": 0
+    },
+    {
+      "q": "Which lifecycle method is called when a component is about to be removed from the DOM?",
+      "opts": ["componentWillUnmount", "componentDidMount", "componentDidUpdate", "render"],
+      "ans": 0
+    },
+    {
+      "q": "What does `React.StrictMode` do?",
+      "opts": ["Helps identify potential problems in the app", "Optimizes the app for production", "Creates new context", "Handles state changes"],
+      "ans": 0
+    }
+  ]
+  ,
+
+
+
+
+
+
+
   UPSC:
     [
       {
@@ -6348,6 +9572,594 @@ export const questions = {
   ]
   ,
   JavaScript: [
+    {
+      "q": "What is the result of the following code?\n\nconsole.log( '1' + 2 + 3 );",
+      "opts": ["'123'", "6", "'32'", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = {}; console.log(a instanceof Object);",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following code?\n\nconsole.log( typeof ({} === {}) );",
+      "opts": ["'boolean'", "'object'", "'undefined'", "'NaN'"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the result of the following code?\n\nconsole.log( 1 + 1 == '2' );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code output?\n\nlet x = 10;\nfunction foo() { var x = 20; };\nfoo(); console.log(x);",
+      "opts": ["10", "20", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = []; console.log(a instanceof Array);",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nconsole.log( [1] == true );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will be logged by the following code?\n\nconsole.log( {} + [] );",
+      "opts": ["'[object Object]'", "'0'", "undefined", "'NaN'"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of the following?\n\nconsole.log( '2' - 1 );",
+      "opts": ["1", "2", "NaN", "'21'"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nconst a = [1, 2, 3]; const b = a; b.push(4); console.log(a.length);",
+      "opts": ["4", "3", "2", "1"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nlet foo = { bar: 1 }; foo.bar = 2; console.log(foo);",
+      "opts": ["{ bar: 2 }", "{ bar: 1 }", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet x = 10;\nfunction fn() { x = 20; };\nfn();\nconsole.log(x);",
+      "opts": ["20", "10", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nfunction test() { console.log(this); }\ntest();",
+      "opts": ["Global object (window in browsers)", "undefined", "null", "test"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = [1, 2]; let b = [1, 2]; console.log(a == b);",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = { x: 10 }; a.y = 20; console.log(a);",
+      "opts": ["{ x: 10, y: 20 }", "{ x: 10 }", "{ y: 20 }", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nlet x = 'hello'; x[0] = 'H'; console.log(x);",
+      "opts": ["'hello'", "'Hello'", "'Helo'", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nconst a = [1, 2, 3]; const b = a; b[0] = 4; console.log(a[0]);",
+      "opts": ["4", "1", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following expression?\n\n'10' == 10",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nconsole.log( typeof (function() {}) );",
+      "opts": ["'function'", "'object'", "'undefined'", "'NaN'"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = 10;\nfunction foo() { let a = 20; return a; }\nconsole.log(a);",
+      "opts": ["10", "20", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = { x: 1, y: 2 }; let b = Object.create(a); b.z = 3; console.log(b.x);",
+      "opts": ["1", "2", "3", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the output of this code?\n\nconsole.log( 1 + '1' == 11 );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will be logged by this code?\n\nconsole.log( typeof [] );",
+      "opts": ["'array'", "'object'", "'undefined'", "'function'"],
+      "ans": 1
+    },
+    {
+      "q": "What is the result of the following expression?\n\nconsole.log( null == undefined );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of 'null == false' in JavaScript?",
+      "opts": ["false", "true", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'this' refer to in a JavaScript class method?",
+      "opts": ["The instance of the class", "The global object", "undefined", "The function object"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of the following code?\n\nconsole.log( Number('123') + 1 );",
+      "opts": ["124", "123", "NaN", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nconsole.log( [1] == true );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the result of this code?\n\nconsole.log( NaN === NaN );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following code log?\n\nconsole.log( {} == {} );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What is the result of '0 === -0' in JavaScript?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = [1, 2, 3]; console.log(a.length); a[5] = 4; console.log(a.length);",
+      "opts": ["3, 6", "3, 5", "6, 6", "5, 6"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet obj = {a: 1, b: 2}; delete obj.b; console.log(obj.b);",
+      "opts": ["undefined", "2", "NaN", "error"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of 'console.log( [1, 2] == '1,2' )'?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of '[] == false' in JavaScript?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nconst obj = { x: 10, y: 20 }; delete obj.x; console.log(obj.x);",
+      "opts": ["undefined", "10", "20", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = [1, 2, 3]; a.length = 2; console.log(a[2]);",
+      "opts": ["undefined", "NaN", "3", "2"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nconsole.log( 'abc'.slice(1, 3) );",
+      "opts": ["'bc'", "'ab'", "'ac'", "'abc'"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nlet x = 10;\nfunction test() { x = 20; }\ntest();\nconsole.log(x);",
+      "opts": ["20", "10", "undefined", "NaN"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What is the result of the following code?\n\nconsole.log( 1 + '1' - 1 );",
+      "opts": ["'10'", "11", "NaN", "1"],
+      "ans": 1
+    },
+    {
+      "q": "What will this code log?\n\nconsole.log( [] == [] );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following will create a deep copy of an object in JavaScript?",
+      "opts": ["Object.assign()", "JSON.parse(JSON.stringify(obj))", "Object.create()", "Spread operator"],
+      "ans": 1
+    },
+    {
+      "q": "What is the result of the following?\n\nconsole.log( 0 == false );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'setTimeout' do in JavaScript?",
+      "opts": ["Schedules a function to run after a delay", "Executes a function immediately", "Stops a function from executing", "Delays the script execution"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = [1, 2]; let b = a; b[0] = 3; console.log(a[0]);",
+      "opts": ["3", "1", "undefined", "2"],
+      "ans": 0
+    },
+    {
+      "q": "What does the following code log?\n\nlet foo = 'bar'; foo = 10; console.log(typeof foo);",
+      "opts": ["'string'", "'number'", "'undefined'", "'boolean'"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is not a valid JavaScript variable name?",
+      "opts": ["var 1x;", "let _x;", "const $y;", "var x1;"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following expression?\n\ntypeof null === 'object'",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will not throw an error in JavaScript?",
+      "opts": ["function*(){}", "async function(){}", "class A {}", "var x = 10;"],
+      "ans": 3
+    },
+    {
+      "q": "What is the result of the following?\n\nconsole.log( 5 + 5 + '5' );",
+      "opts": ["'55'", "10", "'55'", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will correctly define a generator function?",
+      "opts": ["function* gen() {}", "function gen*() {}", "gen function*() {}", "function gen(){}*"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nlet obj = { x: 1, y: 2 }; delete obj.x; console.log(obj.x);",
+      "opts": ["undefined", "1", "2", "null"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet x = 10;\n(function() { var x = 5; console.log(x); })();",
+      "opts": ["5", "10", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of 'console.log( '1' == 1 )'?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nconsole.log( 2 * '3' );",
+      "opts": ["6", "NaN", "undefined", "'23'"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the output of the following?\n\nlet a = [1, 2]; let b = [...a]; b[0] = 3; console.log(a[0]);",
+      "opts": ["1", "2", "3", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of 'typeof []'?",
+      "opts": ["'array'", "'object'", "'undefined'", "'array'"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following will create a new instance of an object?",
+      "opts": ["new Object()", "Object()", "Object.create()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What does the following code log?\n\nconst obj = { x: 10 }; obj.x = 20; console.log(obj.x);",
+      "opts": ["20", "10", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet arr = [1, 2, 3]; arr[2] = 4; console.log(arr.length);",
+      "opts": ["3", "4", "5", "2"],
+      "ans": 3
+    },
+    {
+      "q": "What is the result of the following?\n\nconsole.log( 0 == [] );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code output?\n\nconsole.log( {} == {} );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following log?\n\nconst x = 10;\n(function() { const x = 20; console.log(x); })();",
+      "opts": ["10", "20", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What is the output of the following?\n\nconsole.log( 'foo' === 'foo' );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following does not result in an error?",
+      "opts": ["try { throw 'error' } catch(e) {}", "throw new Error('error')", "throw 'error'", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What will the following code log?\n\nlet obj = { a: 1 }; obj = null; console.log(obj);",
+      "opts": ["null", "undefined", "1", "error"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of 'typeof NaN'?",
+      "opts": ["'number'", "'NaN'", "'undefined'", "'object'"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following code?\n\nconsole.log( 0 === 0 );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'this' refer to inside an arrow function?",
+      "opts": ["The parent scope", "The function's own scope", "The global object", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log?\n\nlet a = [1, 2, 3]; a.length = 2; console.log(a[2]);",
+      "opts": ["undefined", "3", "2", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does the 'spread' operator do?",
+      "opts": ["Spreads elements of an array or object", "Combines multiple arrays", "Both A and B", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "What will this code log?\n\nlet x = 'test'; x[0] = 'T'; console.log(x);",
+      "opts": ["'test'", "'Test'", "'Ttst'", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of this code?\n\nconsole.log( 10 / '2' );",
+      "opts": ["5", "NaN", "'5'", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will this code log?\n\nconsole.log( 'hello' == 'HELLO'.toLowerCase() );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will throw an error?\n\nconst arr = [1,2,3]; arr.length = 0; console.log(arr);",
+      "opts": ["None", "TypeError", "ReferenceError", "SyntaxError"],
+      "ans": 0
+    },
+    {
+      "q": "What does 'undefined' mean in JavaScript?",
+      "opts": ["A variable that has not been assigned a value", "A null object", "A function with no return value", "A reserved keyword"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of the following?\n\nconsole.log( typeof typeof 1 );",
+      "opts": ["'number'", "'string'", "'undefined'", "'NaN'"],
+      "ans": 1
+    },
+    {
+      "q": "What is the result of 'console.log( 0 == '' )'?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following log?\n\nconst obj = { x: 10, y: 20 }; delete obj.x; console.log(obj.x);",
+      "opts": ["undefined", "NaN", "error", "10"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following?\n\nconsole.log( !true );",
+      "opts": ["false", "true", "undefined", "NaN"],
+      "ans": 0
+    }
+    ,
+    {
+      "q": "What will the following code log in the console?\n\nconsole.log( [] + [] );",
+      "opts": ["'', empty string", "'0'", "'NaN'", "undefined"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log in the console?\n\nconsole.log( {} + [] );",
+      "opts": ["'[object Object]'", "'NaN'", "undefined", "'0'"],
+      "ans": 3
+    },
+    {
+      "q": "What is the output of the following expression?\n\nfalse == '0'",
+      "opts": ["true", "false", "undefined", "null"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log in the console?\n\nconsole.log( NaN === NaN );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What is the output of the following expression?\n\ntypeof null",
+      "opts": ["object", "null", "undefined", "function"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of `[] == ![]` in JavaScript?",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of the following?\n\nconsole.log( {} === {} );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What does the following code output?\n\nconsole.log( typeof (function() {}) );",
+      "opts": ["'function'", "'object'", "'undefined'", "'null'"],
+      "ans": 0
+    },
+    {
+      "q": "What does the following code do?\n\nconst a = { x: 1, y: 2 };\nconst b = a;\nb.x = 10;\nconsole.log(a.x);",
+      "opts": ["10", "1", "undefined", "error"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code log in the console?\n\nlet foo = { x: 1 };\nlet bar = foo;\nbar.x = 2;\nconsole.log(foo.x);",
+      "opts": ["2", "1", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about closures in JavaScript?",
+      "opts": ["A closure is a function that retains access to its lexical scope even after the outer function has returned", "Closures are only created for anonymous functions", "A closure is a function defined within an object", "Closures can only access global variables"],
+      "ans": 0
+    },
+    {
+      "q": "What will be logged in the following code?\n\nfunction test() {\n  var x = 1;\n  if (true) {\n    var x = 2;\n  }\n  console.log(x);\n}\ntest();",
+      "opts": ["1", "2", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following code log?\n\nconsole.log( [] == false );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will create a reference to the same object?",
+      "opts": ["let x = {}; let y = x;", "let x = {}; let y = {};", "let x = {}; let y = null;", "let x = {}; let y = undefined;"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of the following code?\n\nconsole.log( '5' - 2 );",
+      "opts": ["'3'", "'NaN'", "'52'", "3"],
+      "ans": 3
+    },
+    {
+      "q": "What is the result of the following expression?\n\n[] + {}",
+      "opts": ["'[object Object]'", "'NaN'", "undefined", "'0'"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the output of the following?\n\nconsole.log( '0' == false );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does the following code return?\n\nconsole.log( 3 + 4 + '5' );",
+      "opts": ["'75'", "'12'", "'34'", "'345'"],
+      "ans": 3
+    },
+    {
+      "q": "What will the following code output?\n\nconsole.log( typeof [1,2,3] );",
+      "opts": ["'array'", "'object'", "'undefined'", "'function'"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following code log?\n\nconst a = (x = 1) => { x = 2; console.log(x); };\na();",
+      "opts": ["1", "2", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What is the result of the following expression?\n\nfunction test() { return typeof arguments; }\nconsole.log(test());",
+      "opts": ["'object'", "'arguments'", "'undefined'", "'function'"],
+      "ans": 0
+    },
+    {
+      "q": "What will be logged in the following code?\n\nvar x = 1;\nfunction fn() { x = 2; };\nfn();\nconsole.log(x);",
+      "opts": ["2", "1", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following expressions will give you an error?\n\nlet obj = {};\nobj.length = 1;\nconsole.log(obj.length);",
+      "opts": ["None, it will output 1", "ReferenceError", "TypeError", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which method can be used to make a function asynchronous?\n",
+      "opts": ["async", "defer", "await", "function(){}"],
+      "ans": 0
+    },
+    {
+      "q": "What is the result of the following code?\n\nconsole.log( Boolean( NaN ) );",
+      "opts": ["false", "true", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of this code?\n\nconsole.log( !!'false' );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid way to declare a generator function in JavaScript?",
+      "opts": ["function* myGenerator() {}", "function myGenerator() *{}", "function* myGenerator() {} and yield", "function*myGenerator() yield"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of 'new' in JavaScript?",
+      "opts": ["To create a new object", "To define a new variable", "To add a new property to an object", "To create a new function"],
+      "ans": 0
+    },
+    {
+      "q": "What does the following code return?\n\nconsole.log( NaN === NaN );",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 1
+    },
+    {
+      "q": "What will the following code output?\n\nvar a = 1;\n(function() { console.log(a); var a = 2; })();",
+      "opts": ["undefined", "1", "2", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "What does the following code do?\n\nfunction foo() { let bar = 10; }\nconsole.log(bar);",
+      "opts": ["Throws a ReferenceError", "Outputs 10", "Outputs undefined", "Outputs null"],
+      "ans": 0
+    },
+    {
+      "q": "What is the output of this?\n\nvar a = 1;\nconsole.log(a++ === ++a);",
+      "opts": ["true", "false", "undefined", "NaN"],
+      "ans": 0
+    },
+    {
+      "q": "Which statement correctly invokes the 'setTimeout' function with a delay of 1000ms?",
+      "opts": ["setTimeout(fn, 1000);", "setTimeout(1000, fn);", "setTimeout(1000);", "setTimeout(1000ms);"],
+      "ans": 0
+    },
+    {
+      "q": "What will be the output of the following code?\n\nconsole.log( Array(3) );",
+      "opts": ["[empty × 3]", "[3]", "[, , , ]", "[3, 3, 3]"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will throw an error in JavaScript?",
+      "opts": ["function* () {}", "async function() {}", "let x = 10;", "const x = 10;"],
+      "ans": 0
+    },
+    {
+      "q": "What will the following code return?\n\nconsole.log( '5' + 5 );",
+      "opts": ["'55'", "10", "NaN", "5"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following will print the value 1000?",
+      "opts": ["(function() { return 1000; })()", "(function() { return new Number(1000); })()", "new Number(1000)", "1000.toString()"],
+      "ans": 0
+    }
+    ,
     { "q": "What is the correct syntax to declare a variable in JavaScript?", "opts": ["var myVar;", "variable myVar;", "v myVar;", "myVar = var;"], "ans": 0 },
     { "q": "Which of the following is a JavaScript data type?", "opts": ["String", "Boolean", "Number", "All of the above"], "ans": 3 },
     { "q": "How do you create a function in JavaScript?", "opts": ["function myFunction()", "function:myFunction()", "create myFunction()", "myFunction() = function"], "ans": 0 },
