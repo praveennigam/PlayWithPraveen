@@ -5004,6 +5004,636 @@ export const questions = {
 
   ],
   CLAT: [
+    {
+      "q": "Who is the author of the Indian Constitution?",
+      "opts": ["Dr. B.R. Ambedkar", "Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a non-justiciable right under the Indian Constitution?",
+      "opts": ["Right to Equality", "Right to Freedom of Speech", "Directive Principles of State Policy", "Right to Life"],
+      "ans": 2
+    },
+    {
+      "q": "Who appoints the Chief Justice of India?",
+      "opts": ["President of India", "Prime Minister", "Parliament", "Supreme Court"],
+      "ans": 0
+    },
+    {
+      "q": "In which year was the Indian Constitution adopted?",
+      "opts": ["1947", "1950", "1952", "1949"],
+      "ans": 3
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the prohibition of discrimination on grounds of religion, race, caste, sex or place of birth?",
+      "opts": ["Article 14", "Article 15", "Article 16", "Article 17"],
+      "ans": 1
+    },
+    {
+      "q": "The First Amendment of the Indian Constitution was made in which year?",
+      "opts": ["1951", "1952", "1953", "1950"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a feature of the Indian Parliament?",
+      "opts": ["Bicameral Legislature", "Unicameral Legislature", "Federal Legislature", "Single Chamber Legislature"],
+      "ans": 0
+    },
+    {
+      "q": "Who has the authority to dissolve the Lok Sabha in India?",
+      "opts": ["President of India", "Prime Minister", "Chief Justice of India", "Rajya Sabha Chairman"],
+      "ans": 0
+    },
+    {
+      "q": "Which article of the Indian Constitution relates to the Right to Life and Personal Liberty?",
+      "opts": ["Article 20", "Article 19", "Article 21", "Article 22"],
+      "ans": 2
+    },
+    {
+      "q": "What is the term of the President of India?",
+      "opts": ["4 years", "5 years", "6 years", "7 years"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution grants the right to freedom of religion?",
+      "opts": ["Article 19", "Article 20", "Article 25", "Article 28"],
+      "ans": 2
+    },
+    {
+      "q": "Who is the guardian of the Constitution of India?",
+      "opts": ["President", "Prime Minister", "Supreme Court", "Parliament"],
+      "ans": 2
+    },
+    {
+      "q": "The concept of ‘Judicial Review’ is borrowed from which country?",
+      "opts": ["USA", "UK", "France", "Canada"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is an important function of the Finance Commission in India?",
+      "opts": ["Distribution of taxes between the Centre and States", "Imposition of taxes", "Selection of the President", "Appointment of Governors"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a Fundamental Duty under the Indian Constitution?",
+      "opts": ["Respect the national flag", "Preserve the cultural heritage", "Pay taxes", "Promote harmony"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following was the first state in India to be created on linguistic basis?",
+      "opts": ["Andhra Pradesh", "Madhya Pradesh", "Bihar", "Tamil Nadu"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum strength of the Lok Sabha as per the Indian Constitution?",
+      "opts": ["545", "552", "535", "535 + 2"],
+      "ans": 1
+    },
+    {
+      "q": "The term ‘Secularism’ in the Indian Constitution was added by which Amendment?",
+      "opts": ["42nd Amendment", "44th Amendment", "52nd Amendment", "72nd Amendment"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT an objective of the Indian Constitution?",
+      "opts": ["Justice", "Equality", "Fraternity", "Monarchy"],
+      "ans": 3
+    },
+    {
+      "q": "Which article of the Indian Constitution provides for the protection of monuments and places of national importance?",
+      "opts": ["Article 49", "Article 50", "Article 52", "Article 58"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a feature of the Indian federal system?",
+      "opts": ["Dual polity", "Single citizenship", "Separation of powers", "Separation of religion and state"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following Articles empowers the Indian Parliament to make laws on matters enumerated in the Union List?",
+      "opts": ["Article 245", "Article 246", "Article 247", "Article 248"],
+      "ans": 1
+    },
+    {
+      "q": "In which of the following cases did the Supreme Court rule that 'Basic Structure' of the Constitution cannot be amended?",
+      "opts": ["Kesavananda Bharati Case", "Golaknath Case", "Maneka Gandhi Case", "Minerva Mills Case"],
+      "ans": 0
+    },
+    {
+      "q": "Who was the first woman to become the Chief Justice of India?",
+      "opts": ["Leila Seth", "Indira Gandhi", "Ranjana Prakash Desai", "V. Ramaswami"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is NOT a method of Constitutional amendment in India?",
+      "opts": ["Simple Majority", "Two-thirds Majority", "Unanimous Consent", "Special Majority"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is related to the concept of 'Writ of Mandamus'?",
+      "opts": ["It is issued to compel the performance of a public duty", "It is issued for the release of a person from unlawful detention", "It is issued to secure the payment of a debt", "It is issued to prevent the commission of an illegal act"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following institutions is responsible for ensuring the protection of Fundamental Rights in India?",
+      "opts": ["Supreme Court", "High Court", "President", "Parliament"],
+      "ans": 0
+    },
+    {
+      "q": "The Right to Information (RTI) Act came into effect in which year?",
+      "opts": ["2002", "2004", "2005", "2006"],
+      "ans": 2
+    },
+    {
+      "q": "Who has the power to impeach the President of India?",
+      "opts": ["Rajya Sabha", "Lok Sabha", "Both Houses of Parliament", "Supreme Court"],
+      "ans": 2
+    },
+    {
+      "q": "Who was the first woman President of India?",
+      "opts": ["Sonia Gandhi", "Indira Gandhi", "Pratibha Patil", "Sarojini Naidu"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is a function of the Election Commission in India?",
+      "opts": ["Conducting Elections", "Enforcing Laws", "Constitutional Amendments", "Implementing Policies"],
+      "ans": 0
+    },
+    {
+      "q": "The provision of 'proportional representation' is related to which aspect of the Indian Constitution?",
+      "opts": ["Elections to the Lok Sabha", "Elections to the Rajya Sabha", "Presidential Elections", "Elections to the Legislative Assemblies"],
+      "ans": 1
+    },
+    {
+      "q": "In which year was the 73rd Constitutional Amendment Act, related to Panchayati Raj, passed?",
+      "opts": ["1991", "1992", "1993", "1994"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the removal of the President of India?",
+      "opts": ["Article 56", "Article 58", "Article 59", "Article 61"],
+      "ans": 3
+    },
+    {
+      "q": "Which Article of the Indian Constitution provides for the impeachment of the President?",
+      "opts": ["Article 61", "Article 56", "Article 58", "Article 64"],
+      "ans": 0
+    },
+    {
+      "q": "Which article of the Indian Constitution grants the Right to Education?",
+      "opts": ["Article 21A", "Article 19", "Article 32", "Article 45"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a part of the Parliament of India?",
+      "opts": ["Rajya Sabha", "Lok Sabha", "Supreme Court", "President of India"],
+      "ans": 2
+    },
+    {
+      "q": "Who is the current Chief Justice of India?",
+      "opts": ["N.V. Ramana", "Sharad Arvind Bobde", "D.Y. Chandrachud", "Ranjan Gogoi"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is the final interpreter of the Constitution of India?",
+      "opts": ["Supreme Court", "High Court", "President", "Parliament"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following writs is issued to prevent the unlawful exercise of jurisdiction by a lower court or tribunal?",
+      "opts": ["Certiorari", "Prohibition", "Mandamus", "Habeas Corpus"],
+      "ans": 1
+    },
+    {
+      "q": "In which year was the 'National Judicial Appointments Commission (NJAC) Act' struck down by the Supreme Court?",
+      "opts": ["2013", "2014", "2015", "2016"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the promotion of international peace and security?",
+      "opts": ["Article 51", "Article 48A", "Article 45", "Article 35"],
+      "ans": 0
+    },
+    {
+      "q": "Who was the first woman to become the Governor of an Indian state?",
+      "opts": ["Sarojini Naidu", "Indira Gandhi", "Pratibha Patil", "Sushma Swaraj"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following cases established the principle of 'basic structure' of the Constitution?",
+      "opts": ["Golaknath Case", "Kesavananda Bharati Case", "Minerva Mills Case", "Indira Gandhi Case"],
+      "ans": 1
+    },
+
+
+
+    {
+      "q": "Which article of the Indian Constitution allows the Parliament to legislate on matters in the Union List?",
+      "opts": ["Article 245", "Article 246", "Article 247", "Article 248"],
+      "ans": 1
+    },
+    {
+      "q": "Under which article of the Indian Constitution is the protection of interest of minorities guaranteed?",
+      "opts": ["Article 29", "Article 30", "Article 31", "Article 32"],
+      "ans": 1
+    },
+    {
+      "q": "What is the maximum period for which a President’s Rule can be imposed in a state?",
+      "opts": ["6 months", "1 year", "2 years", "3 years"],
+      "ans": 2
+    },
+    {
+      "q": "Who has the power to dissolve the Lok Sabha in India?",
+      "opts": ["President", "Prime Minister", "Speaker", "Council of Ministers"],
+      "ans": 0
+    },
+    {
+      "q": "The Directive Principles of State Policy in India are justiciable in nature. (True/False)",
+      "opts": ["True", "False"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is NOT included in the Fundamental Rights under Part III of the Indian Constitution?",
+      "opts": ["Right to Equality", "Right to Property", "Right to Freedom of Religion", "Right to Life and Personal Liberty"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution allows for the suspension of Fundamental Rights during a national emergency?",
+      "opts": ["Article 358", "Article 352", "Article 368", "Article 366"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a feature of the Indian Constitution?",
+      "opts": ["Federal Structure", "Dual Citizenship", "Rigid Constitution", "Unicameral Legislature"],
+      "ans": 0
+    },
+    {
+      "q": "Who is the final interpreter of the Constitution of India?",
+      "opts": ["President of India", "Supreme Court of India", "Parliament", "Prime Minister"],
+      "ans": 1
+    },
+    {
+      "q": "The Parliament of India is bicameral, consisting of the Lok Sabha and the...",
+      "opts": ["Rajya Sabha", "State Assemblies", "Supreme Court", "High Courts"],
+      "ans": 0
+    },
+    {
+      "q": "The term 'secularism' is mentioned in the Preamble of the Indian Constitution. (True/False)",
+      "opts": ["True", "False"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following writs is issued by a court to direct a public official to perform a duty?",
+      "opts": ["Certiorari", "Mandamus", "Prohibition", "Quo Warranto"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is NOT a function of the President of India?",
+      "opts": ["Summoning Parliament", "Commander-in-Chief of the Armed Forces", "Leader of the ruling party", "Appointing the Prime Minister"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the amendment procedure?",
+      "opts": ["Article 368", "Article 368A", "Article 250", "Article 249"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is true about the Indian Constitution?",
+      "opts": ["It is a federal constitution", "It is a rigid constitution", "It is a unitary constitution", "It is both federal and flexible"],
+      "ans": 3
+    },
+    {
+      "q": "Who was the first woman Chief Justice of a High Court in India?",
+      "opts": ["Ruma Pal", "Leila Seth", "Fathima Beevi", "Indira Banerjee"],
+      "ans": 1
+    },
+    {
+      "q": "Which writ is issued to prevent an authority from exceeding its jurisdiction?",
+      "opts": ["Certiorari", "Mandamus", "Prohibition", "Habeas Corpus"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution guarantees the right to life and personal liberty?",
+      "opts": ["Article 19", "Article 21", "Article 32", "Article 29"],
+      "ans": 1
+    },
+    {
+      "q": "The President of India is elected by an indirect election method. (True/False)",
+      "opts": ["True", "False"],
+      "ans": 0
+    },
+    {
+      "q": "Which article empowers the President of India to promulgate ordinances during the recess of Parliament?",
+      "opts": ["Article 123", "Article 124", "Article 115", "Article 120"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following cases established the principle of judicial review in India?",
+      "opts": ["Golaknath Case", "Kesavananda Bharati Case", "Minerva Mills Case", "Maneka Gandhi Case"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution provides the right to equality before law?",
+      "opts": ["Article 14", "Article 15", "Article 16", "Article 17"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum number of members in the Rajya Sabha?",
+      "opts": ["250", "245", "200", "300"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a ground for the President’s impeachment in India?",
+      "opts": ["Violation of the Constitution", "Incompetence", "Misbehaviour", "Corruption"],
+      "ans": 1
+    },
+    {
+      "q": "The Indian Parliament is empowered to enact laws on which list?",
+      "opts": ["Union List", "State List", "Concurrent List", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following is an example of a quasi-judicial body in India?",
+      "opts": ["Election Commission", "Human Rights Commission", "National Green Tribunal", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which article provides for the protection of rights regarding arrest and detention in certain cases?",
+      "opts": ["Article 21", "Article 22", "Article 23", "Article 24"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following articles of the Indian Constitution allows for a financial emergency?",
+      "opts": ["Article 352", "Article 360", "Article 356", "Article 368"],
+      "ans": 1
+    },
+    {
+      "q": "Which part of the Indian Constitution deals with the Directive Principles of State Policy?",
+      "opts": ["Part IV", "Part III", "Part II", "Part VI"],
+      "ans": 0
+    },
+    {
+      "q": "Who can remove the President of India from office?",
+      "opts": ["Prime Minister", "Lok Sabha", "Rajya Sabha", "Both Houses of Parliament"],
+      "ans": 3
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the right to freedom of speech and expression?",
+      "opts": ["Article 19", "Article 20", "Article 21", "Article 22"],
+      "ans": 0
+    },
+    {
+      "q": "Which article of the Indian Constitution lays down the procedure for the removal of judges of the Supreme Court?",
+      "opts": ["Article 124", "Article 128", "Article 217", "Article 218"],
+      "ans": 0
+    },
+    {
+      "q": "The term 'Judicial Activism' refers to...",
+      "opts": ["Judges making laws", "Judges interpreting the Constitution", "Judges intervening in the legislative matters", "None of the above"],
+      "ans": 2
+    },
+    {
+      "q": "Who was the first woman judge of the Supreme Court of India?",
+      "opts": ["Leila Seth", "Indira Banerjee", "Fathima Beevi", "Ruma Pal"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is the largest state by area in India?",
+      "opts": ["Uttar Pradesh", "Madhya Pradesh", "Rajasthan", "Maharashtra"],
+      "ans": 2
+    },
+    {
+      "q": "In which year was the First Law Commission of India established?",
+      "opts": ["1834", "1857", "1895", "1920"],
+      "ans": 0
+    },
+    {
+      "q": "Which part of the Indian Constitution is considered the 'Soul' of the Constitution?",
+      "opts": ["Part III", "Part IV", "Part V", "Part VI"],
+      "ans": 0
+    },
+    {
+      "q": "Which article allows for the extension of the President's Rule in a state?",
+      "opts": ["Article 356", "Article 357", "Article 358", "Article 359"],
+      "ans": 1
+    },
+    {
+      "q": "Which article gives the power to the Parliament to legislate on a matter in the Concurrent List?",
+      "opts": ["Article 245", "Article 246", "Article 248", "Article 249"],
+      "ans": 3
+    },
+    {
+      "q": "Who was the first President of India?",
+      "opts": ["Dr. Rajendra Prasad", "Dr. Sarvepalli Radhakrishnan", "Dr. Zakir Husain", "Dr. A.P.J. Abdul Kalam"],
+      "ans": 0
+    },
+
+
+
+
+
+    {
+      "q": "Which article of the Indian Constitution deals with the protection of interest of minorities?",
+      "opts": ["Article 29", "Article 30", "Article 31", "Article 32"],
+      "ans": 1
+    },
+    {
+      "q": "In the Indian Constitution, the term 'Rule of Law' was borrowed from which country?",
+      "opts": ["USA", "UK", "France", "Canada"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution provides for the protection of cultural and educational rights of minorities?",
+      "opts": ["Article 29", "Article 30", "Article 32", "Article 35"],
+      "ans": 1
+    },
+    {
+      "q": "What is the minimum age required to become the President of India?",
+      "opts": ["25 years", "30 years", "35 years", "40 years"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution mentions the 'Duty of the State to Promote International Peace and Security'?",
+      "opts": ["Article 51", "Article 48A", "Article 32", "Article 45"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a writ jurisdiction of the Supreme Court?",
+      "opts": ["Habeas Corpus", "Mandamus", "Prohibition", "Injunction"],
+      "ans": 3
+    },
+    {
+      "q": "The provision of impeachment of the President is given in which article of the Indian Constitution?",
+      "opts": ["Article 55", "Article 61", "Article 67", "Article 56"],
+      "ans": 1
+    },
+    {
+      "q": "In India, the financial emergency is declared under which article of the Constitution?",
+      "opts": ["Article 360", "Article 352", "Article 356", "Article 368"],
+      "ans": 0
+    },
+    {
+      "q": "The Parliament of India consists of which of the following?",
+      "opts": ["Rajya Sabha", "Lok Sabha", "President", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the maximum number of members that can be nominated to the Rajya Sabha?",
+      "opts": ["12", "15", "10", "14"],
+      "ans": 0
+    },
+    {
+      "q": "Which article of the Indian Constitution gives the President of India the power to dissolve the Lok Sabha?",
+      "opts": ["Article 85", "Article 86", "Article 84", "Article 87"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following fundamental rights is available to only citizens of India?",
+      "opts": ["Right to Equality", "Right to Freedom of Speech", "Right to Freedom of Religion", "Right to Residence and Settlement"],
+      "ans": 3
+    },
+    {
+      "q": "Which article of the Indian Constitution provides for the right to property as a legal right?",
+      "opts": ["Article 19", "Article 21", "Article 31", "Article 32"],
+      "ans": 2
+    },
+    {
+      "q": "The 'Basic Structure' doctrine was established in which case?",
+      "opts": ["Golaknath Case", "Kesavananda Bharati Case", "Minerva Mills Case", "Indira Gandhi Case"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is a condition for the declaration of a national emergency in India?",
+      "opts": ["External aggression", "Armed rebellion", "Internal disturbances", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Who is responsible for the formation of the Union Public Service Commission?",
+      "opts": ["Prime Minister", "President", "Parliament", "Chief Justice of India"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is the highest law of the land in India?",
+      "opts": ["Supreme Court Judgments", "Indian Constitution", "Parliament Acts", "Executive Orders"],
+      "ans": 1
+    },
+    {
+      "q": "In the Indian Constitution, which article contains provisions relating to the amendment of the Constitution?",
+      "opts": ["Article 368", "Article 361", "Article 250", "Article 368A"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a part of the Directive Principles of State Policy?",
+      "opts": ["Right to Education", "Right to Work", "Promotion of Gandhian principles", "Uniform Civil Code"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum period for the imposition of President's rule under Article 356 of the Indian Constitution?",
+      "opts": ["3 months", "6 months", "1 year", "2 years"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution mandates that the state shall not discriminate against any citizen on the grounds of religion, race, caste, sex, or place of birth?",
+      "opts": ["Article 14", "Article 15", "Article 16", "Article 17"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following writs can be issued to command a lower court to transfer a case to a higher court?",
+      "opts": ["Certiorari", "Mandamus", "Quo Warranto", "Prohibition"],
+      "ans": 0
+    },
+    {
+      "q": "In the Indian Constitution, the provision for the establishment of a Finance Commission is mentioned in which article?",
+      "opts": ["Article 280", "Article 330", "Article 366", "Article 368"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a non-justiciable right under the Indian Constitution?",
+      "opts": ["Right to Life", "Right to Freedom of Speech", "Right to Property", "Directive Principles of State Policy"],
+      "ans": 3
+    },
+    {
+      "q": "The Supreme Court of India has original jurisdiction in which matter?",
+      "opts": ["Disputes between states", "Disputes between the President and the Prime Minister", "Disputes between citizens and the state", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "What is the maximum number of judges that can sit in the Supreme Court of India?",
+      "opts": ["15", "17", "22", "25"],
+      "ans": 2
+    },
+    {
+      "q": "Which article of the Indian Constitution relates to the impeachment of the President?",
+      "opts": ["Article 61", "Article 50", "Article 44", "Article 49"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a feature of the Indian Constitution?",
+      "opts": ["Federal structure", "Parliamentary system", "Written constitution", "Unitary system"],
+      "ans": 3
+    },
+    {
+      "q": "What is the power of the President of India in the matter of dissolving the Lok Sabha?",
+      "opts": ["Unlimited", "Restricted", "Can be done only after 5 years", "Cannot be done"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following articles of the Indian Constitution deals with the formation of new states?",
+      "opts": ["Article 3", "Article 5", "Article 10", "Article 11"],
+      "ans": 0
+    },
+    {
+      "q": "The concept of 'Single Citizenship' is a feature of which country's Constitution?",
+      "opts": ["USA", "UK", "India", "Canada"],
+      "ans": 2
+    },
+    {
+      "q": "The Governor of a State in India holds office for a term of how many years?",
+      "opts": ["3 years", "4 years", "5 years", "6 years"],
+      "ans": 2
+    },
+    {
+      "q": "Which of the following is true about the Parliament of India?",
+      "opts": ["Bicameral", "Unicameral", "Elected body", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following writs is issued by a higher court to prevent the lower court from exceeding its jurisdiction?",
+      "opts": ["Mandamus", "Certiorari", "Prohibition", "Quo Warranto"],
+      "ans": 2
+    },
+    {
+      "q": "The powers of the President of India can be exercised by which of the following?",
+      "opts": ["Prime Minister", "Council of Ministers", "Cabinet Secretary", "Both 1 and 2"],
+      "ans": 3
+    },
+    {
+      "q": "Which article of the Indian Constitution deals with the distribution of legislative powers between the Union and the States?",
+      "opts": ["Article 248", "Article 245", "Article 50", "Article 68"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is an example of the 'Parliamentary Sovereignty' system?",
+      "opts": ["India", "UK", "USA", "Canada"],
+      "ans": 1
+    },
+    {
+      "q": "Which article of the Indian Constitution defines the procedure of impeachment of a President?",
+      "opts": ["Article 61", "Article 67", "Article 69", "Article 70"],
+      "ans": 0
+    },
+    {
+      "q": "The power of judicial review in India is vested in which body?",
+      "opts": ["Supreme Court", "High Courts", "Parliament", "Executive"],
+      "ans": 0
+    },
+    {
+      "q": "Which article of the Indian Constitution lays down the procedure for the amendment of the Constitution?",
+      "opts": ["Article 368", "Article 370", "Article 32", "Article 35"],
+      "ans": 0
+    }
+    ,
+
 
 
     { "q": "Which of the following courts has the power of judicial review?", "opts": ["Supreme Court", "High Court", "District Court", "Both Supreme and High Court"], "ans": 3 },
