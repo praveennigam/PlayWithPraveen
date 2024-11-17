@@ -71,7 +71,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown > 0) {
       const countdownTimer = setTimeout(() => {
         setCountdown((prev) => prev - 1);
-      }, 1000);
+      }, 2000);
 
       return () => clearTimeout(countdownTimer);
     } else {
@@ -83,7 +83,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown === 0 && !answered && !isAutoSelected) {
       const selectionTimer = setTimeout(() => {
         autoSelectRandomOption();
-      }, 3000);
+      }, 5000);
       return () => clearTimeout(selectionTimer);
     }
   }, [countdown, answered, isAutoSelected]);
@@ -98,7 +98,7 @@ const Quiz = ({ quizData, handleResult }) => {
   }, [showAnswer]);
 
   return (
-    <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
+    <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       {(loading || isTransitioning) && (
         <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
           <FaSpinner className="animate-spin text-white text-3xl" />
