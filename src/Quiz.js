@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaCheckCircle, FaTimesCircle, FaArrowRight, FaSpinner } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
 
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
@@ -8,8 +8,6 @@ const Quiz = ({ quizData, handleResult }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [countdown, setCountdown] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isAutoSelected, setIsAutoSelected] = useState(false);
   const navigate = useNavigate();
@@ -60,33 +58,19 @@ const Quiz = ({ quizData, handleResult }) => {
   };
 
   useEffect(() => {
-    setLoading(true);
-    setCountdown(3);
     setIsAutoSelected(false);
     setAnswered(false);
     setShowAnswer(false);
   }, [qIndex]);
 
   useEffect(() => {
-    if (countdown > 0) {
-      const countdownTimer = setTimeout(() => {
-        setCountdown((prev) => prev - 1);
-      }, 2000);
-
-      return () => clearTimeout(countdownTimer);
-    } else {
-      setLoading(false);
-    }
-  }, [countdown]);
-
-  useEffect(() => {
-    if (countdown === 0 && !answered && !isAutoSelected) {
+    if (!answered && !isAutoSelected) {
       const selectionTimer = setTimeout(() => {
         autoSelectRandomOption();
       }, 5000);
       return () => clearTimeout(selectionTimer);
     }
-  }, [countdown, answered, isAutoSelected]);
+  }, [answered, isAutoSelected]);
 
   useEffect(() => {
     if (showAnswer) {
@@ -99,12 +83,9 @@ const Quiz = ({ quizData, handleResult }) => {
 
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
-      {(loading || isTransitioning) && (
+      {isTransitioning && (
         <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
           <FaSpinner className="animate-spin text-white text-3xl" />
-          <div className="countdown-text text-white text-2xl absolute top-2 left-2">
-            {countdown}
-          </div>
         </div>
       )}
 
@@ -113,12 +94,6 @@ const Quiz = ({ quizData, handleResult }) => {
       </div>
 
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
-
-      {!answered && !isTransitioning && countdown > 0 && (
-        <div className="countdown text-white text-xl mb-4">
-          Time remaining: {countdown}s
-        </div>
-      )}
 
       <div className="options flex flex-col space-y-4">
         {currentQ.opts.map((opt, index) => {
