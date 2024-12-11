@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaCheckCircle, FaTimesCircle, FaArrowRight, FaSpinner } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
 
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
@@ -99,24 +99,22 @@ const Quiz = ({ quizData, handleResult }) => {
 
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
+      
       {(loading || isTransitioning) && (
         <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
-          <FaSpinner className="animate-spin text-white text-3xl" />
-          <div className="countdown-text text-white text-2xl absolute top-2 left-2">
-            {countdown}
-          </div>
+          {/* The spinner and countdown text are removed */}
         </div>
       )}
 
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
-        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: ${progress}% }}></div>
+        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
       </div>
 
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
 
       {!answered && !isTransitioning && countdown > 0 && (
         <div className="countdown text-white text-xl mb-4">
-          Time remaining: {countdown}s
+          {/* Countdown text is removed */}
         </div>
       )}
 
@@ -142,7 +140,7 @@ const Quiz = ({ quizData, handleResult }) => {
               onClick={() => checkAnswer(index)}
               className={buttonClass}
               disabled={answered}
-              aria-label={Choose option ${opt}}
+              aria-label={`Choose option ${opt}`}
             >
               {answered && index === currentQ.ans ? <FaCheckCircle /> : answered && selectedOptions[qIndex] === index ? <FaTimesCircle /> : null}
               {opt}
