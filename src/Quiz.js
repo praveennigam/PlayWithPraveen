@@ -71,7 +71,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown > 0) {
       const countdownTimer = setTimeout(() => {
         setCountdown((prev) => prev - 1);
-      }, 2000);
+      }, 10);
 
       return () => clearTimeout(countdownTimer);
     } else {
