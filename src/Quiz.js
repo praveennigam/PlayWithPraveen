@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle, FaArrowRight, FaSpinner } from 'react-icons/fa';
 
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
@@ -8,6 +8,8 @@ const Quiz = ({ quizData, handleResult }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [countdown, setCountdown] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isAutoSelected, setIsAutoSelected] = useState(false);
   const navigate = useNavigate();
@@ -46,7 +48,7 @@ const Quiz = ({ quizData, handleResult }) => {
       } else {
         finishQuiz();
       }
-    }, 1000); // Transition duration before showing the next question
+    }, 1000);
   };
 
   const progress = ((qIndex + 1) / quizData.length) * 100;
@@ -58,38 +60,60 @@ const Quiz = ({ quizData, handleResult }) => {
   };
 
   useEffect(() => {
+    setLoading(true);
+    setCountdown(3);
     setIsAutoSelected(false);
     setAnswered(false);
     setShowAnswer(false);
   }, [qIndex]);
 
-  // Auto-select an option after 4 seconds
   useEffect(() => {
-    const selectionTimer = setTimeout(() => {
-      if (!answered && !isAutoSelected) {
-        autoSelectRandomOption();
-      }
-    }, 4000); // Auto-select after 4 seconds
-    return () => clearTimeout(selectionTimer);
-  }, [answered, isAutoSelected]);
+    if (countdown > 0) {
+      const countdownTimer = setTimeout(() => {
+        setCountdown((prev) => prev - 1);
+      }, 2000);
 
-  // Show the next question after 8 seconds (including the answer reveal time)
+      return () => clearTimeout(countdownTimer);
+    } else {
+      setLoading(false);
+    }
+  }, [countdown]);
+
+  useEffect(() => {
+    if (countdown === 0 && !answered && !isAutoSelected) {
+      const selectionTimer = setTimeout(() => {
+        autoSelectRandomOption();
+      }, 5000);
+      return () => clearTimeout(selectionTimer);
+    }
+  }, [countdown, answered, isAutoSelected]);
+
   useEffect(() => {
     if (showAnswer) {
       const nextQuestionTimer = setTimeout(() => {
         handleNextQuestion();
-      }, 8000); // Transition to next question after 8 seconds
+      }, 10000);
       return () => clearTimeout(nextQuestionTimer);
     }
   }, [showAnswer]);
 
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
+      {(loading || isTransitioning) && (
+       
+      )}
+
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
-        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
+        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: ${progress}% }}></div>
       </div>
 
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
+
+      {!answered && !isTransitioning && countdown > 0 && (
+        <div className="countdown text-white text-xl mb-4">
+          
+        </div>
+      )}
 
       <div className="options flex flex-col space-y-4">
         {currentQ.opts.map((opt, index) => {
@@ -113,7 +137,7 @@ const Quiz = ({ quizData, handleResult }) => {
               onClick={() => checkAnswer(index)}
               className={buttonClass}
               disabled={answered}
-              aria-label={`Choose option ${opt}`}
+              aria-label={Choose option ${opt}}
             >
               {answered && index === currentQ.ans ? <FaCheckCircle /> : answered && selectedOptions[qIndex] === index ? <FaTimesCircle /> : null}
               {opt}
