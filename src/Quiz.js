@@ -61,7 +61,7 @@ const Quiz = ({ quizData, handleResult }) => {
 
   useEffect(() => {
     setLoading(true);
-    setCountdown(1);
+    setCountdown(3);
     setIsAutoSelected(false);
     setAnswered(false);
     setShowAnswer(false);
@@ -101,7 +101,9 @@ const Quiz = ({ quizData, handleResult }) => {
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       
       {(loading || isTransitioning) && (
-       
+        <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
+          {/* The spinner and countdown text are removed */}
+        </div>
       )}
 
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
