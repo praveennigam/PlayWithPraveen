@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaCheckCircle, FaTimesCircle, FaArrowRight, FaSpinner } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
 
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
@@ -100,7 +100,8 @@ const Quiz = ({ quizData, handleResult }) => {
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       {(loading || isTransitioning) && (
-       
+        <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
+        </div>
       )}
 
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
@@ -110,9 +111,7 @@ const Quiz = ({ quizData, handleResult }) => {
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
 
       {!answered && !isTransitioning && countdown > 0 && (
-        <div className="countdown text-white text-xl mb-4">
-          
-        </div>
+        
       )}
 
       <div className="options flex flex-col space-y-4">
