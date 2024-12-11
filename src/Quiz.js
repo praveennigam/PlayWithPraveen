@@ -89,10 +89,8 @@ const Quiz = ({ quizData, handleResult }) => {
         </div>
       )}
 
-      <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
-        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
-      </div>
-
+      {/* Removed the loading progress bar */}
+      
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
 
       <div className="options flex flex-col space-y-4">
