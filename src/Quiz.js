@@ -83,46 +83,46 @@ const Quiz = ({ quizData, handleResult }) => {
 
   return (
     <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
-      {isTransitioning && (
-        <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
-          <FaSpinner className="animate-spin text-white text-3xl" />
-        </div>
-      )}
+      {/* Removed FaSpinner and loading related code */}
 
-      {/* Removed the loading progress bar */}
-      
+      <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
+        <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
+      </div>
+
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
 
-      <div className="options flex flex-col space-y-4">
-        {currentQ.opts.map((opt, index) => {
-          let buttonClass =
-            'option-btn p-4 text-lg rounded-lg transition-all duration-300 flex items-center justify-between w-full';
+      {!answered && !isTransitioning && (
+        <div className="options flex flex-col space-y-4">
+          {currentQ.opts.map((opt, index) => {
+            let buttonClass =
+              'option-btn p-4 text-lg rounded-lg transition-all duration-300 flex items-center justify-between w-full';
 
-          if (answered) {
-            buttonClass +=
-              index === currentQ.ans
-                ? ' bg-gradient-to-r from-green-400 to-green-600 text-white'
-                : selectedOptions[qIndex] === index
+            if (answered) {
+              buttonClass +=
+                index === currentQ.ans
+                  ? ' bg-gradient-to-r from-green-400 to-green-600 text-white'
+                  : selectedOptions[qIndex] === index
                   ? ' bg-gradient-to-r from-red-400 to-red-600 text-white'
                   : ' bg-gray-600 text-gray-300';
-          } else {
-            buttonClass += ' bg-gradient-to-r from-blue-900 to-yellow-200 text-white hover:from-orange-400 hover:to-blue-900';
-          }
+            } else {
+              buttonClass += ' bg-gradient-to-r from-blue-900 to-yellow-200 text-white hover:from-orange-400 hover:to-blue-900';
+            }
 
-          return (
-            <button
-              key={index}
-              onClick={() => checkAnswer(index)}
-              className={buttonClass}
-              disabled={answered}
-              aria-label={`Choose option ${opt}`}
-            >
-              {answered && index === currentQ.ans ? <FaCheckCircle /> : answered && selectedOptions[qIndex] === index ? <FaTimesCircle /> : null}
-              {opt}
-            </button>
-          );
-        })}
-      </div>
+            return (
+              <button
+                key={index}
+                onClick={() => checkAnswer(index)}
+                className={buttonClass}
+                disabled={answered}
+                aria-label={`Choose option ${opt}`}
+              >
+                {answered && index === currentQ.ans ? <FaCheckCircle /> : answered && selectedOptions[qIndex] === index ? <FaTimesCircle /> : null}
+                {opt}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {showAnswer && !answered && (
         <div className="answer-feedback text-lg font-bold text-white mt-4">
