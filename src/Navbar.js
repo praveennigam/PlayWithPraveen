@@ -6,7 +6,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-4 md:px-6 bg-gradient-to-r from-purple-800 to-blue-900 border-b border-neutral-700 shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between py-4 px-4 md:px-6 bg-gradient-to-r from-green-800 to-blue-900 border-b border-neutral-700 shadow-lg">
       <div className="flex items-center">
         <img
           src={`${process.env.PUBLIC_URL}/logoic.jpeg`}

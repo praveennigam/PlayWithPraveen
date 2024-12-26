@@ -30,8 +30,8 @@ const Category = ({ startQuiz }) => {
   };
 
   return (
-    <div className="flex flex-wrap justify-center mt-6 p-4">
-      {categories.map(({ name, icon }) => (
+<div className="flex flex-wrap justify-center mt-6 p-4" style={{ background: 'none' }}>
+{categories.map(({ name, icon }) => (
         <button
           key={name}
           onClick={() => handleCategoryClick(name)}

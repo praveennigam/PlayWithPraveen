@@ -71,7 +71,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown > 0) {
       const countdownTimer = setTimeout(() => {
         setCountdown((prev) => prev - 1);
-      }, 10);
+      }, 1000); // Adjusted the delay to 1 second for better visibility
 
       return () => clearTimeout(countdownTimer);
     } else {
@@ -83,7 +83,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown === 0 && !answered && !isAutoSelected) {
       const selectionTimer = setTimeout(() => {
         autoSelectRandomOption();
-      }, 5000);
+      }, 4000);
       return () => clearTimeout(selectionTimer);
     }
   }, [countdown, answered, isAutoSelected]);
@@ -92,20 +92,16 @@ const Quiz = ({ quizData, handleResult }) => {
     if (showAnswer) {
       const nextQuestionTimer = setTimeout(() => {
         handleNextQuestion();
-      }, 10000);
+      }, 5000);
       return () => clearTimeout(nextQuestionTimer);
     }
   }, [showAnswer]);
 
   return (
-    <div className="quiz-container bg-gradient-to-br from-purple-900 to-blue-800 p-10 pb-12 mb-6 mt-6 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
+    <div className="quiz-container bg-gradient-to-br from-voilet-300 to-blue-900 p-10 pb-12 mb-0 mt-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       
-      {(loading || isTransitioning) && (
-        <div className="spinner absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-10">
-          {/* The spinner and countdown text are removed */}
-        </div>
-      )}
-
+      {/* Removed the spinner and countdown overlay */}
+      
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
         <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
       </div>
@@ -131,7 +127,7 @@ const Quiz = ({ quizData, handleResult }) => {
                   ? ' bg-gradient-to-r from-red-400 to-red-600 text-white'
                   : ' bg-gray-600 text-gray-300';
           } else {
-            buttonClass += ' bg-gradient-to-r from-blue-900 to-yellow-200 text-white hover:from-orange-400 hover:to-blue-900';
+            buttonClass += ' bg-gradient-to-r from-blue-900 to-purple-200 text-white hover:from-orange-400 hover:to-blue-900';
           }
 
           return (

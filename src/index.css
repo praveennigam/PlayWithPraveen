@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-br from-black via-blue-800 to-purple-700;
+  @apply bg-gradient-to-br from-black to-blue-800;
 }
