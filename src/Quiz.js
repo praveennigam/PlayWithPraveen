@@ -48,7 +48,7 @@ const Quiz = ({ quizData, handleResult }) => {
       } else {
         finishQuiz();
       }
-    }, 1000);
+    }, 0);
   };
 
   const progress = ((qIndex + 1) / quizData.length) * 100;
@@ -71,8 +71,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown > 0) {
       const countdownTimer = setTimeout(() => {
         setCountdown((prev) => prev - 1);
-      }, 1000); // Adjusted the delay to 1 second for better visibility
-
+      }, 1000); 
       return () => clearTimeout(countdownTimer);
     } else {
       setLoading(false);
@@ -92,7 +91,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (showAnswer) {
       const nextQuestionTimer = setTimeout(() => {
         handleNextQuestion();
-      }, 5000);
+      }, 6000);
       return () => clearTimeout(nextQuestionTimer);
     }
   }, [showAnswer]);
