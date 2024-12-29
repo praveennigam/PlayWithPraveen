@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'; 
 import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 
 const Quiz = ({ quizData, handleResult }) => {
   const [qIndex, setQIndex] = useState(0);
@@ -12,6 +13,7 @@ const Quiz = ({ quizData, handleResult }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isAutoSelected, setIsAutoSelected] = useState(false);
 
+  const navigate = useNavigate();  // Initialize useNavigate hook
   const currentQ = quizData[qIndex];
 
   const checkAnswer = (selected) => {
@@ -98,6 +100,11 @@ const Quiz = ({ quizData, handleResult }) => {
     }
   }, [showAnswer]);
 
+  // Handle End Quiz Button click
+  const handleEndQuiz = () => {
+    navigate("/not-found");  // Navigate to the 404 Not Found page
+  };
+
   return (
     <div className="quiz-container bg-gradient-to-br from-voilet-300 to-blue-900 p-10 pb-12 mb-0 mt-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       
@@ -146,10 +153,10 @@ const Quiz = ({ quizData, handleResult }) => {
 
       <div className="actions flex justify-between items-center mt-6">
         <button
-          onClick={resetQuiz}
+          onClick={handleEndQuiz}  // Handle End Quiz click
           className="end-quiz-btn p-3 text-sm bg-gradient-to-r from-red-500 to-purple-500 hover:from-purple-500 hover:to-green-500 rounded-lg transition duration-300 text-white flex items-center"
         >
-          <FaTimesCircle className="mr-2" /> Reset Quiz
+          <FaTimesCircle className="mr-2" /> End Quiz
         </button>
 
         {answered && (

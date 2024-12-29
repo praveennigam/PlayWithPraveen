@@ -6,6 +6,7 @@ import Quiz from './Quiz';
 import Result from './Result';
 import Contact from './Contact';
 import { questions } from './questions';
+import NotFound from './NotFound'; // Import the NotFound component
 
 function App() {
   const [quizData, setQuizData] = useState(null);
@@ -44,7 +45,7 @@ function App() {
       <div className="flex flex-col min-h-screen bg-gradient-to-b from-primary to-secondary text-white">
         <Navbar />
         <div className="flex-grow flex items-center justify-center mt-16">
-          <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-lg w-full max-w-lg">
+          <div className="  backdrop-blur-lg rounded-lg shadow-lg w-full max-w-lg">
             <Routes>
               <Route path="/" element={<Category startQuiz={startQuiz} />} />
               <Route path="/category" element={<Category startQuiz={startQuiz} />} />
@@ -57,6 +58,7 @@ function App() {
                 element={<Result correct={results.correct} wrong={results.wrong} totalQuestions={quizData?.length} solvedQuestions={solvedQuestions} />}
               />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} /> {/* Catch all undefined routes */}
             </Routes>
           </div>
         </div>
