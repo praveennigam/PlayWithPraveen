@@ -1390,6 +1390,1558 @@ export const questions = {
       "opts": ["Aligns items vertically within a flex container", "Aligns items horizontally", "Sets the gap between items", "Aligns the text within an element"],
       "ans": 0
     },
+    
+    {
+      "q": "Which MongoDB operation is used to sort documents in a collection?",
+      "opts": ["sort()", "orderBy()", "rank()", "filter()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook allows you to execute code only once after the component mounts?",
+      "opts": ["useEffect", "useState", "useMemo", "useRef"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript method is used to remove a specific item from an array?",
+      "opts": ["splice()", "remove()", "delete()", "filter()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which method is used to handle POST requests?",
+      "opts": ["app.post()", "app.put()", "app.get()", "app.delete()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what does the `insertMany()` method do?",
+      "opts": ["Inserts multiple documents", "Inserts a single document", "Updates multiple documents", "Deletes multiple documents"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in React is used to trigger a component re-render?",
+      "opts": ["setState()", "forceUpdate()", "render()", "update()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to find documents where a field's value is greater than a given value?",
+      "opts": ["$gt", "$lt", "$ne", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used for asynchronous programming in Node.js?",
+      "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In Express.js, which method is used to redirect a client to another URL?",
+      "opts": ["res.redirect()", "res.send()", "res.forward()", "res.move()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what does the `findOneAndUpdate()` method do?",
+      "opts": ["Finds and updates a document", "Finds and deletes a document", "Inserts a document", "Finds and inserts a document"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to persist values across renders without causing re-renders?",
+      "opts": ["useRef", "useState", "useEffect", "useMemo"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `res.status()` function do in Express.js?",
+      "opts": ["Sets the HTTP response status code", "Sets the response body", "Sends a redirect response", "Sets the response headers"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to install a package globally in Node.js?",
+      "opts": ["npm install -g", "npm install --global", "npm install", "npm add"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to remove all documents that match a query?",
+      "opts": ["deleteMany()", "removeAll()", "delete()", "clear()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to extract values from an array in JavaScript?",
+      "opts": ["map()", "slice()", "push()", "shift()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, how can you use `useEffect` to fetch data when a component mounts?",
+      "opts": ["Pass an empty dependency array", "Pass a state variable", "Call a function directly", "Use useState() within useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents where a field contains a specified element?",
+      "opts": ["$in", "$contains", "$includes", "$exists"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a built-in module in Node.js?",
+      "opts": ["fs", "path", "http", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which operator is used in MongoDB to select documents with a field that contains a specific substring?",
+      "opts": ["$regex", "$in", "$like", "$contains"],
+      "ans": 0
+    },
+    {
+      "q": "Which Express.js method is used to send JSON data as a response?",
+      "opts": ["res.json()", "res.sendJson()", "res.send()", "res.data()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook allows you to perform side effects in a component?",
+      "opts": ["useEffect", "useState", "useMemo", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code represents that the request was successful?",
+      "opts": ["200", "404", "500", "301"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to handle multiple requests in Express.js?",
+      "opts": ["app.all()", "app.use()", "app.route()", "app.handle()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, what module is used for parsing incoming JSON data?",
+      "opts": ["body-parser", "json-parser", "express-json", "json-body"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is the default index for each collection?",
+      "opts": ["_id", "index", "primary", "unique"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook is used for managing forms and form data?",
+      "opts": ["useForm", "useState", "useEffect", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP method is used to send data to a server to create a new resource?",
+      "opts": ["POST", "GET", "PUT", "DELETE"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to check if a value is not equal to a specified value?",
+      "opts": ["$ne", "$eq", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in MongoDB is used to find documents matching a specific query?",
+      "opts": ["find()", "select()", "query()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what hook is used to handle complex state logic with multiple sub-values?",
+      "opts": ["useReducer", "useState", "useEffect", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operators is used to match documents in MongoDB where a field is between two values?",
+      "opts": ["$gte and $lte", "$in", "$gt and $lt", "$ne"],
+      "ans": 0
+    },
+    {
+      "q": "Which Express.js middleware is used to parse incoming request bodies in JSON format?",
+      "opts": ["express.json()", "bodyParser.json()", "jsonParser()", "body-json()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to get distinct values from a collection?",
+      "opts": ["distinct()", "select()", "unique()", "getValues()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what is the purpose of the `useContext` hook?",
+      "opts": ["To share state across components", "To manage component state", "To execute side effects", "To memoize values"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to send data as a response to the client in Express.js?",
+      "opts": ["res.send()", "res.json()", "res.status()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which MongoDB method is used to find documents based on a regex pattern?",
+      "opts": ["find()", "regex()", "search()", "findRegex()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, what is the purpose of the `app.use()` method?",
+      "opts": ["To add middleware", "To handle HTTP requests", "To create routes", "To parse data"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used to find documents where a field value is inside a specific array?",
+      "opts": ["$in", "$array", "$match", "$contains"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents where a field value is greater than or equal to a given value?",
+      "opts": ["$gte", "$lte", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "Which React method is used to return JSX in a functional component?",
+      "opts": ["return()", "render()", "useRender()", "jsx()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is the purpose of the `aggregate()` method?",
+      "opts": ["To perform data aggregation", "To count documents", "To find documents", "To update documents"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which method is used to create a new directory?",
+      "opts": ["fs.mkdir()", "fs.createDir()", "fs.newDir()", "fs.addDir()"],
+      "ans": 0
+    }
+,
+
+    {
+      "q": "Which MongoDB method is used to update a document in a collection?",
+      "opts": ["updateOne()", "findAndModify()", "updateMany()", "allOfTheAbove"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook is used to store mutable values that do not cause re-renders?",
+      "opts": ["useRef", "useState", "useEffect", "useMemo"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents where a field is in a specific array?",
+      "opts": ["$in", "$eq", "$gt", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which method is used to serve static files?",
+      "opts": ["express.static()", "res.static()", "app.static()", "serve.static()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to create an HTTP server in Node.js?",
+      "opts": ["http.createServer()", "server.create()", "http.newServer()", "create.httpServer()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle asynchronous operations in JavaScript?",
+      "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which method in MongoDB is used to get a distinct list of values for a field?",
+      "opts": ["distinct()", "find()", "aggregate()", "getUnique()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to update a field to a new value if it doesn't exist?",
+      "opts": ["$setOnInsert", "$set", "$push", "$inc"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook can be used to manage complex state with multiple sub-values?",
+      "opts": ["useReducer", "useState", "useEffect", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, how can you handle errors globally?",
+      "opts": ["app.use(errorHandler)", "app.handleError()", "app.catch()", "app.error()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following HTTP methods is used for retrieving data from a server?",
+      "opts": ["GET", "POST", "PUT", "DELETE"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default behavior of MongoDB when a document does not have the specified field in a query?",
+      "opts": ["It returns no result", "It returns null", "It returns the document", "It throws an error"],
+      "ans": 2
+    },
+    {
+      "q": "In React, which hook is used for memoizing values to optimize performance?",
+      "opts": ["useMemo", "useState", "useEffect", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which method is used to parse incoming JSON request bodies?",
+      "opts": ["express.json()", "bodyParser.json()", "app.jsonParser()", "json.parse()"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript method is used to check if an object is an array?",
+      "opts": ["Array.isArray()", "Array.check()", "typeof array", "isArray()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used for pattern matching using regular expressions?",
+      "opts": ["$regex", "$like", "$contains", "$match"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a valid HTTP method?",
+      "opts": ["COPY", "POST", "GET", "UPDATE"],
+      "ans": 3
+    },
+    {
+      "q": "Which of the following methods in React is used to conditionally render content?",
+      "opts": ["render()", "useState()", "if-else statements", "return()"],
+      "ans": 0
+    },
+    {
+      "q": "Which Node.js module is used to handle file system operations?",
+      "opts": ["fs", "file", "os", "http"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to add a new key-value pair to an object in JavaScript?",
+      "opts": ["object[key] = value", "object.add(key, value)", "object.push(key, value)", "object.insert(key, value)"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to increment the value of a field?",
+      "opts": ["$inc", "$set", "$push", "$addToSet"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, how do you handle a specific route for GET requests?",
+      "opts": ["app.get()", "app.route()", "app.on()", "app.post()"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript method is used to iterate over elements in an array?",
+      "opts": ["forEach()", "map()", "filter()", "allOfTheAbove"],
+      "ans": 3
+    },
+    {
+      "q": "Which method is used in React to update the state asynchronously?",
+      "opts": ["setState()", "updateState()", "changeState()", "modifyState()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in Node.js is used to make an HTTP GET request?",
+      "opts": ["http.get()", "http.request()", "fetch()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook is used to manage side effects like data fetching?",
+      "opts": ["useEffect", "useMemo", "useState", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which command is used to start the MongoDB server?",
+      "opts": ["mongod", "mongo", "start-db", "run-mongo"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used to check if a field exists in a document?",
+      "opts": ["$exists", "$match", "$in", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which of the following is used for handling asynchronous code?",
+      "opts": ["Callbacks", "Promises", "Async/Await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In MongoDB, which method is used to find a single document by its ID?",
+      "opts": ["findById()", "find()", "findOne()", "getOne()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is NOT a valid lifecycle method in React?",
+      "opts": ["componentDidMount", "componentWillUnmount", "componentWillRender", "componentDidUpdate"],
+      "ans": 2
+    },
+    {
+      "q": "In Express.js, what is the default status code for successful responses?",
+      "opts": ["200", "404", "500", "301"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in Node.js is used to handle HTTP POST requests?",
+      "opts": ["http.post()", "http.createServer()", "http.request()", "app.post()"],
+      "ans": 3
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents where a field is less than a specific value?",
+      "opts": ["$lt", "$gt", "$gte", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to deploy a Node.js application to the cloud?",
+      "opts": ["Heroku", "AWS", "Google Cloud", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "Which React hook allows you to use state in a functional component?",
+      "opts": ["useState", "setState", "useContext", "useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid way to declare a function in JavaScript?",
+      "opts": ["function foo()", "var foo()", "const foo()", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents with values less than or equal to a specified value?",
+      "opts": ["$lte", "$gte", "$lt", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in Node.js is used to read a file asynchronously?",
+      "opts": ["fs.readFile()", "fs.read()", "fs.open()", "fs.writeFile()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which method is used to return JSX inside a functional component?",
+      "opts": ["return()", "render()", "jsx()", "component()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used in Express.js to handle HTTP PUT requests?",
+      "opts": ["app.put()", "app.post()", "app.delete()", "app.get()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to install dependencies in a Node.js project?",
+      "opts": ["npm install", "npm add", "npm update", "npm run install"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to delete a document?",
+      "opts": ["deleteOne()", "remove()", "drop()", "clear()"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code represents a resource that has been permanently moved?",
+      "opts": ["301", "302", "404", "500"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to validate a schema in MongoDB?",
+      "opts": ["Mongoose", "MongoDB schema", "validate() method", "db.validate()"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used to update a document's array by adding a new element?",
+      "opts": ["$push", "$inc", "$set", "$addToSet"],
+      "ans": 0
+    }
+,  
+
+
+    {
+      "q": "Which method is used to create a new database in MongoDB?",
+      "opts": ["use dbname", "createDatabase()", "db.create()", "new db()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to memoize a function to prevent unnecessary re-renders?",
+      "opts": ["useCallback", "useMemo", "useState", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which module provides utilities for working with streams?",
+      "opts": ["stream", "fs", "path", "http"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to listen for requests on a specific port in Express.js?",
+      "opts": ["app.listen()", "server.listen()", "express.listen()", "app.server()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to match documents where a field is greater than a specific value?",
+      "opts": ["$gt", "$lt", "$gte", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to send a response in Express.js?",
+      "opts": ["res.send()", "res.write()", "response.send()", "response.write()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which function is used to update the state in a functional component?",
+      "opts": ["setState()", "useState()", "stateUpdate()", "updateState()"],
+      "ans": 1
+    },
+    {
+      "q": "Which HTTP status code indicates that the request was successful?",
+      "opts": ["200", "400", "500", "404"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to find all documents in a collection?",
+      "opts": ["find()", "findAll()", "getDocuments()", "fetchAll()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following JavaScript data types is NOT primitive?",
+      "opts": ["Object", "String", "Number", "Boolean"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator is used to join multiple collections in MongoDB's aggregation framework?",
+      "opts": ["$lookup", "$join", "$combine", "$merge"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which module is used to handle URL-related tasks?",
+      "opts": ["url", "http", "fs", "path"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to handle DELETE HTTP requests in Express.js?",
+      "opts": ["app.delete()", "app.remove()", "app.deleteRoute()", "app.removeRoute()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what is the purpose of keys in lists?",
+      "opts": ["To track items and optimize re-renders", "To style the items", "To add event handlers", "To update the state"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used for exact value matching in queries?",
+      "opts": ["$eq", "$gt", "$lt", "$in"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which method is used to create a server that listens to requests?",
+      "opts": ["http.createServer()", "server.create()", "http.listen()", "createServer()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Express.js is used to handle POST requests?",
+      "opts": ["app.post()", "app.put()", "app.get()", "app.delete()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to share state between components without passing props?",
+      "opts": ["useContext", "useState", "useEffect", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to select documents where a field exists?",
+      "opts": ["$exists", "$eq", "$in", "$ne"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements is true about Node.js?",
+      "opts": ["It is single-threaded and asynchronous", "It is multi-threaded", "It is synchronous", "It doesn't support HTTP requests"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which lifecycle method is called after the component is rendered?",
+      "opts": ["componentDidMount()", "render()", "componentWillUnmount()", "componentDidUpdate()"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB command is used to import data from a file?",
+      "opts": ["mongoimport", "importData", "loadData", "db.import()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used for greater-than or equal-to comparison?",
+      "opts": ["$gte", "$gt", "$lte", "$lt"],
+      "ans": 0
+    },
+    {
+      "q": "Which module in Node.js is used for creating a server-side HTTP request and response?",
+      "opts": ["http", "fs", "url", "path"],
+      "ans": 0
+    },
+    {
+      "q": "Which hook in React allows you to perform side effects in a component?",
+      "opts": ["useEffect", "useState", "useCallback", "useMemo"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, what is the default write concern for an insert operation?",
+      "opts": ["Acknowledged", "Unacknowledged", "Journaled", "All of the above"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to remove a document from a MongoDB collection?",
+      "opts": ["deleteOne()", "remove()", "drop()", "clear()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which middleware is used for parsing JSON bodies?",
+      "opts": ["express.json()", "bodyParser.json()", "jsonMiddleware()", "app.json()"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript function is used to execute a function after a delay?",
+      "opts": ["setTimeout()", "setInterval()", "setDelay()", "delayExecute()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what is the main difference between props and state?",
+      "opts": ["State is mutable, props are immutable", "State is passed from parent to child, props are local", "Props are used for conditional rendering, state for lifecycle", "Props are for event handling, state for style changes"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to sort the result of a query?",
+      "opts": ["sort()", "orderBy()", "asc()", "desc()"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code indicates that the server could not find the requested resource?",
+      "opts": ["404", "200", "500", "301"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which method is used to read a file synchronously?",
+      "opts": ["fs.readFileSync()", "fs.readFile()", "fs.readSync()", "fs.loadFileSync()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a way to handle asynchronous code in JavaScript?",
+      "opts": ["Promises", "Async/Await", "Callbacks", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In React, which method is used to force a component to re-render?",
+      "opts": ["forceUpdate()", "reRender()", "update()", "render()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a correct way to initialize an empty array in JavaScript?",
+      "opts": ["[]", "{}", "Array()", "None of the above"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to find documents that match a specific condition?",
+      "opts": ["find()", "findOne()", "findMany()", "match()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which method is used to add middleware to the request-response cycle?",
+      "opts": ["app.use()", "app.middleware()", "app.add()", "middleware.use()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following statements is true about the event loop in Node.js?",
+      "opts": ["It allows Node.js to handle multiple operations concurrently", "It blocks the thread until the operation is completed", "It runs on multiple threads", "It only supports synchronous operations"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used to add an element to an array if it doesn't already exist?",
+      "opts": ["$addToSet", "$push", "$set", "$inc"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP method is used to submit data to be processed to a specified resource?",
+      "opts": ["POST", "GET", "DELETE", "PUT"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to manage state in a functional component?",
+      "opts": ["useState", "useEffect", "useRef", "useContext"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used to check if a field is not equal to a specific value?",
+      "opts": ["$ne", "$eq", "$gt", "$lt"],
+      "ans": 0
+    }
+    ,
+    
+        {
+          "q": "In React, what does JSX stand for?",
+          "opts": ["JavaScript XML", "JavaScript Extension", "JavaScript Example", "JavaScript Syntax"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which method is used to update a single document?",
+          "opts": ["updateOne()", "updateMany()", "replaceOne()", "setOne()"],
+          "ans": 0
+        },
+        {
+          "q": "Which method in Node.js is used to read a file asynchronously?",
+          "opts": ["fs.readFile()", "fs.readFileSync()", "fs.loadFile()", "fs.loadFileSync()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, what is a collection?",
+          "opts": ["A group of documents", "A single document", "A key-value pair", "A server instance"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which method is called before the component is removed from the DOM?",
+          "opts": ["componentWillUnmount()", "componentWillUpdate()", "componentDidMount()", "componentDidUpdate()"],
+          "ans": 0
+        },
+        {
+          "q": "In Express.js, how do you create a new router object?",
+          "opts": ["express.Router()", "router.create()", "new Router()", "app.router()"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which method is used to add a listener to an event?",
+          "opts": ["addListener()", "on()", "listen()", "bind()"],
+          "ans": 1
+        },
+        {
+          "q": "Which HTTP status code represents a server error?",
+          "opts": ["500", "404", "200", "301"],
+          "ans": 0
+        },
+        {
+          "q": "Which React hook allows you to fetch data from an API?",
+          "opts": ["useEffect", "useState", "useFetch", "useContext"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, what command is used to create an index on a field?",
+          "opts": ["createIndex()", "addIndex()", "indexCreate()", "newIndex()"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript function is used to execute code repeatedly after a specific interval?",
+          "opts": ["setInterval()", "setTimeout()", "repeat()", "execute()"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which module is used for working with file paths?",
+          "opts": ["path", "fs", "url", "http"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used in React to prevent component re-rendering when props or state do not change?",
+          "opts": ["shouldComponentUpdate()", "forceUpdate()", "componentDidUpdate()", "render()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which command is used to remove a collection?",
+          "opts": ["drop()", "remove()", "delete()", "clear()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is used to handle exceptions in JavaScript?",
+          "opts": ["try-catch", "catch-finally", "throw-catch", "error-handle"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which module is used to work with HTTP requests and responses?",
+          "opts": ["http", "fs", "express", "request"],
+          "ans": 0
+        },
+        {
+          "q": "Which operator in MongoDB is used to match documents where a field is less than a specific value?",
+          "opts": ["$lt", "$gt", "$lte", "$gte"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which hook allows you to manage multiple states in a functional component?",
+          "opts": ["useReducer", "useState", "useContext", "useEffect"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to redirect a user to a different page in Express.js?",
+          "opts": ["res.redirect()", "app.redirect()", "res.push()", "res.move()"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript method is used to join two or more arrays?",
+          "opts": ["concat()", "merge()", "join()", "combine()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, what is the result of the insertOne() method?",
+          "opts": ["A promise", "An object", "A document", "A boolean"],
+          "ans": 0
+        },
+        {
+          "q": "Which Express.js method is used to parse URL-encoded form data?",
+          "opts": ["express.urlencoded()", "express.json()", "urlParser()", "bodyParser.urlencoded()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which method is used to update the component state?",
+          "opts": ["setState()", "updateState()", "stateUpdate()", "changeState()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which operator is used to find documents where a field's value is in a specific array?",
+          "opts": ["$in", "$all", "$match", "$eq"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is a valid method to create a server in Express.js?",
+          "opts": ["app.listen()", "server.create()", "express.create()", "new express()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which command is used to remove all documents in a collection?",
+          "opts": ["deleteMany()", "removeAll()", "clearCollection()", "dropAll()"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to send JSON data in a response in Express.js?",
+          "opts": ["res.json()", "res.send()", "response.sendJson()", "response.write()"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which module is used for creating a server-side application?",
+          "opts": ["express", "http", "url", "path"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which method is used to aggregate data from a collection?",
+          "opts": ["aggregate()", "mapReduce()", "combine()", "groupBy()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, what is the purpose of the componentDidMount() lifecycle method?",
+          "opts": ["It is called after the component is rendered", "It is called before the component is rendered", "It is called when the component state changes", "It is called when the component is updated"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript method is used to find the index of a specific element in an array?",
+          "opts": ["indexOf()", "findIndex()", "search()", "locate()"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which method is used to create a readable stream from a file?",
+          "opts": ["fs.createReadStream()", "fs.createStream()", "fs.readStream()", "fs.read()"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB method is used to count the number of documents in a collection?",
+          "opts": ["countDocuments()", "count()", "getCount()", "totalCount()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which hook is used for managing context?",
+          "opts": ["useContext", "useState", "useEffect", "useReducer"],
+          "ans": 0
+        },
+        {
+          "q": "Which HTTP method is used to update data on the server?",
+          "opts": ["PUT", "POST", "GET", "DELETE"],
+          "ans": 0
+        },
+        {
+          "q": "Which Express.js method is used to handle all HTTP methods?",
+          "opts": ["app.all()", "app.any()", "app.handle()", "app.use()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which method is used to update multiple documents?",
+          "opts": ["updateMany()", "updateAll()", "replaceMany()", "bulkUpdate()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following JavaScript features is used to handle asynchronous operations?",
+          "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+          "ans": 3
+        },
+        {
+          "q": "In MongoDB, which command is used to find a single document?",
+          "opts": ["findOne()", "find()", "getDocument()", "findDoc()"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which method is used to stop the server?",
+          "opts": ["server.close()", "server.stop()", "app.close()", "app.stop()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which method is called when a component is being removed from the DOM?",
+          "opts": ["componentWillUnmount()", "componentDidUnmount()", "componentDidUpdate()", "componentWillUpdate()"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB operation is used to remove a specific field from a document?",
+          "opts": ["$unset", "$remove", "$delete", "$clear"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript method is used to merge two arrays?",
+          "opts": ["concat()", "merge()", "combine()", "join()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which operator is used to find documents where a field's value is less than or equal to a given value?",
+          "opts": ["$lte", "$lt", "$lt", "$eq"],
+          "ans": 0
+        }
+,      
+{
+  "q": "Which method in React is used to update the state of a component?",
+  "opts": ["setState()", "updateState()", "changeState()", "modifyState()"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which method is used to specify middleware functions?",
+  "opts": ["app.use()", "app.middleware()", "express.middleware()", "express.use()"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP method is used to request data from a server?",
+  "opts": ["GET", "POST", "DELETE", "PUT"],
+  "ans": 0
+},
+{
+  "q": "Which method is used to create a new document in MongoDB?",
+  "opts": ["insertOne()", "addDocument()", "createDocument()", "save()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to handle side effects?",
+  "opts": ["useEffect", "useState", "useReducer", "useContext"],
+  "ans": 0
+},
+{
+  "q": "Which operator is used in MongoDB to check for exact match?",
+  "opts": ["$eq", "$match", "$in", "$gt"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, what does the 'require' function do?",
+  "opts": ["Loads modules", "Defines a module", "Runs a script", "Exports a function"],
+  "ans": 0
+},
+{
+  "q": "Which function in Express.js is used to send a response to the client?",
+  "opts": ["res.send()", "res.response()", "app.send()", "response.send()"],
+  "ans": 0
+},
+{
+  "q": "Which hook is used in React to manage local state in functional components?",
+  "opts": ["useState", "useEffect", "useReducer", "useContext"],
+  "ans": 0
+},
+{
+  "q": "What is the purpose of the 'find' method in MongoDB?",
+  "opts": ["To retrieve documents", "To update documents", "To delete documents", "To create documents"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to match a value that is greater than or equal to a specified value?",
+  "opts": ["$gte", "$gt", "$lte", "$lt"],
+  "ans": 0
+},
+{
+  "q": "Which JavaScript method is used to combine two or more arrays into a single array?",
+  "opts": ["concat()", "merge()", "combine()", "add()"],
+  "ans": 0
+},
+{
+  "q": "In React, what is the default behavior of state when updated using setState()?",
+  "opts": ["Asynchronous", "Synchronous", "Blocking", "Immediate"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which middleware function is used to parse JSON bodies?",
+  "opts": ["express.json()", "bodyParser.json()", "express.body()", "bodyParser.json()"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to delete a single document?",
+  "opts": ["deleteOne()", "removeOne()", "deleteDocument()", "removeDocument()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which function is used to create a new HTTP server?",
+  "opts": ["http.createServer()", "server.create()", "new http.Server()", "http.create()"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP status code indicates that the request was successful?",
+  "opts": ["200", "404", "500", "301"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which command is used to add a new field to an existing document?",
+  "opts": ["$set", "$add", "$update", "$modify"],
+  "ans": 0
+},
+{
+  "q": "Which method in React allows you to subscribe to a context?",
+  "opts": ["useContext", "useState", "useEffect", "useReducer"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how can you define a route that responds to both GET and POST requests?",
+  "opts": ["app.all()", "app.getPost()", "app.use()", "app.route()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to find documents where a field's value is not equal to a given value?",
+  "opts": ["$ne", "$gt", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP method is used to delete data from a server?",
+  "opts": ["DELETE", "GET", "PUT", "POST"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is called after a component is rendered for the first time?",
+  "opts": ["componentDidMount()", "componentWillMount()", "componentDidUpdate()", "componentWillUpdate()"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to update multiple documents at once?",
+  "opts": ["updateMany()", "updateAll()", "update()", "bulkUpdate()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which method is used to write to a file asynchronously?",
+  "opts": ["fs.writeFile()", "fs.writeSync()", "fs.createWriteStream()", "fs.appendFile()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Express.js is used to handle errors?",
+  "opts": ["app.use()", "app.error()", "express.error()", "handleError()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to find documents based on a query?",
+  "opts": ["find()", "query()", "search()", "get()"],
+  "ans": 0
+},
+{
+  "q": "Which JavaScript method is used to check if an array contains a specific element?",
+  "opts": ["includes()", "has()", "contains()", "in()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which function is used to read a file synchronously?",
+  "opts": ["fs.readFileSync()", "fs.readFile()", "fs.syncRead()", "fs.readSync()"],
+  "ans": 0
+},
+{
+  "q": "In React, what is the purpose of keys in lists?",
+  "opts": ["To help React identify which items have changed, are added, or removed", "To style list items", "To update the list state", "To identify the component"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to count the number of documents that match a query?",
+  "opts": ["countDocuments()", "count()", "getCount()", "queryCount()"],
+  "ans": 0
+},
+{
+  "q": "Which method in React is used to render a component?",
+  "opts": ["render()", "update()", "show()", "paint()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to find documents with values that match an array?",
+  "opts": ["$in", "$all", "$match", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how can you create a route to handle a POST request?",
+  "opts": ["app.post()", "app.add()", "express.post()", "route.post()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to remove all documents from a collection?",
+  "opts": ["deleteMany()", "removeAll()", "clearCollection()", "dropAll()"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is called when the component is about to update?",
+  "opts": ["componentWillUpdate()", "componentDidUpdate()", "componentWillMount()", "componentDidMount()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to listen for requests on a port?",
+  "opts": ["server.listen()", "app.listen()", "http.listen()", "express.listen()"],
+  "ans": 1
+},
+{
+  "q": "Which operator in MongoDB is used to match documents with a field value greater than a specific number?",
+  "opts": ["$gt", "$gte", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how do you handle a GET request to the root URL?",
+  "opts": ["app.get('/', handler)", "app.get('/', function)", "app.request('/', handler)", "express.get('/')"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB method is used to remove a collection?",
+  "opts": ["drop()", "remove()", "clear()", "delete()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to handle HTTP responses?",
+  "opts": ["res.send()", "response.send()", "http.response()", "sendResponse()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to match documents where a field contains a specific substring?",
+  "opts": ["$regex", "$contains", "$match", "$search"],
+  "ans": 0
+},
+{
+  "q": "Which of the following is used to handle asynchronous operations in JavaScript?",
+  "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+  "ans": 3
+},
+{
+  "q": "Which method is used in MongoDB to find the first matching document?",
+  "opts": ["findOne()", "find()", "get()", "select()"],
+  "ans": 0
+},
+{
+  "q": "Which method is used in Express.js to define a route for all HTTP methods?",
+  "opts": ["app.all()", "app.use()", "express.all()", "app.any()"],
+  "ans": 0
+},{
+  "q": "Which method in React is used to update the state of a component?",
+  "opts": ["setState()", "updateState()", "changeState()", "modifyState()"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which method is used to specify middleware functions?",
+  "opts": ["app.use()", "app.middleware()", "express.middleware()", "express.use()"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP method is used to request data from a server?",
+  "opts": ["GET", "POST", "DELETE", "PUT"],
+  "ans": 0
+},
+{
+  "q": "Which method is used to create a new document in MongoDB?",
+  "opts": ["insertOne()", "addDocument()", "createDocument()", "save()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to handle side effects?",
+  "opts": ["useEffect", "useState", "useReducer", "useContext"],
+  "ans": 0
+},
+{
+  "q": "Which operator is used in MongoDB to check for exact match?",
+  "opts": ["$eq", "$match", "$in", "$gt"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, what does the 'require' function do?",
+  "opts": ["Loads modules", "Defines a module", "Runs a script", "Exports a function"],
+  "ans": 0
+},
+{
+  "q": "Which function in Express.js is used to send a response to the client?",
+  "opts": ["res.send()", "res.response()", "app.send()", "response.send()"],
+  "ans": 0
+},
+{
+  "q": "Which hook is used in React to manage local state in functional components?",
+  "opts": ["useState", "useEffect", "useReducer", "useContext"],
+  "ans": 0
+},
+{
+  "q": "What is the purpose of the 'find' method in MongoDB?",
+  "opts": ["To retrieve documents", "To update documents", "To delete documents", "To create documents"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to match a value that is greater than or equal to a specified value?",
+  "opts": ["$gte", "$gt", "$lte", "$lt"],
+  "ans": 0
+},
+{
+  "q": "Which JavaScript method is used to combine two or more arrays into a single array?",
+  "opts": ["concat()", "merge()", "combine()", "add()"],
+  "ans": 0
+},
+{
+  "q": "In React, what is the default behavior of state when updated using setState()?",
+  "opts": ["Asynchronous", "Synchronous", "Blocking", "Immediate"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which middleware function is used to parse JSON bodies?",
+  "opts": ["express.json()", "bodyParser.json()", "express.body()", "bodyParser.json()"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to delete a single document?",
+  "opts": ["deleteOne()", "removeOne()", "deleteDocument()", "removeDocument()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which function is used to create a new HTTP server?",
+  "opts": ["http.createServer()", "server.create()", "new http.Server()", "http.create()"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP status code indicates that the request was successful?",
+  "opts": ["200", "404", "500", "301"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which command is used to add a new field to an existing document?",
+  "opts": ["$set", "$add", "$update", "$modify"],
+  "ans": 0
+},
+{
+  "q": "Which method in React allows you to subscribe to a context?",
+  "opts": ["useContext", "useState", "useEffect", "useReducer"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how can you define a route that responds to both GET and POST requests?",
+  "opts": ["app.all()", "app.getPost()", "app.use()", "app.route()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to find documents where a field's value is not equal to a given value?",
+  "opts": ["$ne", "$gt", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "Which HTTP method is used to delete data from a server?",
+  "opts": ["DELETE", "GET", "PUT", "POST"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is called after a component is rendered for the first time?",
+  "opts": ["componentDidMount()", "componentWillMount()", "componentDidUpdate()", "componentWillUpdate()"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to update multiple documents at once?",
+  "opts": ["updateMany()", "updateAll()", "update()", "bulkUpdate()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which method is used to write to a file asynchronously?",
+  "opts": ["fs.writeFile()", "fs.writeSync()", "fs.createWriteStream()", "fs.appendFile()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Express.js is used to handle errors?",
+  "opts": ["app.use()", "app.error()", "express.error()", "handleError()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to find documents based on a query?",
+  "opts": ["find()", "query()", "search()", "get()"],
+  "ans": 0
+},
+{
+  "q": "Which JavaScript method is used to check if an array contains a specific element?",
+  "opts": ["includes()", "has()", "contains()", "in()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which function is used to read a file synchronously?",
+  "opts": ["fs.readFileSync()", "fs.readFile()", "fs.syncRead()", "fs.readSync()"],
+  "ans": 0
+},
+{
+  "q": "In React, what is the purpose of keys in lists?",
+  "opts": ["To help React identify which items have changed, are added, or removed", "To style list items", "To update the list state", "To identify the component"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operation is used to count the number of documents that match a query?",
+  "opts": ["countDocuments()", "count()", "getCount()", "queryCount()"],
+  "ans": 0
+},
+{
+  "q": "Which method in React is used to render a component?",
+  "opts": ["render()", "update()", "show()", "paint()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to find documents with values that match an array?",
+  "opts": ["$in", "$all", "$match", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how can you create a route to handle a POST request?",
+  "opts": ["app.post()", "app.add()", "express.post()", "route.post()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to remove all documents from a collection?",
+  "opts": ["deleteMany()", "removeAll()", "clearCollection()", "dropAll()"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is called when the component is about to update?",
+  "opts": ["componentWillUpdate()", "componentDidUpdate()", "componentWillMount()", "componentDidMount()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to listen for requests on a port?",
+  "opts": ["server.listen()", "app.listen()", "http.listen()", "express.listen()"],
+  "ans": 1
+},
+{
+  "q": "Which operator in MongoDB is used to match documents with a field value greater than a specific number?",
+  "opts": ["$gt", "$gte", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, how do you handle a GET request to the root URL?",
+  "opts": ["app.get('/', handler)", "app.get('/', function)", "app.request('/', handler)", "express.get('/')"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB method is used to remove a collection?",
+  "opts": ["drop()", "remove()", "clear()", "delete()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to handle HTTP responses?",
+  "opts": ["res.send()", "response.send()", "http.response()", "sendResponse()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to match documents where a field contains a specific substring?",
+  "opts": ["$regex", "$contains", "$match", "$search"],
+  "ans": 0
+},
+{
+  "q": "Which of the following is used to handle asynchronous operations in JavaScript?",
+  "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+  "ans": 3
+},
+{
+  "q": "Which method is used in MongoDB to find the first matching document?",
+  "opts": ["findOne()", "find()", "get()", "select()"],
+  "ans": 0
+},
+{
+  "q": "Which method is used in Express.js to define a route for all HTTP methods?",
+  "opts": ["app.all()", "app.use()", "express.all()", "app.any()"],
+  "ans": 0
+}, {
+  "q": "In React, which hook is used to persist a state value across renders?",
+  "opts": ["useState", "useEffect", "useMemo", "useRef"],
+  "ans": 2
+},
+{
+  "q": "Which method is used to handle errors in Express.js?",
+  "opts": ["next()", "throw()", "handleError()", "catch()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to create a new HTTP server?",
+  "opts": ["http.createServer()", "http.newServer()", "createServer()", "server.create()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to specify an array element to update?",
+  "opts": ["$arrayFilters", "$set", "$push", "$inc"],
+  "ans": 0
+},
+{
+  "q": "Which React hook is used to create an effect that runs after a component has mounted?",
+  "opts": ["useEffect", "useState", "useCallback", "useMemo"],
+  "ans": 0
+},
+{
+  "q": "Which method in Express.js is used to define a route for GET requests?",
+  "opts": ["app.get()", "app.post()", "app.put()", "app.route()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operation is used to remove documents from a collection?",
+  "opts": ["remove()", "deleteMany()", "destroy()", "removeAll()"],
+  "ans": 1
+},
+{
+  "q": "Which operator is used to match documents in MongoDB that have an exact value for a field?",
+  "opts": ["$eq", "$ne", "$gt", "$lt"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to parse the request body as JSON?",
+  "opts": ["express.json()", "app.json()", "json.parse()", "bodyParser.json()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to avoid unnecessary re-renders by memoizing a value?",
+  "opts": ["useMemo", "useCallback", "useState", "useEffect"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to update multiple documents that match a given filter?",
+  "opts": ["updateMany()", "update()", "modify()", "findAndModify()"],
+  "ans": 0
+},
+{
+  "q": "Which method is used to read files asynchronously in Node.js?",
+  "opts": ["fs.readFile()", "fs.readFileSync()", "fs.readAsync()", "fs.read()"],
+  "ans": 0
+},
+{
+  "q": "Which operator in MongoDB is used to match documents where the field value exists?",
+  "opts": ["$exists", "$match", "$in", "$contains"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to handle state updates in functional components?",
+  "opts": ["useState", "useReducer", "useEffect", "useCallback"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which module is used to handle URL parsing?",
+  "opts": ["url", "http", "path", "fs"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to get the first document that matches a query?",
+  "opts": ["findOne()", "find()", "getFirst()", "findDoc()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Express.js is used to send a response with a specific status code?",
+  "opts": ["res.status().send()", "res.sendStatus()", "send()", "sendResponse()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to match documents where a field value is greater than a specific value?",
+  "opts": ["$gt", "$gte", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook allows you to memoize a function so it doesn't get recreated on each render?",
+  "opts": ["useCallback", "useMemo", "useState", "useReducer"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which method is used to define a route for a POST request?",
+  "opts": ["app.post()", "app.get()", "express.post()", "app.route()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which module is used to work with file paths?",
+  "opts": ["path", "url", "fs", "http"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operation is used to find all documents that match a query?",
+  "opts": ["find()", "findAll()", "getDocuments()", "query()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to handle HTTP requests?",
+  "opts": ["http.createServer()", "http.listen()", "createRequestHandler()", "app.listen()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to handle side effects in functional components?",
+  "opts": ["useEffect", "useState", "useReducer", "useMemo"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to check for a field value equal to a specified value?",
+  "opts": ["$eq", "$ne", "$gt", "$lt"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which module is used to handle HTTP server requests?",
+  "opts": ["http", "express", "url", "fs"],
+  "ans": 0
+},
+{
+  "q": "Which React hook allows you to interact with the browser's DOM directly?",
+  "opts": ["useRef", "useState", "useEffect", "useMemo"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to add an item to an array field in a document?",
+  "opts": ["$push", "$addToSet", "$set", "$inc"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to listen for events emitted by the EventEmitter?",
+  "opts": ["on()", "emit()", "listen()", "trigger()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook is used to return the previous value of a state?",
+  "opts": ["useRef", "useEffect", "useMemo", "usePrevious"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operation is used to increment a field's value by a specified number?",
+  "opts": ["$inc", "$push", "$set", "$addToSet"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which method is used to define a route for handling PUT requests?",
+  "opts": ["app.put()", "app.update()", "app.replace()", "express.put()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to find documents matching a query?",
+  "opts": ["find()", "get()", "query()", "search()"],
+  "ans": 0
+},
+{
+  "q": "In React, which hook allows you to share state between components?",
+  "opts": ["useContext", "useState", "useReducer", "useEffect"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which method is used to parse URL query strings?",
+  "opts": ["url.parse()", "query.parse()", "http.query()", "path.parse()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which operator is used to match documents where a field value is not equal to a specific value?",
+  "opts": ["$ne", "$eq", "$gt", "$lt"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is used to update the component's state asynchronously?",
+  "opts": ["setState()", "forceUpdate()", "update()", "render()"],
+  "ans": 0
+},
+{
+  "q": "In Node.js, which module is used for stream handling?",
+  "opts": ["stream", "http", "url", "fs"],
+  "ans": 0
+},
+{
+  "q": "Which MongoDB operator is used to match documents with a value greater than or equal to a specified value?",
+  "opts": ["$gte", "$gt", "$lt", "$eq"],
+  "ans": 0
+},
+{
+  "q": "In React, which method is used to trigger a component re-render when state changes?",
+  "opts": ["setState()", "forceUpdate()", "render()", "useState()"],
+  "ans": 0
+},
+{
+  "q": "In Express.js, which method is used to handle a PATCH request?",
+  "opts": ["app.patch()", "express.patch()", "app.update()", "app.modify()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to find and update a document atomically?",
+  "opts": ["findAndModify()", "updateOne()", "findAndUpdate()", "update()"],
+  "ans": 0
+},
+{
+  "q": "Which method in Node.js is used to close an HTTP server?",
+  "opts": ["server.close()", "http.close()", "app.close()", "server.shutdown()"],
+  "ans": 0
+},
+{
+  "q": "In MongoDB, which method is used to remove all documents from a collection?",
+  "opts": ["deleteMany()", "removeAll()", "clear()", "deleteAll()"],
+  "ans": 0
+},
     {
       "q": "Which of the following is used to create a gradient background in CSS?",
       "opts": ["background-image: linear-gradient()", "background-color: gradient()", "background-gradient: linear", "background-image: gradient()"],
@@ -9572,6 +11124,1975 @@ export const questions = {
   ]
   ,
   JavaScript: [
+    
+    {
+      "q": "Which HTML tag is used to define an unordered list?",
+      "opts": ["<ul>", "<ol>", "<li>", "<list>"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used to change the background color in CSS?",
+      "opts": ["color", "bgcolor", "background-color", "background"],
+      "ans": 2
+    },
+    {
+      "q": "In React, which function is used to render a component to the DOM?",
+      "opts": ["render()", "ReactDOM.render()", "createElement()", "useEffect()"],
+      "ans": 1
+    },
+    {
+      "q": "Which method in JavaScript can be used to add an element at the end of an array?",
+      "opts": ["push()", "pop()", "shift()", "unshift()"],
+      "ans": 0
+    },
+    {
+      "q": "Which package is used for managing packages in Node.js?",
+      "opts": ["npm", "yarn", "bower", "composer"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, what does the `app.use()` function do?",
+      "opts": ["It registers middleware", "It starts the server", "It sends a response", "It defines a route"],
+      "ans": 0
+    },
+    {
+      "q": "Which CSS property is used to define the space between the content and the border?",
+      "opts": ["margin", "padding", "border-spacing", "space"],
+      "ans": 1
+    },
+    {
+      "q": "Which HTML tag is used to define an input field for a password?",
+      "opts": ["<input type='password'>", "<password>", "<input type='text'>", "<input type='secret'>"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the 'display' property in CSS?",
+      "opts": ["block", "inline", "inline-block", "none"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what hook is used to manage state in functional components?",
+      "opts": ["useState", "useEffect", "useReducer", "useMemo"],
+      "ans": 0
+    },
+    {
+      "q": "In JavaScript, which method can be used to convert a string to a number?",
+      "opts": ["parse()", "parseInt()", "parseFloat()", "Number()"],
+      "ans": 1
+    },
+    {
+      "q": "In MongoDB, what type of database is it based on?",
+      "opts": ["Relational", "Document-based", "Graph-based", "Key-Value Store"],
+      "ans": 1
+    },
+    {
+      "q": "What is the purpose of the `cors` middleware in Express.js?",
+      "opts": ["To handle cross-origin requests", "To log requests", "To serve static files", "To handle database connections"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTML tag is used to define a table row?",
+      "opts": ["<tr>", "<td>", "<th>", "<trrow>"],
+      "ans": 0
+    },
+    {
+      "q": "Which property in CSS is used to set the text color?",
+      "opts": ["color", "text-color", "font-color", "background-color"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to define a route for handling POST requests in Express.js?",
+      "opts": ["app.post()", "app.get()", "app.put()", "app.delete()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct syntax to create a React component?",
+      "opts": ["function Component() {}", "const Component = () => {}", "class Component extends React.Component {}", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In Node.js, which module is required to create an HTTP server?",
+      "opts": ["http", "express", "server", "request"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to remove the last item from an array in JavaScript?",
+      "opts": ["shift()", "pop()", "push()", "unshift()"],
+      "ans": 1
+    },
+    {
+      "q": "Which MongoDB operator is used to update documents?",
+      "opts": ["$set", "$push", "$inc", "$addToSet"],
+      "ans": 0
+    },
+    {
+      "q": "In JavaScript, which of these is not a valid loop?",
+      "opts": ["for", "while", "do-while", "loop-for"],
+      "ans": 3
+    },
+    {
+      "q": "What does the `async` keyword do in JavaScript?",
+      "opts": ["Makes the function synchronous", "Makes the function asynchronous", "Handles errors in functions", "Waits for the function to finish"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following CSS selectors will select all paragraphs inside a div?",
+      "opts": ["div p", "div+p", "p>div", "p+div"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following tags is used to define a hyperlink in HTML?",
+      "opts": ["<link>", "<a>", "<href>", "<url>"],
+      "ans": 1
+    },
+    {
+      "q": "In MongoDB, what is the default data type for the `_id` field?",
+      "opts": ["ObjectId", "String", "Number", "Date"],
+      "ans": 0
+    },
+    {
+      "q": "Which property is used in CSS to change the font of an element?",
+      "opts": ["font-family", "text-font", "font-style", "font-size"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, what method is used to send a response to the client?",
+      "opts": ["res.send()", "app.send()", "response.send()", "res.response()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `useEffect` hook in React?",
+      "opts": ["To manage state", "To handle side effects", "To render UI", "To handle events"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is used to import React in a React component file?",
+      "opts": ["import React from 'react';", "import { React } from 'react';", "import React from './react';", "require('react');"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following JavaScript methods is used to join two or more arrays?",
+      "opts": ["join()", "concat()", "merge()", "combine()"],
+      "ans": 1
+    },
+    {
+      "q": "In Express.js, which function is used to serve static files?",
+      "opts": ["express.static()", "serve.static()", "app.static()", "static()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of these is a correct way to handle an error in Node.js?",
+      "opts": ["throw error;", "console.log(error);", "res.send(error);", "catch error;"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of the `npm init` command in Node.js?",
+      "opts": ["To initialize a new Node.js project", "To install a new package", "To start the server", "To configure a database"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to style a component in React?",
+      "opts": ["style={}", "className={}", "id={}", "css={}" ],
+      "ans": 1
+    },
+    {
+      "q": "Which method is used in MongoDB to create a new document in a collection?",
+      "opts": ["insertOne()", "add()", "create()", "push()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid CSS selector?",
+      "opts": ["#myId", ".myClass", "myTag", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the purpose of the `next()` function in Express.js?",
+      "opts": ["To call the next middleware function", "To send a response", "To terminate the request", "To render a view"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to check if a value is an array in JavaScript?",
+      "opts": ["isArray()", "Array.is()", "Array.isArray()", "checkArray()"],
+      "ans": 2
+    },
+    {
+      "q": "What does `npm install` do?",
+      "opts": ["Installs Node.js", "Installs all dependencies", "Creates a new project", "Updates the package.json file"],
+      "ans": 1
+    },
+    {
+      "q": "In MongoDB, which method is used to retrieve all documents from a collection?",
+      "opts": ["find()", "get()", "all()", "select()"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default value of the `flex-direction` property in CSS?",
+      "opts": ["row", "column", "row-reverse", "column-reverse"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct syntax to include a JavaScript file in an HTML document?",
+      "opts": ["<script src='script.js'></script>", "<javascript src='script.js'></javascript>", "<js src='script.js'></js>", "<script>src='script.js'></script>"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which method is used to handle user input in a form?",
+      "opts": ["handleInputChange()", "onChange()", "inputChanged()", "updateInput()"],
+      "ans": 1
+    },
+    {
+      "q": "What is the correct way to import a module in Node.js?",
+      "opts": ["import module from 'module';", "require('module');", "import('module');", "load('module');"],
+      "ans": 1
+    },
+    {
+      "q": "Which CSS property is used to set the width of an element?",
+      "opts": ["width", "size", "element-width", "box-width"],
+      "ans": 0
+    },
+    {
+      "q": "In JavaScript, how do you declare a variable that can't be reassigned?",
+      "opts": ["let", "const", "var", "immutable"],
+      "ans": 1
+    },
+    {
+      "q": "In MongoDB, which of the following is not a valid query operator?",
+      "opts": ["$eq", "$gt", "$set", "$in"],
+      "ans": 2
+    },
+    
+        {
+          "q": "Which of the following is used to define a class in JavaScript?",
+          "opts": ["class MyClass {}", "function MyClass {}", "MyClass class {}", "class = MyClass {}"],
+          "ans": 0
+        },
+        {
+          "q": "In JavaScript, which method is used to remove the first item from an array?",
+          "opts": ["shift()", "pop()", "unshift()", "remove()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is used to handle asynchronous operations in JavaScript?",
+          "opts": ["Promises", "Callbacks", "Async/Await", "All of the above"],
+          "ans": 3
+        },
+        {
+          "q": "In React, which hook is used to perform side effects in functional components?",
+          "opts": ["useEffect", "useState", "useRef", "useReducer"],
+          "ans": 0
+        },
+        {
+          "q": "Which operator is used to destructure an object in JavaScript?",
+          "opts": ["= { }", ": {}", "{}", "=>"],
+          "ans": 2
+        },
+        {
+          "q": "Which JavaScript function is used to test whether a string matches a regular expression?",
+          "opts": ["match()", "test()", "search()", "exec()"],
+          "ans": 1
+        },
+        {
+          "q": "What is the purpose of `useReducer` in React?",
+          "opts": ["To manage complex state logic", "To handle side effects", "To render components", "To update props"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript method is used to find the index of an element in an array?",
+          "opts": ["indexOf()", "search()", "find()", "locate()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is used to start a Node.js server?",
+          "opts": ["http.createServer()", "node.createServer()", "express.createServer()", "server.start()"],
+          "ans": 0
+        },
+        {
+          "q": "What is the correct syntax to import a module in Node.js?",
+          "opts": ["import module from 'module';", "require('module');", "import('module');", "load('module');"],
+          "ans": 1
+        },
+        {
+          "q": "In MongoDB, what is the default data type for the `_id` field?",
+          "opts": ["ObjectId", "String", "Number", "Date"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to send a JSON response in Express.js?",
+          "opts": ["res.send()", "res.json()", "res.text()", "res.data()"],
+          "ans": 1
+        },
+        {
+          "q": "Which JavaScript method is used to convert a string to a number?",
+          "opts": ["parseInt()", "parseFloat()", "Number()", "All of the above"],
+          "ans": 3
+        },
+        {
+          "q": "Which of the following is used to create a new MongoDB document?",
+          "opts": ["db.create()", "insertOne()", "add()", "create()"],
+          "ans": 1
+        },
+        {
+          "q": "Which React hook is used to create a reference to a DOM element?",
+          "opts": ["useState", "useEffect", "useRef", "useMemo"],
+          "ans": 2
+        },
+        {
+          "q": "In JavaScript, which of the following is a primitive data type?",
+          "opts": ["Array", "Object", "String", "Function"],
+          "ans": 2
+        },
+        {
+          "q": "Which operator is used to check if a variable is of a specific type in JavaScript?",
+          "opts": ["typeof", "instanceof", "is", "equals"],
+          "ans": 0
+        },
+        {
+          "q": "What does `npm start` do in a Node.js application?",
+          "opts": ["Starts the server", "Installs packages", "Runs tests", "Creates a new project"],
+          "ans": 0
+        },
+        {
+          "q": "In React, what is the primary purpose of `key` props in lists?",
+          "opts": ["To optimize rendering", "To handle events", "To define the order of items", "To style items"],
+          "ans": 0
+        },
+        {
+          "q": "What is the correct way to define a Node.js route that listens for GET requests?",
+          "opts": ["app.get('/route', function() {})", "app.route('/route').get(function() {})", "app.route('/').get(function() {})", "All of the above"],
+          "ans": 3
+        },
+        {
+          "q": "In JavaScript, what does the `bind()` method do?",
+          "opts": ["Binds a function to a specific context", "Binds a variable to a scope", "Binds an event handler", "Binds a promise to a value"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following methods is used to create a new array in JavaScript?",
+          "opts": ["new Array()", "Array.from()", "Array.of()", "All of the above"],
+          "ans": 3
+        },
+        {
+          "q": "In MongoDB, which command is used to update a document?",
+          "opts": ["updateOne()", "set()", "modify()", "update()"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used in MongoDB to find a document by its _id?",
+          "opts": ["findOne()", "getById()", "findById()", "find()"],
+          "ans": 0
+        },
+        {
+          "q": "In JavaScript, which method is used to add a key-value pair to an object?",
+          "opts": ["Object.assign()", "push()", "set()", "add()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is used to create a new instance of an object in JavaScript?",
+          "opts": ["new Object()", "Object.create()", "Object.new()", "Both 1 and 2"],
+          "ans": 3
+        },
+        {
+          "q": "What is the purpose of `useMemo` in React?",
+          "opts": ["To memoize functions", "To cache values for optimization", "To manage state", "To manage side effects"],
+          "ans": 1
+        },
+        {
+          "q": "Which method is used to find all documents in a MongoDB collection?",
+          "opts": ["find()", "select()", "all()", "get()"],
+          "ans": 0
+        },
+        {
+          "q": "Which JavaScript method is used to join two or more arrays?",
+          "opts": ["join()", "concat()", "merge()", "combine()"],
+          "ans": 1
+        },
+        {
+          "q": "In React, what does the `componentDidMount` lifecycle method do?",
+          "opts": ["It runs after the component is rendered", "It runs before the component is rendered", "It updates the state", "It handles errors"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB operation is used to remove a document from a collection?",
+          "opts": ["remove()", "deleteOne()", "drop()", "clear()"],
+          "ans": 1
+        },
+        {
+          "q": "Which JavaScript function is used to delay execution of code?",
+          "opts": ["setTimeout()", "setInterval()", "delay()", "pause()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, what is the primary purpose of `useState`?",
+          "opts": ["To define components", "To manage local state", "To update the DOM", "To handle events"],
+          "ans": 1
+        },
+        {
+          "q": "Which method is used to parse a JSON string in JavaScript?",
+          "opts": ["JSON.parse()", "JSON.stringify()", "JSON.decode()", "JSON.read()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which method is used to find documents with a specific condition?",
+          "opts": ["find()", "findOne()", "search()", "query()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following methods is used to start the Express.js server?",
+          "opts": ["app.listen()", "server.start()", "express.run()", "app.serve()"],
+          "ans": 0
+        },
+        {
+          "q": "In JavaScript, which operator is used to compare values and their types?",
+          "opts": ["==", "===", "!=", "!=="],
+          "ans": 2
+        },
+        {
+          "q": "Which method in Node.js is used to read files asynchronously?",
+          "opts": ["fs.readFileSync()", "fs.readFile()", "fs.read()", "fs.load()"],
+          "ans": 1
+        },
+        {
+          "q": "What is the purpose of the `async` keyword in JavaScript?",
+          "opts": ["Makes a function synchronous", "Makes a function asynchronous", "Handles errors in functions", "Waits for a function to finish"],
+          "ans": 1
+        },
+        {
+          "q": "Which of the following is a way to handle multiple promises concurrently in JavaScript?",
+          "opts": ["Promise.all()", "Promise.race()", "Promise.chain()", "Both 1 and 2"],
+          "ans": 3
+        },
+        {
+          "q": "What is the purpose of the `next()` function in Express.js?",
+          "opts": ["To call the next middleware function", "To send a response", "To terminate the request", "To render a view"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB operator is used to check if a value exists in a document?",
+          "opts": ["$exists", "$match", "$in", "$eq"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to execute a query in MongoDB?",
+          "opts": ["query()", "execute()", "run()", "find()"],
+          "ans": 3
+        },
+        {
+          "q": "In JavaScript, which method is used to remove whitespace from both ends of a string?",
+          "opts": ["trim()", "strip()", "clean()", "remove()"],
+          "ans": 0
+        },
+        
+            {
+              "q": "What is the default value of `this` in a regular JavaScript function?",
+              "opts": ["global object", "undefined", "null", "window"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following methods is used to convert a number to a string in JavaScript?",
+              "opts": ["toString()", "String()", "Stringify()", "All of the above"],
+              "ans": 3
+            },
+            {
+              "q": "In React, what is the purpose of `useCallback`?",
+              "opts": ["To memoize functions", "To manage side effects", "To handle component lifecycle", "To manage state"],
+              "ans": 0
+            },
+            {
+              "q": "In Node.js, which module is used to create a server?",
+              "opts": ["http", "server", "express", "net"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is true about React components?",
+              "opts": ["They must return a single JSX element", "They can return multiple JSX elements", "They do not need to have a render method", "They can return functions"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of the `super()` method in JavaScript classes?",
+              "opts": ["Calls the constructor of the parent class", "Creates a new instance of the class", "Initializes class properties", "Defines a class method"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of the `express.Router()` in Express.js?",
+              "opts": ["To define routes in a modular way", "To start the server", "To handle requests", "To set up middleware"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, what is the purpose of the `aggregate()` function?",
+              "opts": ["To filter documents", "To update documents", "To perform complex queries", "To join collections"],
+              "ans": 2
+            },
+            {
+              "q": "Which of the following is used to check if a string contains a substring in JavaScript?",
+              "opts": ["includes()", "contains()", "has()", "match()"],
+              "ans": 0
+            },
+            {
+              "q": "In React, what is the purpose of `useEffect`?",
+              "opts": ["To manage component state", "To perform side effects in functional components", "To update DOM", "To handle events"],
+              "ans": 1
+            },
+            {
+              "q": "In Node.js, which of the following is a valid way to include a module?",
+              "opts": ["require('module')", "import 'module'", "include('module')", "load('module')"],
+              "ans": 0
+            },
+            {
+              "q": "Which MongoDB function is used to find a document by a specific field?",
+              "opts": ["findOne()", "findById()", "find()", "search()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the main purpose of middleware in Express.js?",
+              "opts": ["To process requests before they reach the route handler", "To define routes", "To start the server", "To connect to the database"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, what type of value does the `ObjectId()` function generate?",
+              "opts": ["Date", "String", "UUID", "ObjectId"],
+              "ans": 3
+            },
+            {
+              "q": "In JavaScript, which of the following is used to check if an object is an array?",
+              "opts": ["Array.isArray()", "Object.isArray()", "isArray()", "arrayCheck()"],
+              "ans": 0
+            },
+            {
+              "q": "What does the `map()` function do in JavaScript?",
+              "opts": ["Transforms elements of an array", "Filters an array", "Reduces an array", "Adds elements to an array"],
+              "ans": 0
+            },
+            {
+              "q": "What is the primary difference between `let` and `var` in JavaScript?",
+              "opts": ["`let` is block-scoped, `var` is function-scoped", "`let` is function-scoped, `var` is block-scoped", "`let` is used for constants", "`var` is used for variables"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is a valid route method in Express.js?",
+              "opts": ["app.get()", "app.post()", "app.put()", "All of the above"],
+              "ans": 3
+            },
+            {
+              "q": "What is the purpose of `useLayoutEffect` in React?",
+              "opts": ["To perform side effects after DOM mutations", "To update component state", "To handle events", "To handle errors"],
+              "ans": 0
+            },
+            {
+              "q": "Which method is used to create a new MongoDB collection?",
+              "opts": ["db.createCollection()", "create()", "addCollection()", "newCollection()"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is used to start the Express.js server?",
+              "opts": ["app.listen()", "express.start()", "server.run()", "start()"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is the correct syntax to define an arrow function in JavaScript?",
+              "opts": ["() => {}", "() -> {}", "() -> {}", "() = > {}"],
+              "ans": 0
+            },
+            {
+              "q": "What is the primary use of `useReducer` in React?",
+              "opts": ["To manage state in a more complex way", "To handle events", "To memoize functions", "To perform side effects"],
+              "ans": 0
+            },
+            {
+              "q": "What method is used to insert multiple documents into a MongoDB collection?",
+              "opts": ["insertMany()", "insert()", "add()", "insertOne()"],
+              "ans": 0
+            },
+            {
+              "q": "In Node.js, what does `process.exit()` do?",
+              "opts": ["Terminates the Node.js process", "Restarts the Node.js process", "Ends the current request", "Stops the server"],
+              "ans": 0
+            },
+            {
+              "q": "Which JavaScript method is used to add one or more elements to the beginning of an array?",
+              "opts": ["push()", "unshift()", "pop()", "shift()"],
+              "ans": 1
+            },
+            {
+              "q": "In MongoDB, which command is used to delete a collection?",
+              "opts": ["drop()", "remove()", "delete()", "clear()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the correct syntax to create a new React component?",
+              "opts": ["function MyComponent() {}", "MyComponent = () => {}", "class MyComponent extends React.Component {}", "All of the above"],
+              "ans": 3
+            },
+            {
+              "q": "Which function is used to stop an HTTP request in Node.js?",
+              "opts": ["res.end()", "res.stop()", "res.cancel()", "http.end()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `useContext` in React?",
+              "opts": ["To share state between components", "To handle events", "To manage side effects", "To memoize functions"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, which method is used to count the number of documents in a collection?",
+              "opts": ["countDocuments()", "find().count()", "count()", "documentCount()"],
+              "ans": 0
+            },
+            {
+              "q": "In Node.js, which module is used to work with the file system?",
+              "opts": ["fs", "path", "url", "http"],
+              "ans": 0
+            },
+            {
+              "q": "Which method is used to return the first document in a MongoDB collection?",
+              "opts": ["findOne()", "first()", "find()", "get()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `useEffect` with an empty dependency array in React?",
+              "opts": ["It runs once after the initial render", "It runs every time the component renders", "It runs when a state changes", "It runs on component mount and unmount"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is used to define a route parameter in Express.js?",
+              "opts": [":param", "param", "{param}", "param()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `Promise.all()` in JavaScript?",
+              "opts": ["Runs multiple promises concurrently", "Runs promises sequentially", "Handles promise errors", "Wraps a promise in a new promise"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `MongoClient.connect()` in MongoDB?",
+              "opts": ["To connect to a MongoDB database", "To create a new collection", "To query the database", "To perform an aggregation"],
+              "ans": 0
+            },
+            {
+              "q": "In JavaScript, which of the following is a valid way to declare a constant?",
+              "opts": ["const x = 10;", "let x = 10;", "var x = 10;", "constant x = 10;"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is used to schedule a function call after a delay in JavaScript?",
+              "opts": ["setTimeout()", "setInterval()", "delay()", "timeout()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `catch` in JavaScript promises?",
+              "opts": ["To handle promise errors", "To execute code after a promise resolves", "To wrap a promise in another promise", "To resolve a promise"],
+              "ans": 0
+            },
+            {
+              "q": "What is the correct syntax for defining a route in Express.js?",
+              "opts": ["app.get('/route', (req, res) => {})", "app.route('/route').get(() => {})", "app.get('/route').do(() => {})", "app.handle('/route')"],
+              "ans": 0
+            },
+            
+                {
+                  "q": "What is the primary use of `useRef` in React?",
+                  "opts": ["To persist values across renders without causing re-renders", "To manage state in functional components", "To perform side effects", "To handle events"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is used to create a new instance of a MongoDB client?",
+                  "opts": ["new MongoClient()", "MongoDB.createClient()", "connect() method", "MongoClient.connect()"],
+                  "ans": 3
+                },
+                {
+                  "q": "In Node.js, which module is used for working with URLs?",
+                  "opts": ["url", "http", "fs", "path"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which method is used to add a route handler for a POST request in Express.js?",
+                  "opts": ["app.post()", "app.addPost()", "app.handlePost()", "post()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In MongoDB, which of the following operators is used to update a field in a document?",
+                  "opts": ["$set", "$update", "$change", "$replace"],
+                  "ans": 0
+                },
+                {
+                  "q": "In React, which method is used to update a component’s state?",
+                  "opts": ["setState()", "updateState()", "setComponent()", "changeState()"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is a valid way to handle errors in Express.js?",
+                  "opts": ["app.use((err, req, res, next) => {})", "app.onError((err) => {})", "handleError((err) => {})", "catchError((err) => {})"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which JavaScript function is used to join elements of an array into a string?",
+                  "opts": ["join()", "combine()", "merge()", "concatenate()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In Node.js, which of the following is a way to handle asynchronous code?",
+                  "opts": ["Callbacks", "Promises", "Async/Await", "All of the above"],
+                  "ans": 3
+                },
+                {
+                  "q": "What does the `find()` method return in MongoDB?",
+                  "opts": ["An array of documents", "A single document", "A Boolean value", "A string of results"],
+                  "ans": 0
+                },
+                {
+                  "q": "In React, how do you create a controlled component?",
+                  "opts": ["By binding the state to the input value", "By using refs", "By setting default values", "By using the `useEffect` hook"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is the correct way to declare a class in JavaScript?",
+                  "opts": ["class MyClass {}", "MyClass = class {}", "function MyClass {}", "class: MyClass {}"],
+                  "ans": 0
+                },
+                {
+                  "q": "In MongoDB, how do you perform a query with a projection?",
+                  "opts": ["db.collection.find({}, {field: 1})", "db.collection.query({field: 1})", "db.collection.find({field})", "db.collection.filter({field: 1})"],
+                  "ans": 0
+                },
+                {
+                  "q": "What is the purpose of `useMemo` in React?",
+                  "opts": ["To memoize values and prevent unnecessary recalculations", "To update the state", "To handle side effects", "To perform form validations"],
+                  "ans": 0
+                },
+                {
+                  "q": "In Node.js, how can you set the content type for a response?",
+                  "opts": ["res.setHeader('Content-Type', 'application/json')", "res.contentType('application/json')", "res.sendHeader('Content-Type', 'json')", "res.type('json')"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is used to stop a MongoDB connection?",
+                  "opts": ["db.close()", "db.disconnect()", "db.end()", "MongoClient.close()"],
+                  "ans": 3
+                },
+                {
+                  "q": "In MongoDB, which method is used to update a document?",
+                  "opts": ["updateOne()", "updateDocument()", "update()", "set()"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is a React hook for managing component state?",
+                  "opts": ["useState", "useContext", "useEffect", "useReducer"],
+                  "ans": 0
+                },
+                {
+                  "q": "What does `JSON.stringify()` do in JavaScript?",
+                  "opts": ["Converts a JavaScript object into a JSON string", "Parses a JSON string into an object", "Converts a JavaScript object to a function", "Converts an object into an array"],
+                  "ans": 0
+                },
+                {
+                  "q": "In Node.js, which function is used to read the contents of a file asynchronously?",
+                  "opts": ["fs.readFile()", "fs.read()", "fs.openFile()", "fs.readFileSync()"],
+                  "ans": 0
+                },
+                {
+                  "q": "What does the `await` keyword do in JavaScript?",
+                  "opts": ["Waits for a promise to resolve", "Starts a new promise", "Pauses execution of the program", "Handles promise rejection"],
+                  "ans": 0
+                },
+                {
+                  "q": "What is the main purpose of Express.js?",
+                  "opts": ["To simplify routing and middleware in Node.js", "To manage MongoDB connections", "To perform server-side rendering", "To handle JavaScript events"],
+                  "ans": 0
+                },
+                {
+                  "q": "In React, which method is used to render a component?",
+                  "opts": ["render()", "display()", "draw()", "show()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In MongoDB, which of the following is used to retrieve all documents from a collection?",
+                  "opts": ["db.collection.find()", "db.collection.fetch()", "db.collection.get()", "db.collection.retrieve()"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following methods is used to add a new document to a MongoDB collection?",
+                  "opts": ["insertOne()", "add()", "insert()", "create()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In JavaScript, which of the following is a valid way to create a promise?",
+                  "opts": ["new Promise((resolve, reject) => {})", "Promise.new()", "Promise.create()", "new Promise()"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is a correct way to make an HTTP GET request using Node.js?",
+                  "opts": ["http.get(url, callback)", "request(url, callback)", "http.request(url, 'GET', callback)", "fetch(url, callback)"],
+                  "ans": 0
+                },
+                
+    {
+      "q": "Which hook in React is used to perform side effects in function components?",
+      "opts": ["useEffect", "useState", "useContext", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to start a MongoDB server?",
+      "opts": ["mongod", "mongo", "start-mongo", "init-mongo"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which function is used to create a server?",
+      "opts": ["http.createServer()", "server.create()", "createServer()", "server.start()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to serve static files in Express.js?",
+      "opts": ["express.static()", "staticFile()", "express.serve()", "staticFiles()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a way to define a route for HTTP GET requests in Express.js?",
+      "opts": ["app.get()", "app.onGet()", "app.routeGet()", "app.listen()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to manage the state of a component?",
+      "opts": ["useState", "useEffect", "useMemo", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to insert a single document in MongoDB?",
+      "opts": ["insertOne()", "addDocument()", "insert()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which built-in module is used for working with file system?",
+      "opts": ["fs", "file", "filesystem", "fileSystem"],
+      "ans": 0
+    },
+    {
+      "q": "Which MongoDB method is used to remove a document?",
+      "opts": ["deleteOne()", "remove()", "drop()", "discard()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what is the purpose of `useContext` hook?",
+      "opts": ["To access global state or context", "To update component state", "To perform side effects", "To memoize values"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which of the following is used to parse incoming requests with JSON payloads?",
+      "opts": ["express.json()", "jsonParser()", "express.bodyParser()", "jsonMiddleware()"],
+      "ans": 0
+    },
+    {
+      "q": "In JavaScript, which of the following is used to create a deep clone of an object?",
+      "opts": ["JSON.parse(JSON.stringify(obj))", "Object.clone(obj)", "obj.copy()", "Object.assign({}, obj)"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in MongoDB is used to find documents?",
+      "opts": ["find()", "select()", "query()", "search()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a valid HTTP status code for successful requests?",
+      "opts": ["200", "400", "500", "404"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which of the following is used to sort query results?",
+      "opts": [".sort()", ".orderBy()", ".sortResults()", ".arrange()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Express.js is used to send a response with a JSON object?",
+      "opts": ["res.json()", "res.sendJson()", "res.sendObject()", "res.writeJson()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which event is emitted when a server is started and is listening on a port?",
+      "opts": ["'listening'", "'start'", "'connect'", "'ready'"],
+      "ans": 0
+    },
+    {
+      "q": "In React, how do you define a functional component?",
+      "opts": ["const MyComponent = () => {}", "function MyComponent() {}", "function = MyComponent() {}", "const MyComponent = function() {}"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to install packages in a Node.js project?",
+      "opts": ["npm install", "node install", "install npm", "npm get"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to connect to a MongoDB database in Node.js?",
+      "opts": ["MongoClient.connect()", "db.connect()", "mongoose.connect()", "mongodb.connect()"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript keyword is used to define a variable with block scope?",
+      "opts": ["let", "var", "const", "scope"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what does the `useEffect` hook with an empty dependency array `[]` do?",
+      "opts": ["Runs only once after the first render", "Runs on every render", "Runs when the component is removed", "Does not run at all"],
+      "ans": 0
+    },
+    {
+      "q": "What is the primary purpose of `res.status()` in Express.js?",
+      "opts": ["To set the HTTP status code for the response", "To send data as a response", "To specify the content type", "To end the response"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to count documents in a collection?",
+      "opts": ["countDocuments()", "count()", "aggregateCount()", "documentsCount()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which method is used to create a buffer from a string?",
+      "opts": ["Buffer.from()", "Buffer.create()", "new Buffer()", "Buffer.encode()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which of the following is used to handle HTTP PUT requests?",
+      "opts": ["app.put()", "app.addPut()", "app.handlePut()", "app.routePut()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods in MongoDB is used to create an index?",
+      "opts": ["createIndex()", "addIndex()", "buildIndex()", "create()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in React is used to trigger a re-render of a component?",
+      "opts": ["setState()", "triggerRender()", "renderComponent()", "updateState()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is a JavaScript data structure that allows you to store key-value pairs?",
+      "opts": ["Map", "Array", "Set", "Object"],
+      "ans": 0
+    },
+    {
+      "q": "What is the default HTTP status code for a successful POST request?",
+      "opts": ["201", "200", "400", "404"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used for querying documents with a value less than a specified value?",
+      "opts": ["$lt", "$gt", "$eq", "$in"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to stop a server in Node.js?",
+      "opts": ["server.close()", "server.stop()", "server.end()", "server.quit()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to retrieve a single document from a collection?",
+      "opts": ["findOne()", "find()", "select()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what is the primary purpose of the `useReducer` hook?",
+      "opts": ["To manage more complex state logic", "To update state", "To perform side effects", "To access context data"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to fetch data from a MongoDB collection?",
+      "opts": ["find()", "query()", "select()", "fetch()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which operator is used for logical 'OR' queries?",
+      "opts": ["$or", "$and", "$nor", "$not"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, how can you handle a route parameter?",
+      "opts": ["req.params", "req.body", "req.query", "req.route"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to handle asynchronous operations in Node.js?",
+      "opts": ["Callbacks", "Promises", "Async/Await", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "In MongoDB, which method is used to delete multiple documents?",
+      "opts": ["deleteMany()", "removeAll()", "deleteAll()", "dropMany()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which of the following is a built-in module used for handling HTTP requests?",
+      "opts": ["http", "request", "express", "server"],
+      "ans": 0
+    },
+    {
+      "q": "Which JavaScript function is used to add an item to the end of an array?",
+      "opts": ["push()", "add()", "insert()", "append()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Express.js is used to handle HTTP DELETE requests?",
+      "opts": ["app.delete()", "app.remove()", "app.deleteRequest()", "app.removeRequest()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following React hooks is used to memoize values?",
+      "opts": ["useMemo", "useEffect", "useState", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to update multiple documents in a collection?",
+      "opts": ["updateMany()", "update()", "setMany()", "updateAll()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which method is used to handle URL encoding and decoding?",
+      "opts": ["decodeURIComponent()", "encodeURIComponent()", "url.parse()", "path.resolve()"],
+      "ans": 0
+    }
+,
+
+
+    {
+      "q": "What is the correct method to update a MongoDB document?",
+      "opts": ["updateOne()", "update()", "modify()", "edit()"],
+      "ans": 0
+    },
+    {
+      "q": "Which method in Node.js allows you to listen to an event on an EventEmitter object?",
+      "opts": ["on()", "listen()", "emit()", "trigger()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is used to perform async operations in Node.js?",
+      "opts": ["async/await", "promises", "callbacks", "All of the above"],
+      "ans": 3
+    },
+    {
+      "q": "What is the default timeout for a MongoDB connection?",
+      "opts": ["10000ms", "30000ms", "5000ms", "60000ms"],
+      "ans": 1
+    },
+    {
+      "q": "Which of the following is used to define a REST API route in Express.js?",
+      "opts": ["app.route()", "app.endPoint()", "app.path()", "app.method()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, what does `useReducer` hook help with?",
+      "opts": ["Managing more complex state", "Handling side effects", "Accessing context", "Re-rendering components"],
+      "ans": 0
+    },
+    {
+      "q": "What does `res.send()` do in Express.js?",
+      "opts": ["Sends the response to the client", "Sends a file to the client", "Sends JSON to the client", "Sends a header to the client"],
+      "ans": 0
+    },
+    {
+      "q": "What method do you use to parse the body of a request in Express.js?",
+      "opts": ["express.json()", "express.bodyParser()", "bodyParser.json()", "express.parser()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to update multiple documents that match a condition?",
+      "opts": ["updateMany()", "updateAll()", "modify()", "set()"],
+      "ans": 0
+    },
+    {
+      "q": "What does the `useState` hook in React return?",
+      "opts": ["A state variable and a function to update it", "A state variable", "A function to update the state", "Nothing"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to create a new MongoDB collection?",
+      "opts": ["createCollection()", "addCollection()", "newCollection()", "insertCollection()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following methods is used to find documents in a MongoDB collection?",
+      "opts": ["find()", "query()", "select()", "get()"],
+      "ans": 0
+    },
+    {
+      "q": "Which event is triggered when an HTTP request is completed in Express.js?",
+      "opts": ["finish", "end", "complete", "done"],
+      "ans": 1
+    },
+    {
+      "q": "What is the default HTTP method for sending data in a form submission?",
+      "opts": ["POST", "GET", "PUT", "DELETE"],
+      "ans": 0
+    },
+    {
+      "q": "What function is used in Node.js to start an HTTP server?",
+      "opts": ["http.createServer()", "server.start()", "app.listen()", "createServer()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook is used to share state or logic across components?",
+      "opts": ["useContext", "useMemo", "useState", "useEffect"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following JavaScript methods is used to remove the last element of an array?",
+      "opts": ["pop()", "shift()", "splice()", "remove()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which function is used to send a JSON response to the client?",
+      "opts": ["res.json()", "res.send()", "res.write()", "res.end()"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to count documents matching a query?",
+      "opts": ["countDocuments()", "count()", "findCount()", "total()"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following React hooks is used to memoize a value for performance optimization?",
+      "opts": ["useMemo", "useState", "useEffect", "useReducer"],
+      "ans": 0
+    },
+    {
+      "q": "What is the correct way to update a document in MongoDB with a specific filter?",
+      "opts": ["db.collection.updateOne()", "db.collection.update()", "db.collection.set()", "db.collection.modify()"],
+      "ans": 0
+    },
+    {
+      "q": "In Express.js, which function is used to serve static files from a directory?",
+      "opts": ["express.static()", "static()", "serve()", "fileServe()"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used to find documents where a value is equal to a specified value?",
+      "opts": ["$eq", "$in", "$ne", "$gt"],
+      "ans": 0
+    },
+    {
+      "q": "What does `res.status(200)` do in Express.js?",
+      "opts": ["Sets the response status code to 200", "Sends a 200 OK response", "Sets the response type to JSON", "Logs the status"],
+      "ans": 0
+    },
+    {
+      "q": "In MongoDB, which method is used to remove a specific document?",
+      "opts": ["deleteOne()", "remove()", "drop()", "delete()"],
+      "ans": 0
+    },
+    {
+      "q": "In React, which hook allows you to synchronize a component with an external system like a browser API?",
+      "opts": ["useEffect", "useContext", "useReducer", "useState"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used in Node.js to parse the URL of a request?",
+      "opts": ["url.parse()", "path.parse()", "url.decode()", "url.resolve()"],
+      "ans": 0
+    },
+    {
+      "q": "What type of data does `req.body` contain in Express.js?",
+      "opts": ["Request body data", "Query parameters", "URL parameters", "Headers"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to install a package in Node.js?",
+      "opts": ["npm install", "node install", "install package", "npm get"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used in Express.js to handle POST requests?",
+      "opts": ["app.post()", "app.onPost()", "app.addPost()", "app.submit()"],
+      "ans": 0
+    },
+    {
+      "q": "Which function in React is used to update the state of a component?",
+      "opts": ["setState()", "updateState()", "changeState()", "set()"],
+      "ans": 0
+    },
+    {
+      "q": "What does `mongoose.connect()` do in a Node.js application?",
+      "opts": ["Connects to a MongoDB database", "Connects to an Express server", "Sets up a MongoDB schema", "Initiates a MongoDB query"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to create a new document in a MongoDB collection?",
+      "opts": ["insertOne()", "add()", "create()", "insert()"],
+      "ans": 0
+    },
+    {
+      "q": "Which command is used to start a Node.js server in a terminal?",
+      "opts": ["node server.js", "start server", "node app.js", "npm start"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP status code indicates that the server could not find the requested resource?",
+      "opts": ["404", "200", "500", "403"],
+      "ans": 0
+    },
+    {
+      "q": "What is the purpose of `res.send()` in Express.js?",
+      "opts": ["Sends the response to the client", "Sets the response header", "Sends a file", "Sets the status code"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following operators in MongoDB is used to find documents where a value is greater than a specified value?",
+      "opts": ["$gt", "$lt", "$ne", "$eq"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook is used to store a state value in a component?",
+      "opts": ["useState", "useEffect", "useContext", "useMemo"],
+      "ans": 0
+    },
+    {
+      "q": "Which method is used to remove a MongoDB collection?",
+      "opts": ["drop()", "remove()", "delete()", "clear()"],
+      "ans": 0
+    },
+    {
+      "q": "In Node.js, which module is used to handle events?",
+      "opts": ["events", "http", "url", "path"],
+      "ans": 0
+    },
+    {
+      "q": "Which HTTP method is used to retrieve data from the server?",
+      "opts": ["GET", "POST", "PUT", "DELETE"],
+      "ans": 0
+    },
+    {
+      "q": "Which operator in MongoDB is used for matching exact values?",
+      "opts": ["$eq", "$match", "$in", "$like"],
+      "ans": 0
+    },
+    {
+      "q": "Which of the following is the correct syntax to declare a function in JavaScript?",
+      "opts": ["function myFunction() {}", "function: myFunction() {}", "myFunction() => {}", "function = myFunction() {}"],
+      "ans": 0
+    },
+    {
+      "q": "Which React hook is used for optimizing performance by memoizing functions?",
+      "opts": ["useCallback", "useState", "useEffect", "useMemo"],
+      "ans": 0
+    },
+
+    
+        {
+          "q": "Which of the following methods is used to add a new field to an existing document in MongoDB?",
+          "opts": ["$set", "$add", "$append", "$insert"],
+          "ans": 0
+        },
+        {
+          "q": "In React, which hook is used to perform side effects in functional components?",
+          "opts": ["useEffect", "useState", "useReducer", "useCallback"],
+          "ans": 0
+        },
+        {
+          "q": "Which Express.js method is used to handle HTTP PUT requests?",
+          "opts": ["app.put()", "app.post()", "app.get()", "app.delete()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which operator is used to check if a field is not equal to a specified value?",
+          "opts": ["$ne", "$eq", "$gt", "$lt"],
+          "ans": 0
+        },
+        {
+          "q": "In React, what does the `key` prop do in lists?",
+          "opts": ["Helps React identify which items have changed", "Sets the CSS class of the list item", "Adds a unique identifier to the component", "Controls the rendering order of components"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is the correct way to set the environment variable in a Node.js app?",
+          "opts": ["process.env.VARIABLE = 'value'", "env.set('VARIABLE', 'value')", "setenv('VARIABLE', 'value')", "NODE_ENV = 'value'"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following is used to make a field in a MongoDB schema required?",
+          "opts": ["required: true", "mandatory: true", "isRequired: true", "compulsory: true"],
+          "ans": 0
+        },
+        {
+          "q": "Which HTTP status code represents a successful request in Express.js?",
+          "opts": ["200", "400", "500", "401"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to delete multiple documents in MongoDB that match a condition?",
+          "opts": ["deleteMany()", "removeAll()", "delete()", "clear()"],
+          "ans": 0
+        },
+        {
+          "q": "What function is used to send a response with a status code and JSON in Express.js?",
+          "opts": ["res.status().json()", "res.sendJson()", "res.send()", "res.json()"],
+          "ans": 0
+        },
+        {
+          "q": "Which operator is used in MongoDB to find documents where a field contains an array of values?",
+          "opts": ["$in", "$all", "$array", "$contain"],
+          "ans": 0
+        },
+        {
+          "q": "Which React lifecycle method is called immediately after a component is mounted?",
+          "opts": ["componentDidMount", "componentWillMount", "render", "componentDidUpdate"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following JavaScript methods is used to join two arrays?",
+          "opts": ["concat()", "combine()", "join()", "merge()"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB method is used to find documents by specific field values?",
+          "opts": ["find()", "findBy()", "get()", "search()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, how can you prevent a component from re-rendering unnecessarily?",
+          "opts": ["Use React.memo()", "Use useEffect()", "Use useCallback()", "Use PureComponent"],
+          "ans": 0
+        },
+        {
+          "q": "Which Express.js middleware is used to parse incoming request bodies in JSON format?",
+          "opts": ["express.json()", "bodyParser.json()", "express.body()", "express.parser()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which command is used to change a document's value?",
+          "opts": ["update()", "modify()", "set()", "change()"],
+          "ans": 0
+        },
+        {
+          "q": "Which operator in MongoDB is used to check for the existence of a field in a document?",
+          "opts": ["$exists", "$notExists", "$empty", "$null"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following methods is used in MongoDB to remove all documents from a collection?",
+          "opts": ["deleteMany()", "removeAll()", "clear()", "truncate()"],
+          "ans": 0
+        },
+        {
+          "q": "In React, what does the `useEffect` hook do?",
+          "opts": ["Handles side effects", "Sets state", "Manages performance", "Updates the DOM"],
+          "ans": 0
+        },
+        {
+          "q": "Which function is used to define an API route in Express.js?",
+          "opts": ["app.route()", "app.method()", "router.use()", "app.get()"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which operator is used to increment a field's value?",
+          "opts": ["$inc", "$add", "$sum", "$increment"],
+          "ans": 0
+        },
+        {
+          "q": "What is the command to create a new React app using Create React App?",
+          "opts": ["npx create-react-app", "create-react-app new-app", "react-create new-app", "npm init react-app"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, what is the purpose of the `require` function?",
+          "opts": ["To import modules", "To load files", "To declare dependencies", "To execute commands"],
+          "ans": 0
+        },
+        {
+          "q": "What is the default database name when using Mongoose in Node.js?",
+          "opts": ["test", "db", "mongodb", "default"],
+          "ans": 0
+        },
+        {
+          "q": "In MongoDB, which method is used to insert multiple documents at once?",
+          "opts": ["insertMany()", "insertAll()", "insert()", "addMany()"],
+          "ans": 0
+        },
+        {
+          "q": "What does `express.static()` serve in Express.js?",
+          "opts": ["Static files", "Dynamic content", "API responses", "Error pages"],
+          "ans": 0
+        },
+        {
+          "q": "Which HTTP method is used to update a resource in a REST API?",
+          "opts": ["PUT", "POST", "DELETE", "PATCH"],
+          "ans": 0
+        },
+        {
+          "q": "Which React hook allows you to memoize a function to avoid unnecessary re-creations?",
+          "opts": ["useCallback", "useState", "useEffect", "useMemo"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to find the length of an array in JavaScript?",
+          "opts": ["length", "size", "count()", "getLength()"],
+          "ans": 0
+        },
+        {
+          "q": "Which operator is used in MongoDB to query for values that match a regular expression?",
+          "opts": ["$regex", "$match", "$pattern", "$search"],
+          "ans": 0
+        },
+        {
+          "q": "In Node.js, which module is used to create a server?",
+          "opts": ["http", "express", "path", "url"],
+          "ans": 0
+        },
+        {
+          "q": "Which method is used to handle HTTP DELETE requests in Express.js?",
+          "opts": ["app.delete()", "app.remove()", "app.destroy()", "app.deleteAll()"],
+          "ans": 0
+        },
+        {
+          "q": "Which MongoDB operator checks if a field is greater than a specified value?",
+          "opts": ["$gt", "$lt", "$ne", "$eq"],
+          "ans": 0
+        },
+        {
+          "q": "What is used to handle asynchronous code in React?",
+          "opts": ["useEffect", "useState", "useAsync", "useAsyncEffect"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following methods in MongoDB is used to count the number of documents that match a query?",
+          "opts": ["countDocuments()", "getCount()", "count()", "findCount()"],
+          "ans": 0
+        },
+        {
+          "q": "Which function is used to get the current working directory in Node.js?",
+          "opts": ["process.cwd()", "path.getCurrentDirectory()", "directory()", "getcwd()"],
+          "ans": 0
+        },
+        {
+          "q": "Which React hook is used to handle and manage side effects in components?",
+          "opts": ["useEffect", "useState", "useCallback", "useReducer"],
+          "ans": 0
+        },
+        {
+          "q": "What does the `node_modules` folder in a Node.js application contain?",
+          "opts": ["Installed dependencies", "Source code", "Configuration files", "Log files"],
+          "ans": 0
+        },
+        {
+          "q": "Which method in Express.js is used to handle incoming POST requests?",
+          "opts": ["app.post()", "app.get()", "app.put()", "app.delete()"],
+          "ans": 0
+        },
+        {
+          "q": "Which of the following MongoDB operators is used to find documents where a value is less than a specified value?",
+          "opts": ["$lt", "$gt", "$ne", "$eq"],
+          "ans": 0
+        },      
+
+        
+            {
+              "q": "Which JavaScript method is used to combine two or more arrays?",
+              "opts": ["concat()", "merge()", "combine()", "union()"],
+              "ans": 0
+            },
+            {
+              "q": "What does `async` keyword do in JavaScript?",
+              "opts": ["Marks a function as asynchronous", "Executes code asynchronously", "Makes the function return a promise", "Both 1 and 3"],
+              "ans": 3
+            },
+            {
+              "q": "In MongoDB, which method is used to find a single document?",
+              "opts": ["findOne()", "find()", "get()", "findDocument()"],
+              "ans": 0
+            },
+            {
+              "q": "Which HTTP status code represents a bad request in Express.js?",
+              "opts": ["400", "500", "404", "301"],
+              "ans": 0
+            },
+            {
+              "q": "Which MongoDB method is used to delete a collection?",
+              "opts": ["drop()", "remove()", "deleteCollection()", "clear()"],
+              "ans": 0
+            },
+            {
+              "q": "Which React hook is used to manage the state of an array or object?",
+              "opts": ["useState", "useReducer", "useEffect", "useContext"],
+              "ans": 1
+            },
+            {
+              "q": "Which JavaScript operator is used to check for equality with type conversion?",
+              "opts": ["==", "===", "=", "==="],
+              "ans": 0
+            },
+            {
+              "q": "Which method in Express.js is used to serve static files?",
+              "opts": ["express.static()", "serve.static()", "static()", "fileServe()"],
+              "ans": 0
+            },
+            {
+              "q": "Which operator in MongoDB is used to update an existing field value?",
+              "opts": ["$set", "$update", "$add", "$change"],
+              "ans": 0
+            },
+            {
+              "q": "In Node.js, what does the `fs` module allow you to do?",
+              "opts": ["File system operations", "HTTP requests", "Create servers", "Process environment variables"],
+              "ans": 0
+            },
+            {
+              "q": "In React, what is the purpose of the `useMemo` hook?",
+              "opts": ["Memoizes expensive calculations", "Handles side effects", "Manages state", "Renders components conditionally"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is used to handle HTTP GET requests in Express.js?",
+              "opts": ["app.get()", "app.request()", "app.fetch()", "app.response()"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, which operator is used to find documents with a field that is not equal to a specified value?",
+              "opts": ["$ne", "$eq", "$gt", "$lt"],
+              "ans": 0
+            },
+            {
+              "q": "What is the purpose of `res.status()` in Express.js?",
+              "opts": ["Sets the HTTP status code of the response", "Sets the content-type", "Sets the response body", "Sends a header"],
+              "ans": 0
+            },
+            {
+              "q": "Which HTTP method is used to create a new resource in a REST API?",
+              "opts": ["POST", "GET", "PUT", "DELETE"],
+              "ans": 0
+            },
+            {
+              "q": "In React, how can you share data between components without passing props?",
+              "opts": ["useContext", "useState", "useReducer", "useEffect"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, what method is used to find documents that match multiple conditions?",
+              "opts": ["find()", "query()", "where()", "select()"],
+              "ans": 0
+            },
+            {
+              "q": "Which method in Express.js is used to handle all HTTP requests regardless of the method?",
+              "opts": ["app.all()", "app.method()", "app.request()", "app.route()"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, which operator is used to match documents with an array of values?",
+              "opts": ["$in", "$match", "$array", "$all"],
+              "ans": 0
+            },
+            {
+              "q": "In Node.js, which module provides utilities for manipulating file paths?",
+              "opts": ["path", "fs", "url", "http"],
+              "ans": 0
+            },
+            {
+              "q": "Which method is used to add an event listener to an HTML element in JavaScript?",
+              "opts": ["addEventListener()", "on()", "listen()", "trigger()"],
+              "ans": 0
+            },
+            {
+              "q": "Which operator in MongoDB is used to check if a value is greater than a specified value?",
+              "opts": ["$gt", "$lt", "$eq", "$ne"],
+              "ans": 0
+            },
+            {
+              "q": "In Express.js, which function is used to send a plain text response?",
+              "opts": ["res.send()", "res.text()", "res.write()", "res.message()"],
+              "ans": 0
+            },
+            {
+              "q": "Which function is used to parse incoming requests with JSON payloads in Express.js?",
+              "opts": ["express.json()", "bodyParser.json()", "jsonParser()", "express.bodyParser()"],
+              "ans": 0
+            },
+            {
+              "q": "What does the `useEffect` hook return in React?",
+              "opts": ["Cleanup function", "State update", "Promise", "Rendering function"],
+              "ans": 0
+            },
+            {
+              "q": "Which of the following is used to handle errors in MongoDB queries?",
+              "opts": ["catch()", "then()", "finally()", "reject()"],
+              "ans": 0
+            },
+            {
+              "q": "In React, what is the `useContext` hook used for?",
+              "opts": ["To consume context values", "To manage state", "To handle side effects", "To optimize performance"],
+              "ans": 0
+            },
+            {
+              "q": "Which HTTP status code represents an internal server error in Express.js?",
+              "opts": ["500", "404", "400", "200"],
+              "ans": 0
+            },
+            {
+              "q": "Which JavaScript function is used to add an item to the end of an array?",
+              "opts": ["push()", "append()", "insert()", "add()"],
+              "ans": 0
+            },
+            {
+              "q": "Which Express.js method is used to handle PUT requests?",
+              "opts": ["app.put()", "app.post()", "app.patch()", "app.delete()"],
+              "ans": 0
+            },
+            {
+              "q": "Which method is used in MongoDB to insert a single document?",
+              "opts": ["insertOne()", "addDocument()", "insert()", "addOne()"],
+              "ans": 0
+            },
+            {
+              "q": "What is the default database used by Mongoose when no database is specified?",
+              "opts": ["test", "default", "db", "mongo"],
+              "ans": 0
+            },
+            {
+              "q": "Which operator is used in MongoDB to match documents where a field is less than a specified value?",
+              "opts": ["$lt", "$gt", "$eq", "$ne"],
+              "ans": 0
+            },
+            {
+              "q": "Which HTTP status code indicates that a resource has been created successfully?",
+              "opts": ["201", "200", "404", "500"],
+              "ans": 0
+            },
+            {
+              "q": "In React, which hook is used to store a reference to a DOM element?",
+              "opts": ["useRef", "useState", "useEffect", "useMemo"],
+              "ans": 0
+            },
+            {
+              "q": "What does the `useReducer` hook in React help with?",
+              "opts": ["Managing complex state logic", "Managing component rendering", "Handling API calls", "Passing props between components"],
+              "ans": 0
+            },
+            {
+              "q": "In MongoDB, which operator is used to find documents where a field is less than a specified value?",
+              "opts": ["$lt", "$gt", "$ne", "$eq"],
+              "ans": 0
+            },
+            {
+              "q": "Which JavaScript method is used to remove the first element of an array?",
+              "opts": ["shift()", "pop()", "remove()", "slice()"],
+              "ans": 0
+            },
+            {
+              "q": "Which Express.js method is used to handle DELETE requests?",
+              "opts": ["app.delete()", "app.remove()", "app.destroy()", "app.removeAll()"],
+              "ans": 0
+            },
+            {
+              "q": "Which operator in MongoDB is used to select documents where a field is equal to a specified value?",
+              "opts": ["$eq", "$in", "$not", "$match"],
+              "ans": 0
+            },
+            {
+              "q": "Which React method is used to force a component to re-render?",
+              "opts": ["forceUpdate()", "render()", "update()", "setState()"],
+              "ans": 0
+            },
+            {
+              "q": "What method in MongoDB is used to get distinct values from a collection?",
+              "opts": ["distinct()", "unique()", "select()", "getValues()"],
+              "ans": 0
+            }
+          ,
+          {
+            "q": "Which of the following is used to create a route in Express.js?",
+            "opts": ["app.get()", "app.route()", "router.use()", "app.create()"],
+            "ans": 0
+          },
+          {
+            "q": "In React, what is the purpose of the `useState` hook?",
+            "opts": ["Manages state in a functional component", "Triggers a component re-render", "Handles side effects", "Handles context values"],
+            "ans": 0
+          },
+          {
+            "q": "Which method in MongoDB is used to update a single document?",
+            "opts": ["updateOne()", "update()", "modify()", "set()"],
+            "ans": 0
+          },
+          {
+            "q": "In Node.js, which method is used to create a server?",
+            "opts": ["http.createServer()", "server.create()", "app.listen()", "createServer()"],
+            "ans": 0
+          },
+          {
+            "q": "In React, which hook allows you to access the previous state of a component?",
+            "opts": ["useRef", "useEffect", "useState", "useReducer"],
+            "ans": 0
+          },
+          {
+            "q": "Which HTTP method is used to replace a resource in a REST API?",
+            "opts": ["PUT", "POST", "DELETE", "GET"],
+            "ans": 0
+          },
+          {
+            "q": "Which MongoDB operator is used to match documents where a field is not equal to a specified value?",
+            "opts": ["$ne", "$lt", "$gt", "$eq"],
+            "ans": 0
+          },
+          {
+            "q": "Which Express.js method is used to handle HTTP PATCH requests?",
+            "opts": ["app.patch()", "app.put()", "app.post()", "app.delete()"],
+            "ans": 0
+          },
+          {
+            "q": "In MongoDB, which command is used to check if a collection exists?",
+            "opts": ["listCollections()", "findCollection()", "exists()", "check()"],
+            "ans": 0
+          },
+          {
+            "q": "Which React hook is used for optimization by memoizing values?",
+            "opts": ["useMemo", "useState", "useEffect", "useContext"],
+            "ans": 0
+          },
+          {
+            "q": "Which HTTP status code is used to indicate that a requested resource was not found?",
+            "opts": ["404", "400", "500", "200"],
+            "ans": 0
+          },
+          {
+            "q": "In MongoDB, which operator is used to check if a value is less than a specified value?",
+            "opts": ["$lt", "$gt", "$eq", "$ne"],
+            "ans": 0
+          },
+          {
+            "q": "What method is used in Express.js to set a response header?",
+            "opts": ["res.set()", "res.header()", "res.sendHeader()", "res.addHeader()"],
+            "ans": 1
+          },
+          {
+            "q": "Which method in MongoDB is used to insert a single document?",
+            "opts": ["insertOne()", "insert()", "add()", "create()"],
+            "ans": 0
+          },
+          {
+            "q": "In Node.js, which module provides utilities for working with URLs?",
+            "opts": ["url", "path", "http", "fs"],
+            "ans": 0
+          },
+          {
+            "q": "Which React lifecycle method is called before the component is removed from the DOM?",
+            "opts": ["componentWillUnmount", "componentDidMount", "componentDidUpdate", "render"],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following is used to manage authentication in an Express.js app?",
+            "opts": ["passport.js", "express-auth", "express-validate", "auth.js"],
+            "ans": 0
+          },
+          {
+            "q": "Which JavaScript function is used to remove an item from the end of an array?",
+            "opts": ["pop()", "shift()", "remove()", "slice()"],
+            "ans": 0
+          },
+          {
+            "q": "What is the default HTTP method used in Express.js for a route?",
+            "opts": ["GET", "POST", "PUT", "DELETE"],
+            "ans": 0
+          },
+          {
+            "q": "Which method in MongoDB is used to count the number of documents in a collection?",
+            "opts": ["countDocuments()", "count()", "size()", "length()"],
+            "ans": 0
+          },
+          {
+            "q": "Which hook in React is used to update a component's state?",
+            "opts": ["useState", "useEffect", "useContext", "useReducer"],
+            "ans": 0
+          },
+          {
+            "q": "Which MongoDB method is used to remove all documents from a collection?",
+            "opts": ["deleteMany()", "clear()", "removeAll()", "drop()"],
+            "ans": 0
+          },
+          {
+            "q": "Which method in Express.js is used to handle all HTTP request methods (GET, POST, PUT, DELETE)?",
+            "opts": ["app.all()", "app.use()", "app.handle()", "app.route()"],
+            "ans": 0
+          },
+          {
+            "q": "In React, what is the default value of `useState` when initialized?",
+            "opts": ["The value passed to `useState`", "null", "undefined", "false"],
+            "ans": 0
+          },
+          {
+            "q": "Which operator in MongoDB is used to perform a search based on a regular expression?",
+            "opts": ["$regex", "$match", "$in", "$text"],
+            "ans": 0
+          },
+          {
+            "q": "Which method is used to parse incoming requests with URL-encoded data in Express.js?",
+            "opts": ["express.urlencoded()", "bodyParser.urlencoded()", "express.bodyParser()", "urlencoded()"],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following is used to add a new route to an Express.js app?",
+            "opts": ["app.get()", "app.route()", "router.add()", "app.add()"],
+            "ans": 0
+          },
+          {
+            "q": "In Node.js, which function is used to handle asynchronous errors?",
+            "opts": ["try-catch", "promise.catch()", "async-catch", "error.handle()"],
+            "ans": 1
+          },
+          {
+            "q": "Which React hook is used for state management in functional components?",
+            "opts": ["useState", "useEffect", "useContext", "useReducer"],
+            "ans": 0
+          },
+          {
+            "q": "Which MongoDB method is used to find documents that match multiple criteria?",
+            "opts": ["find()", "filter()", "query()", "select()"],
+            "ans": 0
+          },
+          {
+            "q": "Which Express.js method is used to handle HTTP HEAD requests?",
+            "opts": ["app.head()", "app.get()", "app.request()", "app.listen()"],
+            "ans": 0
+          },
+          {
+            "q": "Which operator in MongoDB is used to match documents where a field contains a specified string?",
+            "opts": ["$regex", "$text", "$match", "$contains"],
+            "ans": 0
+          },
+          {
+            "q": "Which Express.js middleware is used to parse cookies in HTTP requests?",
+            "opts": ["cookie-parser", "cookie-handler", "express-cookies", "http-cookies"],
+            "ans": 0
+          },
+          {
+            "q": "What does the `res.sendFile()` method do in Express.js?",
+            "opts": ["Sends a file as the response", "Sends an HTML file", "Sends JSON data", "Sends a redirect response"],
+            "ans": 0
+          },
+          {
+            "q": "In React, which method is used to force a component to re-render?",
+            "opts": ["forceUpdate()", "setState()", "render()", "update()"],
+            "ans": 0
+          },
+          {
+            "q": "Which MongoDB method is used to remove a single document?",
+            "opts": ["deleteOne()", "remove()", "clear()", "drop()"],
+            "ans": 0
+          },
+          {
+            "q": "In Express.js, which method is used to send a JSON response?",
+            "opts": ["res.json()", "res.sendJson()", "res.data()", "res.response()"],
+            "ans": 0
+          },
+          {
+            "q": "Which HTTP status code indicates that a resource has been permanently moved to a new location?",
+            "opts": ["301", "200", "404", "302"],
+            "ans": 0
+          },
+          {
+            "q": "Which of the following is used to manage asynchronous code in Node.js?",
+            "opts": ["Promise", "callback", "async/await", "All of the above"],
+            "ans": 3
+          },
+          {
+            "q": "In MongoDB, which operator is used to check for the presence of a field in a document?",
+            "opts": ["$exists", "$in", "$eq", "$gt"],
+            "ans": 0
+          },
+          {
+            "q": "In React, which hook is used to persist state across re-renders?",
+            "opts": ["useMemo", "useRef", "useState", "useEffect"],
+            "ans": 1
+          },
+          {
+            "q": "Which Express.js method is used to handle HTTP PUT requests?",
+            "opts": ["app.put()", "app.patch()", "app.post()", "app.get()"],
+            "ans": 0
+          },
+          {
+            "q": "In Node.js, which module is used to interact with the file system?",
+            "opts": ["fs", "path", "http", "url"],
+            "ans": 0
+          },
+          {
+            "q": "Which React lifecycle method is invoked before a component is updated?",
+            "opts": ["componentWillUpdate", "componentDidUpdate", "render", "componentDidMount"],
+            "ans": 0
+          },
+          {
+            "q": "Which MongoDB method is used to find all documents in a collection?",
+            "opts": ["find()", "select()", "all()", "get()"],
+            "ans": 0
+          },
+          
+                {
+                  "q": "In MongoDB, what is an `ObjectId`?",
+                  "opts": ["A unique identifier for documents", "A type of document", "A field type", "A reference to another collection"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which React hook is used for accessing context data?",
+                  "opts": ["useContext()", "useState()", "useEffect()", "useReducer()"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following can be used to manage routing in Node.js?",
+                  "opts": ["Express", "url", "http", "fs"],
+                  "ans": 0
+                },
+                {
+                  "q": "What is the default behavior of `res.send()` in Express.js?",
+                  "opts": ["Sends a response to the client", "Sends an HTTP error", "Ends the request", "Sets the content type"],
+                  "ans": 0
+                },
+                {
+                  "q": "What is the purpose of the `useEffect` hook with a dependency array in React?",
+                  "opts": ["To run a side effect based on specific state or props changes", "To update the state", "To memoize values", "To manage context data"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which function in Express.js is used to handle errors in middleware?",
+                  "opts": ["next()", "handleError()", "error()", "catchError()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In React, what is the purpose of `useLayoutEffect`?",
+                  "opts": ["To perform DOM mutations synchronously", "To update component state", "To manage context", "To perform async operations"],
+                  "ans": 0
+                },
+                {
+                  "q": "What is the purpose of `res.json()` in Express.js?",
+                  "opts": ["To send JSON responses", "To parse JSON data", "To create a JSON object", "To send an HTTP response"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following is used to parse incoming JSON data in Express.js?",
+                  "opts": ["express.json()", "express.bodyParser()", "express.jsonParser()", "express.parse()"],
+                  "ans": 0
+                },
+                {
+                  "q": "In MongoDB, which operator is used to match documents where a field is greater than a specific value?",
+                  "opts": ["$gt", "$lt", "$eq", "$in"],
+                  "ans": 0
+                },
+                {
+                  "q": "What does `res.sendFile()` do in Express.js?",
+                  "opts": ["Sends a file as a response", "Sends a JSON response", "Sends text as a response", "Sends a status code"],
+                  "ans": 0
+                },
+                {
+                  "q": "What does `db.collection.drop()` do in MongoDB?",
+                  "opts": ["Deletes a collection", "Deletes all documents in a collection", "Drops an index", "Removes a field from a collection"],
+                  "ans": 0
+                },
+                {
+                  "q": "What does `JSON.parse()` do in JavaScript?",
+                  "opts": ["Converts a JSON string into a JavaScript object", "Converts an object into a JSON string", "Parses a URL", "Parses an XML string"],
+                  "ans": 0
+                },
+                {
+                  "q": "Which of the following functions is used to return the last document in a MongoDB query?",
+                  "opts": ["findOne()", "find().sort()", "find().limit()", "find().reverse()"],
+                  "ans": 1
+                }
+              
+          
+      
+  
+  ,
     {
       "q": "What is the result of the following code?\n\nconsole.log( '1' + 2 + 3 );",
       "opts": ["'123'", "6", "'32'", "NaN"],
