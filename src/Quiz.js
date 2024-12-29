@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'; 
 import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
 
 const Quiz = ({ quizData, handleResult }) => {
@@ -12,7 +11,6 @@ const Quiz = ({ quizData, handleResult }) => {
   const [countdown, setCountdown] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isAutoSelected, setIsAutoSelected] = useState(false);
-  const navigate = useNavigate();
 
   const currentQ = quizData[qIndex];
 
@@ -30,13 +28,6 @@ const Quiz = ({ quizData, handleResult }) => {
     }
   };
 
-  const finishQuiz = () => {
-    const totalQuestions = quizData.length;
-    const wrongAnswers = totalQuestions - correctAnswers;
-    handleResult(correctAnswers, wrongAnswers, totalQuestions, selectedOptions.length);
-    navigate('/result');
-  };
-
   const handleNextQuestion = () => {
     setAnswered(false);
     setShowAnswer(false);
@@ -46,9 +37,20 @@ const Quiz = ({ quizData, handleResult }) => {
         setQIndex(qIndex + 1);
         setIsTransitioning(false);
       } else {
-        finishQuiz();
+        // Reset quiz after the last question
+        resetQuiz();
       }
-    }, 0);
+    }, 500);
+  };
+
+  const resetQuiz = () => {
+    setQIndex(0);  // Reset to the first question
+    setSelectedOptions([]);  // Clear selected options
+    setCorrectAnswers(0);  // Reset correct answers count
+    setAnswered(false);  // Reset answered status
+    setShowAnswer(false);  // Reset show answer state
+    setCountdown(3);  // Reset countdown for the next quiz round
+    setIsTransitioning(false);  // Reset transitioning state
   };
 
   const progress = ((qIndex + 1) / quizData.length) * 100;
@@ -71,7 +73,7 @@ const Quiz = ({ quizData, handleResult }) => {
     if (countdown > 0) {
       const countdownTimer = setTimeout(() => {
         setCountdown((prev) => prev - 1);
-      }, 1000); 
+      }, 1000);
       return () => clearTimeout(countdownTimer);
     } else {
       setLoading(false);
@@ -99,19 +101,11 @@ const Quiz = ({ quizData, handleResult }) => {
   return (
     <div className="quiz-container bg-gradient-to-br from-voilet-300 to-blue-900 p-10 pb-12 mb-0 mt-0 rounded-lg shadow-xl transform transition-all duration-500 ease-in-out relative">
       
-      {/* Removed the spinner and countdown overlay */}
-      
       <div className="progress-bar w-full h-2 bg-gray-400 rounded-lg mb-6">
         <div className="progress-bar-fill h-full bg-gradient-to-r from-green-400 to-blue-600 transition-all duration-500" style={{ width: `${progress}%` }}></div>
       </div>
 
       <h2 className="question text-3xl font-extrabold text-white mb-6">{currentQ.q}</h2>
-
-      {!answered && !isTransitioning && countdown > 0 && (
-        <div className="countdown text-white text-xl mb-4">
-          {/* Countdown text is removed */}
-        </div>
-      )}
 
       <div className="options flex flex-col space-y-4">
         {currentQ.opts.map((opt, index) => {
@@ -152,10 +146,10 @@ const Quiz = ({ quizData, handleResult }) => {
 
       <div className="actions flex justify-between items-center mt-6">
         <button
-          onClick={finishQuiz}
+          onClick={resetQuiz}
           className="end-quiz-btn p-3 text-sm bg-gradient-to-r from-red-500 to-purple-500 hover:from-purple-500 hover:to-green-500 rounded-lg transition duration-300 text-white flex items-center"
         >
-          <FaTimesCircle className="mr-2" /> End Quiz
+          <FaTimesCircle className="mr-2" /> Reset Quiz
         </button>
 
         {answered && (
